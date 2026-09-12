@@ -1,0 +1,16 @@
+{
+  "title": "Corpus metadata record (per artifact)",
+  "type": "object",
+  "required": ["file", "compiler", "compiler_version", "circuit_description", "known_correct", "expected_result"],
+  "properties": {
+    "file": {"type": "string"},
+    "compiler": {"type": "string"},
+    "compiler_version": {"type": "string"},
+    "compiler_commit": {"type": "string"},
+    "circuit_description": {"type": "string"},
+    "known_correct": {"type": "boolean"},
+    "expected_result": {"enum": ["all_pass", "pending_adjudication", "known_warnings"]},
+    "bug_class_exercised": {"type": ["string", "null"]},
+    "adjudication": {"enum": ["genuine_positive", "false_positive", "stale_artifact", "clean", null]}
+  }
+}
