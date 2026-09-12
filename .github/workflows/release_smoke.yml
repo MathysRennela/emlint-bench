@@ -1,0 +1,63 @@
+name: release-smoke
+
+# Tiered automation: the smoke tier runs automatically on every emlint release
+# (or on demand). It is record-only: it appends to results/ and never edits
+# historical results, never adjudicates findings, and never updates narrative
+# summaries (those stay manual per results/README.md).
+
+on:
+  workflow_dispatch:
+    inputs:
+      emlint_version:
+        description: "emlint version to benchmark (e.g. 0.2.2)"
+        required: true
+  repository_dispatch:
+    types: [emlint-release]
+
+permissions:
+  contents: write
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve emlint version
+        id: ver
+        run: |
+          if [ -n "${{ github.event.client_payload.version }}" ]; then
+            echo "version=${{ github.event.client_payload.version }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "version=${{ github.event.inputs.emlint_version }}" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install pinned environment
+        run: pip install "emlint==${{ steps.ver.outputs.version }}" -r requirements.txt
+
+      - name: Run release smoke benchmark
+        id: smoke
+        run: |
+          set +e
+          python scripts/release_smoke.py --emlint-version "${{ steps.ver.outputs.version }}"
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Commit results (append-only)
+        run: |
+          git config user.name "emlint-bench bot"
+          git config user.email "actions@github.com"
+          git add results/
+          git diff --cached --quiet || git commit -m "release smoke: emlint ${{ steps.ver.outputs.version }} (exit ${{ steps.smoke.outputs.exit_code }})"
+          git push
+
+      - name: Surface regressions
+        if: steps.smoke.outputs.exit_code == '1'
+        run: |
+          echo "::warning::Smoke benchmark reported error-severity findings (exit ${{ steps.smoke.outputs.exit_code }}). Results recorded under results/raw/release-smoke/; adjudication is manual."
+          exit 1
