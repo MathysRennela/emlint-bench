@@ -1,0 +1,2 @@
+TypeError: Stim 1.16.0 CompiledDetectorSampler.sample does not accept seed=; seed belongs to compile_detector_sampler.
+Command: PYTHONPATH=. PYTHONHASHSEED=0 .venv312/bin/python campaigns/run_smoke.py

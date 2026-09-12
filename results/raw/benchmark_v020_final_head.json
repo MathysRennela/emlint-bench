@@ -1,0 +1,107 @@
+{
+  "implementation": "0.2.0",
+  "label": "current-working-tree",
+  "platform": "Darwin-25.5.0-arm64",
+  "python": "3.12.13",
+  "stim": "1.16.0",
+  "source_commit": "c8234bfa5c62fedb73fc3da7a5e44cd22a3b70f2",
+  "dirty_worktree": true,
+  "regimes": {
+    "d5_r5": {
+      "scope-local-only": {
+        "median_ms": 8.424,
+        "samples_ms": [
+          9.365,
+          8.596,
+          8.37,
+          8.161,
+          8.424
+        ]
+      },
+      "cross-scope-only": {
+        "median_ms": 8.547,
+        "samples_ms": [
+          9.241,
+          8.536,
+          8.547,
+          8.618,
+          8.48
+        ]
+      },
+      "full-default": {
+        "median_ms": 10.266,
+        "samples_ms": [
+          12.246,
+          10.109,
+          10.419,
+          10.2,
+          10.266
+        ]
+      }
+    },
+    "d13_r13": {
+      "scope-local-only": {
+        "median_ms": 89.585,
+        "samples_ms": [
+          83.886,
+          90.621,
+          89.654,
+          89.585,
+          89.095
+        ]
+      },
+      "cross-scope-only": {
+        "median_ms": 114.365,
+        "samples_ms": [
+          123.3,
+          110.778,
+          113.265,
+          114.365,
+          115.619
+        ]
+      },
+      "full-default": {
+        "median_ms": 138.903,
+        "samples_ms": [
+          138.781,
+          135.504,
+          142.873,
+          139.323,
+          138.903
+        ]
+      }
+    },
+    "d21_r21": {
+      "scope-local-only": {
+        "median_ms": 249.32,
+        "samples_ms": [
+          247.859,
+          249.32,
+          238.22,
+          268.323,
+          252.603
+        ]
+      },
+      "cross-scope-only": {
+        "median_ms": 510.305,
+        "samples_ms": [
+          496.483,
+          481.94,
+          511.932,
+          510.305,
+          531.219
+        ]
+      },
+      "full-default": {
+        "median_ms": 570.159,
+        "samples_ms": [
+          571.802,
+          570.304,
+          568.729,
+          570.159,
+          570.02
+        ]
+      }
+    }
+  }
+}

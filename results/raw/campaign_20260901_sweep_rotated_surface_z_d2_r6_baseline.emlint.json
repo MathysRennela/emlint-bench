@@ -1,0 +1,420 @@
+{
+  "num_detectors": 17,
+  "num_observables": 1,
+  "num_error_mechanisms": 176,
+  "disabled_checks": [],
+  "applied_overrides": {},
+  "unknown_instructions": [],
+  "all_passed": false,
+  "any_skipped": false,
+  "has_errors": false,
+  "has_warnings": true,
+  "results": [
+    {
+      "name": "detectability",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanisms that flip observables also trigger detectors.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "sensitivity",
+      "passed": true,
+      "severity": "warning",
+      "message": "All detectors are triggered by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "observable_coverage",
+      "passed": true,
+      "severity": "error",
+      "message": "All declared observables are flipped by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "probability_bounds",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanism probabilities are in (0, 0.5].",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "duplicates",
+      "passed": false,
+      "severity": "warning",
+      "message": "Found 56 duplicate mechanism signature(s) across 56 distinct location(s). The same fault path appears more than once in the DEM, which typically happens when sub-circuit DEMs are concatenated without merging coincident mechanisms. Duplicate probabilities should be XOR-folded as p_eff = p1*(1-p2) + p2*(1-p1) (iterated for 3+), not left as separate entries.",
+      "counter_example": "error(0.00133244444444445, 0.0002667378157289138) share signature D1@(2,0,1) D4@(2,0,2); XOR-fused probability is 0.00159847; error(0.00040005335705113, 0.0001333866998761608) share signature D1@(2,0,1) D2@(2,2,1) L0; XOR-fused probability is 0.000533333; error(0.0002667378157289138, 0.0001333866998761608) share signature D0@(2,2,0) D1@(2,0,1) D2@(2,2,1); XOR-fused probability is 0.000400053; error(0.0002667378157289138, 0.00040005335705113) share signature D0@(2,2,0) D2@(2,2,1); XOR-fused probability is 0.000666578; error(0.0001333866998761608, 0.0003334000326131335) share signature D2@(2,2,1) D4@(2,0,2) L0; XOR-fused probability is 0.000466698; error(0.0001333866998761608, 0.0001333866998761608) share signature D1@(2,0,1) D2@(2,2,1) D4@(2,0,2) L0; XOR-fused probability is 0.000266738; error(0.00133244444444445, 0.0002667378157289138) share signature D3@(2,4,1) D6@(2,4,2); XOR-fused probability is 0.00159847; error(6.669779853440971e-05, 6.669779853440971e-05) share signature D3@(2,4,1) D4@(2,0,2); XOR-fused probability is 0.000133387; error(0.0003334000326131335, 0.0001333866998761608) share signature D3@(2,4,1) D5@(2,2,2); XOR-fused probability is 0.000466698; error(0.0002000667052120995, 6.669779853440971e-05) share signature D2@(2,2,1) D3@(2,4,1) D5@(2,2,2); XOR-fused probability is 0.000266738 (and 46 more)",
+      "counter_example_data": {
+        "mechanisms": [
+          "error(0.00133244444444445) D1 D4",
+          "error(0.0002667378157289138) D1 D4",
+          "error(0.00040005335705113) D1 D2 L0",
+          "error(0.0001333866998761608) D1 D2 L0",
+          "error(0.0002667378157289138) D0 D1 D2",
+          "error(0.0001333866998761608) D0 D1 D2",
+          "error(0.0002667378157289138) D0 D2",
+          "error(0.00040005335705113) D0 D2",
+          "error(0.0001333866998761608) D2 D4 L0",
+          "error(0.0003334000326131335) D2 D4 L0",
+          "error(0.0001333866998761608) D1 D2 D4 L0",
+          "error(0.0001333866998761608) D1 D2 D4 L0",
+          "error(0.00133244444444445) D3 D6",
+          "error(0.0002667378157289138) D3 D6",
+          "error(6.669779853440971e-05) D3 D4",
+          "error(6.669779853440971e-05) D3 D4",
+          "error(0.0003334000326131335) D3 D5",
+          "error(0.0001333866998761608) D3 D5",
+          "error(0.0002000667052120995) D2 D3 D5",
+          "error(6.669779853440971e-05) D2 D3 D5",
+          "error(6.669779853440971e-05) D2 D3 D4 D5",
+          "error(6.669779853440971e-05) D2 D3 D4 D5",
+          "error(0.00133244444444445) D4 D7",
+          "error(0.0002667378157289138) D4 D7",
+          "error(0.0003334000326131335) D4 D5 L0",
+          "error(0.0001333866998761608) D4 D5 L0",
+          "error(0.0002000667052120995) D2 D4 D5",
+          "error(6.669779853440971e-05) D2 D4 D5",
+          "error(0.0002000667052120995) D2 D5",
+          "error(0.0002000667052120995) D2 D5",
+          "error(0.0001333866998761608) D5 D7 L0",
+          "error(0.0003334000326131335) D5 D7 L0",
+          "error(0.0001333866998761608) D4 D5 D7 L0",
+          "error(0.0001333866998761608) D4 D5 D7 L0",
+          "error(0.0001333866998761608) D5 D6",
+          "error(0.0003334000326131335) D5 D6",
+          "error(0.0001333866998761608) D3 D5 D6",
+          "error(0.0001333866998761608) D3 D5 D6",
+          "error(0.00133244444444445) D6 D9",
+          "error(0.0002667378157289138) D6 D9",
+          "error(6.669779853440971e-05) D6 D7",
+          "error(6.669779853440971e-05) D6 D7",
+          "error(0.0003334000326131335) D6 D8",
+          "error(0.0001333866998761608) D6 D8",
+          "error(0.0002000667052120995) D5 D6 D8",
+          "error(6.669779853440971e-05) D5 D6 D8",
+          "error(6.669779853440971e-05) D5 D6 D7 D8",
+          "error(6.669779853440971e-05) D5 D6 D7 D8",
+          "error(0.00133244444444445) D7 D10",
+          "error(0.0002667378157289138) D7 D10",
+          "error(0.0003334000326131335) D7 D8 L0",
+          "error(0.0001333866998761608) D7 D8 L0",
+          "error(0.0002000667052120995) D5 D7 D8",
+          "error(6.669779853440971e-05) D5 D7 D8",
+          "error(0.0002000667052120995) D5 D8",
+          "error(0.0002000667052120995) D5 D8",
+          "error(0.0001333866998761608) D8 D10 L0",
+          "error(0.0003334000326131335) D8 D10 L0",
+          "error(0.0001333866998761608) D7 D8 D10 L0",
+          "error(0.0001333866998761608) D7 D8 D10 L0",
+          "error(0.0001333866998761608) D8 D9",
+          "error(0.0003334000326131335) D8 D9",
+          "error(0.0001333866998761608) D6 D8 D9",
+          "error(0.0001333866998761608) D6 D8 D9",
+          "error(0.00133244444444445) D9 D12",
+          "error(0.0002667378157289138) D9 D12",
+          "error(6.669779853440971e-05) D9 D10",
+          "error(6.669779853440971e-05) D9 D10",
+          "error(0.0003334000326131335) D9 D11",
+          "error(0.0001333866998761608) D9 D11",
+          "error(0.0002000667052120995) D8 D9 D11",
+          "error(6.669779853440971e-05) D8 D9 D11",
+          "error(6.669779853440971e-05) D8 D9 D10 D11",
+          "error(6.669779853440971e-05) D8 D9 D10 D11",
+          "error(0.00133244444444445) D10 D13",
+          "error(0.0002667378157289138) D10 D13",
+          "error(0.0003334000326131335) D10 D11 L0",
+          "error(0.0001333866998761608) D10 D11 L0",
+          "error(0.0002000667052120995) D8 D10 D11",
+          "error(6.669779853440971e-05) D8 D10 D11",
+          "error(0.0002000667052120995) D8 D11",
+          "error(0.0002000667052120995) D8 D11",
+          "error(0.0001333866998761608) D11 D13 L0",
+          "error(0.0003334000326131335) D11 D13 L0",
+          "error(0.0001333866998761608) D10 D11 D13 L0",
+          "error(0.0001333866998761608) D10 D11 D13 L0",
+          "error(0.0001333866998761608) D11 D12",
+          "error(0.0003334000326131335) D11 D12",
+          "error(0.0001333866998761608) D9 D11 D12",
+          "error(0.0001333866998761608) D9 D11 D12",
+          "error(0.00133244444444445) D12 D15",
+          "error(0.0002667378157289138) D12 D15",
+          "error(6.669779853440971e-05) D12 D13",
+          "error(6.669779853440971e-05) D12 D13",
+          "error(0.0003334000326131335) D12 D14",
+          "error(0.0001333866998761608) D12 D14",
+          "error(0.0002000667052120995) D11 D12 D14",
+          "error(6.669779853440971e-05) D11 D12 D14",
+          "error(6.669779853440971e-05) D11 D12 D13 D14",
+          "error(6.669779853440971e-05) D11 D12 D13 D14",
+          "error(0.0002000667052120995) D11 D13 D14",
+          "error(6.669779853440971e-05) D11 D13 D14",
+          "error(0.0002000667052120995) D11 D14",
+          "error(0.0002000667052120995) D11 D14",
+          "error(0.0001333866998761608) D14 D15",
+          "error(0.00040005335705113) D14 D15",
+          "error(0.0001333866998761608) D12 D14 D15",
+          "error(0.0001333866998761608) D12 D14 D15",
+          "error(0.0002667378157289138) D14 D15 D16",
+          "error(0.0001333866998761608) D14 D15 D16",
+          "error(0.00040005335705113) D14 D16",
+          "error(0.0002667378157289138) D14 D16"
+        ],
+        "signature_count": 56
+      },
+      "status": "verdict"
+    },
+    {
+      "name": "correctability",
+      "passed": false,
+      "severity": "warning",
+      "message": "Found 35 syndrome(s) across 35 distinct location(s) that map to more than one distinct observable set. The decoder cannot determine which logical observable was flipped from the measurement outcome alone.",
+      "counter_example": "syndrome {D0@(2,2,0)} maps to observable sets {}, {L0}; witnesses: error(0.00040005335705113) D0 (iteration (0,)), error(0.0007997866287252842) D0 L0 (iteration (0,)); syndrome {D0@(2,2,0) D1@(2,0,1)} maps to observable sets {}, {L0}; witnesses: error(0.0001333866998761608) D0 D1 (iteration (0,)), error(0.0007997866287252842) D0 D1 L0 (iteration (0,)); syndrome {D2@(2,2,1)} maps to observable sets {}, {L0}; witnesses: error(0.001132653363562217) D2 (iteration (0,)), error(0.0007331866340596878) D2 L0 (iteration (0,)); syndrome {D1@(2,0,1) D2@(2,2,1)} maps to observable sets {}, {L0}; witnesses: error(0.0001333866998761608) D1 D2 (iteration (0,)), error(0.00040005335705113) D1 D2 L0 (iteration (0,)), error(0.0001333866998761608) D1 D2 L0 (iteration (0,)); syndrome {D2@(2,2,1) D3@(2,4,1)} maps to observable sets {}, {L0}; witnesses: error(0.0007331866340596878) D2 D3 (iteration (0,)), error(6.669779853440971e-05) D2 D3 L0 (iteration (0,)); syndrome {D2@(2,2,1) D4@(2,0,2)} maps to observable sets {}, {L0}; witnesses: error(6.669779853440971e-05) D2 D4 (iteration (0,)), error(0.0001333866998761608) D2 D4 L0 (iteration (0,)), error(0.0003334000326131335) D2 D4 L0 (iteration (0,)); syndrome {D2@(2,2,1) D3@(2,4,1) D4@(2,0,2)} maps to observable sets {}, {L0}; witnesses: error(6.669779853440971e-05) D2 D3 D4 (iteration (0,)), error(6.669779853440971e-05) D2 D3 D4 L0 (iteration (0,)); syndrome {D3@(2,4,1) D4@(2,0,2) D5@(2,2,2)} maps to observable sets {}, {L0}; witnesses: error(6.669779853440971e-05) D3 D4 D5 (iteration (0,)), error(6.669779853440971e-05) D3 D4 D5 L0 (iteration (0,)); syndrome {D5@(2,2,2)} maps to observable sets {}, {L0}; witnesses: error(0.0006665777540627741) D5 (iteration (0,)), error(0.0006665777540627741) D5 L0 (iteration (0,)); syndrome {D3@(2,4,1) D5@(2,2,2)} maps to observable sets {}, {L0}; witnesses: error(0.0003334000326131335) D3 D5 (iteration (0,)), error(0.0001333866998761608) D3 D5 (iteration (0,)), error(6.669779853440971e-05) D3 D5 L0 (iteration (0,)) (and 25 more)",
+      "counter_example_data": {
+        "conflicts": [
+          {
+            "syndrome": [
+              0
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00040005335705113) D0",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0007997866287252842) D0 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              0,
+              1
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0001333866998761608) D0 D1",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0007997866287252842) D0 D1 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              2
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.001132653363562217) D2",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0007331866340596878) D2 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              1,
+              2
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0001333866998761608) D1 D2",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00040005335705113) D1 D2 L0",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0001333866998761608) D1 D2 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              2,
+              3
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0007331866340596878) D2 D3",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D2 D3 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              2,
+              4
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(6.669779853440971e-05) D2 D4",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0001333866998761608) D2 D4 L0",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0003334000326131335) D2 D4 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              2,
+              3,
+              4
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(6.669779853440971e-05) D2 D3 D4",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D2 D3 D4 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              3,
+              4,
+              5
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(6.669779853440971e-05) D3 D4 D5",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D3 D4 D5 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              5
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0006665777540627741) D5",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0006665777540627741) D5 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              3,
+              5
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0003334000326131335) D3 D5",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0001333866998761608) D3 D5",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D3 D5 L0",
+                "iteration": []
+              }
+            ]
+          }
+        ],
+        "total_conflicts": 35,
+        "witnesses_truncated": true
+      },
+      "status": "verdict"
+    }
+  ]
+}

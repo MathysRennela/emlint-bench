@@ -1,0 +1,5350 @@
+{
+  "QECirc-noisy": {
+    "clean": 322,
+    "files": 714,
+    "finding_counts_by_check": {
+      "correctability": 275,
+      "detectability": 61,
+      "duplicates": 125
+    },
+    "parse_failures": 0,
+    "rows": [
+      {
+        "file": "1020-136-20--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "1020-136-20--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "1020-136-20--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "108-8-10--bivariate-bicycle-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "108-8-10--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "108-8-10--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "108-8-10--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "108-8-10--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "108-8-10--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "108-8-10--plus-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "108-8-10--zero-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "108-8-10--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "108-8-8--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "108-8-8--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "108-8-8--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "11-1-3--det-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "125-5-5--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "125-5-5--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "125-5-5--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "126-8-10--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "126-8-10--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "126-8-10--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "1428-184-24--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "1428-184-24--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "1428-184-24--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "144-12-12--bivariate-bicycle-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "144-12-12--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "144-12-12--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "144-12-12--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "144-12-12--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "144-12-12--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "144-12-12--plus-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "144-12-12--zero-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "144-12-12--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "144-8-12--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "144-8-12--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "144-8-12--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--circuit-synth-encoding-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "15-7-3--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "15-7-3--circuit-synth-encoding-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "15-7-3--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "15-7-3--circuit-synth-zero-state-preparation-depth-optimized-1d-aod.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--circuit-synth-zero-state-preparation-gate-optimized-1d-aod.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--det-ft-zero-heuristic-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--det-ft-zero-heuristic-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--det-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--det-ft-zero-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--edge-coloring-schedule-x-z-split.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--edge-coloring-schedule.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "15-7-3--ft-plus-heuristic-heuristic-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-plus-heuristic-heuristic-gates_only.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-plus-heuristic-heuristic.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-plus-opt-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-zero-heuristic-heuristic-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-zero-heuristic-heuristic-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-zero-heuristic-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-zero-heuristic-opt-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-zero-heuristic-opt-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-zero-heuristic-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--ft-zero-opt-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--non-ft-plus-heuristic.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--non-ft-plus-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--non-ft-zero-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--plus-state-preparation.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "15-7-3--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "15-7-3--zero-state-preparation.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "16-1-4-bacon-shor--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "16-1-4-bacon-shor--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "16-2-4--det-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "16-2-4-toric--edge-coloring-schedule-x-z-split.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "16-2-4-toric--edge-coloring-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "16-2-4-toric--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "16-2-4-toric--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "16-6-4--det-ft-zero-heuristic-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "16-6-4--det-ft-zero-heuristic-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "16-6-4--det-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "162-8-12--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "162-8-12--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "162-8-12--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "17-1-5--alphasyndrome-schedule-bp-osd.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "17-1-5--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "17-1-5--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--depth-optimal-schedule.dem",
+        "findings": [
+          "correctability",
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "17-1-5--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--ft-zero-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--ft-zero-heuristic-opt.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--non-ft-zero-heuristic.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--plus-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--rl-fully-connected-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--rl-fully-connected-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--rl-fully-connected-zero-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--rl-fully-connected-zero-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--rl-fully-connected-zero-4.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "17-1-5--zero-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "180-8-16--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "180-8-16--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "180-8-16--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "19-1-5--alphasyndrome-schedule-bp-osd.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "19-1-5--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "19-1-5--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "19-1-5--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--ft-zero-heuristic-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "19-1-5--non-ft-zero-heuristic.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--plus-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--rl-fully-connected-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--rl-fully-connected-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--rl-fully-connected-zero-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--rl-fully-connected-zero-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "19-1-5--zero-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "20-2-6--ft-zero-flag-at-origin.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "225-9-6--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "225-9-6--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "225-9-6--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "23-1-7--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "23-1-7--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "23-1-7--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "23-1-7--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "23-1-7--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "23-1-7--ft-zero-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "23-1-7--plus-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "23-1-7--rl-fully-connected-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "23-1-7--zero-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "24-8-4--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "correctability",
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "24-8-4--depth-optimal-schedule.dem",
+        "findings": [
+          "correctability",
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "241-121-3--edge-coloring-schedule-x-z-split.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "241-121-3--edge-coloring-schedule.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "241-121-3--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "241-121-3--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "288-12-18--bivariate-bicycle-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "288-12-18--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "30-6-5--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "30-6-5--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "30-6-5--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "30-6-5--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "30-6-5--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "30-6-5--plus-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "30-6-5--zero-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "30-8-3--alphasyndrome-schedule-mwpm.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "30-8-3--depth-optimal-schedule.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--alphasyndrome-schedule-bp-osd.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "31-1-7--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "31-1-7--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "31-1-7--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--ft-zero-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--ft-zero-heuristic-mixed.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--ft-zero-naive.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--non-ft-zero-heuristic.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--plus-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-1-7--zero-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-21-3--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-21-3--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-21-3--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "31-21-3--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "31-21-3--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "31-21-3--plus-state-preparation.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "31-21-3--zero-state-preparation.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "32-12-4--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "32-12-4--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "36-2-6--edge-coloring-schedule-x-z-split.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "36-2-6--edge-coloring-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "36-2-6--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "36-2-6--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "36-8-4--alphasyndrome-schedule-mwpm.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "36-8-4--depth-optimal-schedule.dem",
+        "findings": [
+          "correctability",
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "36-8-4-bpc--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "36-8-4-bpc--cardinal-schedule-seed-2.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "36-8-4-bpc--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "36-8-4-bpc--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "360-12-24--bivariate-bicycle-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "360-12-24--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "37-1-7--alphasyndrome-schedule-bp-osd.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "37-1-7--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "37-1-7--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "37-1-7--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "37-1-7--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "37-1-7--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "37-1-7--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "37-1-7--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "37-1-7--plus-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "37-1-7--zero-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "4-2-2--edge-coloring-schedule-x-z-split.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "4-2-2--edge-coloring-schedule.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "4-2-2--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "4-2-2--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "40-10-4--alphasyndrome-schedule-mwpm.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "40-10-4--depth-optimal-schedule.dem",
+        "findings": [
+          "correctability",
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "40-16-4--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "correctability",
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "40-16-4--depth-optimal-schedule.dem",
+        "findings": [
+          "correctability",
+          "detectability",
+          "duplicates"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "42-6-6--alphasyndrome-schedule-bp-lsd.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "45-1-5--alphasyndrome-schedule-mwpm.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "45-1-5--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "47-1-11--ft-zero-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "49-1-5--ft-plus-flag-at-origin-variant-f.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "49-1-5--ft-plus-flag-at-origin-variant.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "49-1-9--alphasyndrome-schedule-bp-osd.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "49-1-9--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "49-1-9--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "49-1-9--ft-zero-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "49-9-4--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "49-9-4--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "54-8-4--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "54-8-4--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "54-8-4--zx-coloration-schedule.dem",
+        "findings": [
+          "correctability",
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "544-80-12--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "544-80-12--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "544-80-12--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "58-16-3--edge-coloring-schedule-x-z-split.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "58-16-3--edge-coloring-schedule.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "58-16-3--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "58-16-3--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "6-2-2--edge-coloring-schedule-x-z-split.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "6-2-2--edge-coloring-schedule.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "6-2-2--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "6-2-2--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "60-18-3--alphasyndrome-schedule-mwpm.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "60-18-3--depth-optimal-schedule.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "60-8-4--alphasyndrome-schedule-mwpm.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "60-8-4--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "61-1-9--alphasyndrome-schedule-bp-osd.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "61-1-9--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "61-1-9--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "625-25-8--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "625-25-8--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "625-25-8--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "65-5-5--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "65-5-5--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "65-5-5--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "71-1-11--ft-zero-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "714-100-16--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "714-100-16--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "714-100-16--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "72-12-6--alphasyndrome-schedule-bp-osd.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "72-12-6--alphasyndrome-schedule-union-find.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "72-12-6--bivariate-bicycle-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "72-12-6--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "72-12-6--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "72-12-6--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "72-12-6--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "72-12-6--edge-coloring-schedule-x-z-split.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "72-12-6--edge-coloring-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "72-12-6--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "72-12-6--plus-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "72-12-6--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "72-12-6--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "72-12-6--zero-state-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "72-12-6--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "72-8-8--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "72-8-8--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "72-8-8--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "756-16-34--bivariate-bicycle-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "756-16-34--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "80-18-5--alphasyndrome-schedule-mwpm.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "80-18-5--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "9-1-3--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "9-1-3--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "90-8-10--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "90-8-10--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "90-8-10--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "90-8-10--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "90-8-10--encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "90-8-10--plus-state-preparation.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "90-8-10--zero-state-preparation.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "90-8-10-autqec--bivariate-bicycle-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "90-8-10-autqec--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "90-8-10-bpc--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "90-8-10-bpc--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "90-8-10-bpc--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "900-36-10--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "900-36-10--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "900-36-10--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "91-7-5--cardinal-schedule-n-s-merged.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "91-7-5--cardinal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "91-7-5--zx-coloration-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "95-1-7--ft-plus-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "carbon-code--circuit-synth-encoding-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "carbon-code--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "carbon-code--circuit-synth-encoding-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "carbon-code--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "carbon-code--circuit-synth-zero-state-preparation-depth-optimized-1d-aod.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "carbon-code--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "carbon-code--circuit-synth-zero-state-preparation-gate-optimized-1d-aod.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "carbon-code--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "carbon-code--det-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "carbon-code--det-ft-zero-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "carbon-code--ft-zero-heuristic-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "carbon-code--ft-zero-heuristic-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "carbon-code--ft-zero-opt-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "carbon-code--non-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "five-qubit-code--circuit-synth-encoding-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--circuit-synth-encoding-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--circuit-synth-zero-state-preparation-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--circuit-synth-zero-state-preparation-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-minus-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-minus-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-minus-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-minus-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-minus-4.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-one-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-one-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-one-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-one-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-one-4.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-one-5.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-one-6.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-10.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-11.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-12.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-13.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-14.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-4.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-5.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-6.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-7.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-8.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-fully-connected-zero-9.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-lima-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-lima-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-lima-zero-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-lima-zero-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-lima-zero-5.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-lima-zero-7.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-lima-zero-9.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-4.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-5.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-6.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-7.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-8.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-manila-zero-9.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-tokyo-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--rl-ibm-tokyo-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--tableau-0-preparation.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "five-qubit-code--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "gottesman-8-3-3-code--circuit-synth-encoding-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "gottesman-8-3-3-code--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "gottesman-8-3-3-code--circuit-synth-encoding-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "gottesman-8-3-3-code--circuit-synth-zero-state-preparation-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "gottesman-8-3-3-code--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "gottesman-8-3-3-code--circuit-synth-zero-state-preparation-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "gottesman-8-3-3-code--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-11--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-11--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-11--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-11--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--alphasyndrome-schedule-mwpm.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--circuit-synth-encoding-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--circuit-synth-encoding-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--circuit-synth-zero-state-preparation-depth-optimized-1d-aod.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--circuit-synth-zero-state-preparation-gate-optimized-1d-aod.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--depth-optimal-schedule.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--det-ft-plus-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--det-ft-plus-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--det-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--det-ft-zero-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--edge-coloring-schedule-x-z-split.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--edge-coloring-schedule.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--ft-plus-heuristic-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--ft-plus-opt-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--ft-zero-flag-at-origin.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--ft-zero-heuristic-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--ft-zero-heuristic-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--ft-zero-opt-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--non-ft-plus-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--non-ft-plus-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--non-ft-zero-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-2d-grid-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-2d-grid-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-2d-grid-zero-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-2d-grid-zero-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-2d-grid-zero-4.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-2d-grid-zero-5.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-2d-grid-zero-6.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-plus-0.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-plus-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-plus-2.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-plus-3.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-plus-4.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-plus-5.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-plus-6.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-plus-7.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-0.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-15.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-2.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-3.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-4.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-5.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-6.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-8.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--rl-fully-connected-zero-9.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-3--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--alphasyndrome-schedule-mwpm.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-5--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-5--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--edge-coloring-schedule-x-z-split.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-5--edge-coloring-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-5--ft-zero-flag-at-origin-variant-f.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--ft-zero-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--ft-zero-heuristic-naive.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--ft-zero-heuristic-opt.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--non-ft-zero-heuristic.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--rl-fully-connected-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-5--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-5--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-7--alphasyndrome-schedule-mwpm.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-7--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-7--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-7--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-7--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-7--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-7--edge-coloring-schedule-x-z-split.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-7--edge-coloring-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-7--ft-zero-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-7--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-7--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-9--alphasyndrome-schedule-mwpm.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-9--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-9--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-9--depth-optimal-schedule.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "rotated-surface-code-d-9--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-9--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "rotated-surface-code-d-9--ft-zero-flag-at-origin.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--circuit-synth-encoding-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--circuit-synth-encoding-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--circuit-synth-zero-state-preparation-depth-optimized-1d-aod.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--circuit-synth-zero-state-preparation-gate-optimized-1d-aod.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--det-ft-zero-heuristic-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--det-ft-zero-heuristic-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--det-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--det-ft-zero-opt-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--det-ft-zero-opt-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--det-ft-zero-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--ft-plus-heuristic-heuristic.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--ft-plus-opt-opt.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--ft-zero-heuristic-heuristic-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--ft-zero-heuristic-heuristic-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--ft-zero-heuristic-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--ft-zero-heuristic-opt-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--ft-zero-heuristic-opt-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--ft-zero-heuristic-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--ft-zero-opt-opt-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--ft-zero-opt-opt-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--ft-zero-opt-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--non-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--non-ft-zero-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-0.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-2.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-3-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-3-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-3.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-4-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-4-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-4.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-5-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-5-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-5.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-6.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-7-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-7-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-2d-grid-plus-7.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-0.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-10.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-11.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-12.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-13-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-13-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-13.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-14-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-14-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-14.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-15-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-15-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-15.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-16-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-16-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-16.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-18-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-18-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-18.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-19-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-19-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-19.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-2.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-21-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-21-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-21.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-22-all_quantum_instructions.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-22-gates_only.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-22.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-3.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-4.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-5.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-6.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-7.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-8.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-plus-9.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-fully-connected-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--rl-fully-connected-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--rl-fully-connected-zero-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--rl-fully-connected-zero-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "shor-code--rl-ibm-guadalupe-plus-0.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-ibm-guadalupe-plus-1.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-ibm-guadalupe-plus-2.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-ibm-guadalupe-plus-3.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-ibm-guadalupe-plus-4.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "shor-code--rl-ibm-guadalupe-plus-5.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--alphasyndrome-schedule-bp-osd-on-the-4-8-8-lattice.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--alphasyndrome-schedule-bp-osd-on-the-6-6-6-lattice.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--alphasyndrome-schedule-union-find-on-the-4-8-8-lattice.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--alphasyndrome-schedule-union-find-on-the-6-6-6-lattice.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--circuit-synth-encoding-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "steane-code--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "steane-code--circuit-synth-encoding-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "steane-code--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "steane-code--circuit-synth-zero-state-preparation-depth-optimized-1d-aod.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--circuit-synth-zero-state-preparation-gate-optimized-1d-aod.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--depth-optimal-schedule-on-the-4-8-8-lattice.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--depth-optimal-schedule-on-the-6-6-6-lattice.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--det-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--det-ft-zero-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--edge-coloring-schedule-x-z-split.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--edge-coloring-schedule.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--ft-plus-heuristic-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--ft-plus-opt-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--ft-zero-flag-at-origin.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--ft-zero-heuristic-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--ft-zero-heuristic-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--ft-zero-opt-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--non-ft-plus-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--non-ft-plus-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--non-ft-zero-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--non-ft-zero-opt.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-2d-grid-zero-0.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-2d-grid-zero-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-2d-grid-zero-2.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-2d-grid-zero-3.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-2d-grid-zero-4.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-2d-grid-zero-5.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-2d-grid-zero-6.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-2d-grid-zero-7.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-plus-0.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-plus-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-plus-2.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-plus-3.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-0.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-10.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-11.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-12.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-13.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-14.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-17.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-2.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-21.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-3.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-4.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-5.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-6.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-7.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-8.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-fully-connected-zero-9.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-0.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-10.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-11.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-2.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-3.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-4.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-5.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-6.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-7.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-8.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-guadalupe-zero-9.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-0.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-2.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-3.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-4.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-5.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-6.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-7.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-8.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--rl-ibm-jakarta-zero-9.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--standard-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "steane-code--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "steane-code--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--circuit-synth-encoding-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--circuit-synth-encoding-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--circuit-synth-encoding-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--circuit-synth-encoding-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--circuit-synth-zero-state-preparation-depth-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--circuit-synth-zero-state-preparation-depth-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--circuit-synth-zero-state-preparation-gate-optimized-1d-aod.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--circuit-synth-zero-state-preparation-gate-optimized.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--det-ft-plus-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "tetrahedral-code--det-ft-zero-heuristic.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--det-ft-zero-opt.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--edge-coloring-schedule-x-z-split.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--edge-coloring-schedule.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--ft-plus-heuristic-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "tetrahedral-code--ft-zero-heuristic-heuristic.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--ft-zero-heuristic-opt.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--ft-zero-opt-opt.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--non-ft-plus-heuristic.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "tetrahedral-code--non-ft-zero-heuristic.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-plus-0.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-plus-1.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-plus-2.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-plus-7.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-10.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-11.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-12.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-13.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-14.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-15.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-16.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-17.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-18.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-19.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-20.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-21.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-22.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-4.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-5.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-6.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-7.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-8.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-fully-connected-zero-9.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-ibm-tokyo-zero-0.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-ibm-tokyo-zero-1.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-ibm-tokyo-zero-2.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-ibm-tokyo-zero-3.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-ibm-tokyo-zero-4.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-ibm-tokyo-zero-5.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-ibm-tokyo-zero-6.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--rl-ibm-tokyo-zero-7.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "tetrahedral-code--tableau-0-preparation.dem",
+        "findings": [
+          "correctability",
+          "detectability"
+        ],
+        "severities": [
+          "error",
+          "warning"
+        ]
+      },
+      {
+        "file": "tetrahedral-code--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-11--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-11--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-11--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-11--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-3--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-3--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-3--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-3--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-3--edge-coloring-schedule-x-z-split.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-3--edge-coloring-schedule.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-3--tableau-0-preparation.dem",
+        "findings": [
+          "correctability"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "unrotated-surface-code-d-3--tableau-encoding.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-5--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-5--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-5--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-5--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-7--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-7--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-7--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-7--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-9--ancilla-mediated-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-9--ancilla-mediated-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-9--direct-plus-prep.dem",
+        "findings": [],
+        "severities": []
+      },
+      {
+        "file": "unrotated-surface-code-d-9--direct-zero-prep.dem",
+        "findings": [],
+        "severities": []
+      }
+    ],
+    "warning_only": 331,
+    "with_error_findings": 61
+  },
+  "TQEC": {
+    "clean": 0,
+    "files": 6,
+    "finding_counts_by_check": {
+      "duplicates": 6
+    },
+    "parse_failures": 0,
+    "rows": [
+      {
+        "file": "cnot_k1.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "cnot_k2.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "memory_x_k1.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "memory_x_k2.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "memory_z_k1.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      },
+      {
+        "file": "memory_z_k2.dem",
+        "findings": [
+          "duplicates"
+        ],
+        "severities": [
+          "warning"
+        ]
+      }
+    ],
+    "warning_only": 6,
+    "with_error_findings": 0
+  }
+}

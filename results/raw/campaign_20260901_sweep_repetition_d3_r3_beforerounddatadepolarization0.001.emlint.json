@@ -1,0 +1,73 @@
+{
+  "num_detectors": 8,
+  "num_observables": 1,
+  "num_error_mechanisms": 9,
+  "disabled_checks": [],
+  "applied_overrides": {},
+  "unknown_instructions": [],
+  "all_passed": false,
+  "any_skipped": false,
+  "has_errors": false,
+  "has_warnings": true,
+  "results": [
+    {
+      "name": "detectability",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanisms that flip observables also trigger detectors.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "sensitivity",
+      "passed": false,
+      "severity": "warning",
+      "message": "2 detector(s) are never triggered by any error mechanism.",
+      "counter_example": "Detector(s) not triggered by any error mechanism: D6@(1,3), D7@(3,3)",
+      "counter_example_data": {
+        "detectors": [
+          6,
+          7
+        ]
+      },
+      "status": "verdict"
+    },
+    {
+      "name": "observable_coverage",
+      "passed": true,
+      "severity": "error",
+      "message": "All declared observables are flipped by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "probability_bounds",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanism probabilities are in (0, 0.5].",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "duplicates",
+      "passed": true,
+      "severity": "warning",
+      "message": "No duplicate mechanism signatures found.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "correctability",
+      "passed": true,
+      "severity": "warning",
+      "message": "Every syndrome maps to at most one distinct set of logical observables.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    }
+  ]
+}

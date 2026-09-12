@@ -1,0 +1,218 @@
+{
+  "date": "2026-09-01",
+  "question": "Are the 648 duplicates findings on quits_bb144_r3 inherent to undecomposed BB-code DEMs, or specific to the QUITS pipeline? frontier gross144 (same family) ran clean.",
+  "ingest_rows": {
+    "quits_bb144_x_r3_matched": {
+      "source": "QUITS",
+      "repo": "https://github.com/mkangquantum/quits",
+      "commit": "31ab78252f5bbe169d11956450a5c9d2b1184d51 (v1.1.0)",
+      "generated": "2026-09-01",
+      "purpose": "matched comparison with frontier gross144 (see GROSS_QUITS_MATCHED_20260901.json)",
+      "num_rounds": 3,
+      "basis": "X",
+      "noise": {
+        "model": "circuit_level",
+        "p": 0.001
+      },
+      "decompose_errors": false,
+      "num_qubits": 288,
+      "num_detectors": 360,
+      "num_observables": 24,
+      "dem_sha256": "5bf96618ea0683ebe629fd55b3f9c3f018938da38782546514ff16fee2b79115",
+      "stim_version": "1.16.0",
+      "observed_checks": [
+        "duplicates",
+        "correctability"
+      ],
+      "check_duration_seconds": 0.0739157919306308,
+      "exit_code": 2,
+      "hyperedge_stats": {
+        "mechanisms": 3672,
+        "hyperedge_size_counts": {
+          "2": 504,
+          "3": 2592,
+          "4": 576
+        },
+        "duplicate_signatures": 1008,
+        "distinct_signatures": 2664,
+        "max_hyperedge_size": 4
+      },
+      "adjudication": "PENDING_HUMAN_REVIEW"
+    },
+    "quits_bb144_z_r3_matched": {
+      "source": "QUITS",
+      "repo": "https://github.com/mkangquantum/quits",
+      "commit": "31ab78252f5bbe169d11956450a5c9d2b1184d51 (v1.1.0)",
+      "generated": "2026-09-01",
+      "purpose": "matched comparison with frontier gross144 (see GROSS_QUITS_MATCHED_20260901.json)",
+      "num_rounds": 3,
+      "basis": "Z",
+      "noise": {
+        "model": "circuit_level",
+        "p": 0.001
+      },
+      "decompose_errors": false,
+      "num_qubits": 288,
+      "num_detectors": 360,
+      "num_observables": 24,
+      "dem_sha256": "c239a4f7c7d7016e8d2a7963a838d8538bbf361652a25ab4f78f876cb98c0a24",
+      "stim_version": "1.16.0",
+      "observed_checks": [
+        "duplicates",
+        "correctability"
+      ],
+      "check_duration_seconds": 0.07147133303806186,
+      "exit_code": 2,
+      "hyperedge_stats": {
+        "mechanisms": 3672,
+        "hyperedge_size_counts": {
+          "2": 504,
+          "3": 2304,
+          "4": 576,
+          "5": 288
+        },
+        "duplicate_signatures": 1008,
+        "distinct_signatures": 2664,
+        "max_hyperedge_size": 5
+      },
+      "adjudication": "PENDING_HUMAN_REVIEW"
+    },
+    "quits_bb144_x_r12_matched": {
+      "source": "QUITS",
+      "repo": "https://github.com/mkangquantum/quits",
+      "commit": "31ab78252f5bbe169d11956450a5c9d2b1184d51 (v1.1.0)",
+      "generated": "2026-09-01",
+      "purpose": "matched comparison with frontier gross144 (see GROSS_QUITS_MATCHED_20260901.json)",
+      "num_rounds": 12,
+      "basis": "X",
+      "noise": {
+        "model": "circuit_level",
+        "p": 0.001
+      },
+      "decompose_errors": false,
+      "num_qubits": 288,
+      "num_detectors": 1008,
+      "num_observables": 24,
+      "dem_sha256": "b684ebb52d682d913aafc47c54f73eae86a38a4fdb5457908b1b34ed040dc12b",
+      "stim_version": "1.16.0",
+      "observed_checks": [
+        "duplicates",
+        "correctability"
+      ],
+      "check_duration_seconds": 0.287793458905071,
+      "exit_code": 2,
+      "hyperedge_stats": {
+        "mechanisms": 12096,
+        "hyperedge_size_counts": {
+          "2": 1800,
+          "3": 8424,
+          "4": 1872
+        },
+        "duplicate_signatures": 3600,
+        "distinct_signatures": 8496,
+        "max_hyperedge_size": 4
+      },
+      "adjudication": "PENDING_HUMAN_REVIEW"
+    },
+    "quits_bb144_z_r12_matched": {
+      "source": "QUITS",
+      "repo": "https://github.com/mkangquantum/quits",
+      "commit": "31ab78252f5bbe169d11956450a5c9d2b1184d51 (v1.1.0)",
+      "generated": "2026-09-01",
+      "purpose": "matched comparison with frontier gross144 (see GROSS_QUITS_MATCHED_20260901.json)",
+      "num_rounds": 12,
+      "basis": "Z",
+      "noise": {
+        "model": "circuit_level",
+        "p": 0.001
+      },
+      "decompose_errors": false,
+      "num_qubits": 288,
+      "num_detectors": 1008,
+      "num_observables": 24,
+      "dem_sha256": "eb26b3ebc0d0b5a8c537e6d500a66766e72bbf0456cfb604469f23744c12f162",
+      "stim_version": "1.16.0",
+      "observed_checks": [
+        "duplicates",
+        "correctability"
+      ],
+      "check_duration_seconds": 0.12406425015069544,
+      "exit_code": 2,
+      "hyperedge_stats": {
+        "mechanisms": 12096,
+        "hyperedge_size_counts": {
+          "2": 1800,
+          "3": 7488,
+          "4": 1872,
+          "5": 936
+        },
+        "duplicate_signatures": 3600,
+        "distinct_signatures": 8496,
+        "max_hyperedge_size": 5
+      },
+      "adjudication": "PENDING_HUMAN_REVIEW"
+    }
+  },
+  "structural_diff_12r_Z": {
+    "frontier_gross144_z_p0.001": {
+      "num_detectors": 936,
+      "num_observables": 12,
+      "mechanisms": 8784,
+      "hyperedge_size_counts": {
+        "2": 864,
+        "3": 5328,
+        "4": 864,
+        "5": 864,
+        "6": 864
+      },
+      "duplicate_signatures": 0,
+      "distinct_signatures": 8784,
+      "max_hyperedge_size": 6
+    },
+    "quits_bb144_z_r12_matched": {
+      "num_detectors": 1008,
+      "num_observables": 24,
+      "mechanisms": 12096,
+      "hyperedge_size_counts": {
+        "2": 1800,
+        "3": 7488,
+        "4": 1872,
+        "5": 936
+      },
+      "duplicate_signatures": 3600,
+      "distinct_signatures": 8496,
+      "max_hyperedge_size": 5
+    }
+  },
+  "fusion_analysis": {
+    "quits_bb144_z_r12_matched": {
+      "duplicate_detector_sets": 1872,
+      "excess_mechanism_rows": 3600,
+      "identical_(dets,obs)_signature_groups": 1728,
+      "dets_equal_obs_differ_groups": 144,
+      "worst_multiplicity": 4,
+      "example_group_probabilities": [
+        0.0009330488319746112,
+        0.002263006804953941,
+        0.002395701190099389,
+        0.00266116095762313
+      ]
+    },
+    "frontier_gross144_z_p0.001": {
+      "duplicate_detector_sets": 0,
+      "note": "frontier pipeline emits perfectly fused DEMs: 8784 mechanisms, all signatures distinct"
+    },
+    "stim_control_experiment": {
+      "test": "stim.DetectorErrorModel('error(0.1) D0 D1 L0\\nerror(0.2) D0 D1 L0')",
+      "result": "both rows preserved verbatim; stim does NOT auto-fuse identical error instructions",
+      "implication": "duplicates in the QUITS DEM are real unfused rows, not an emlint parsing artifact"
+    },
+    "interpretation": "HUMAN ADJUDICATION 2026-09-01: no action. The pipeline-specific duplicate signatures are documented here but will not be filed upstream or pursued further. Evidence retained for the corpus record."
+  },
+  "caveats": [
+    "QUITS bb144 circuits track 24 observables (both bases) even per-basis memory; frontier sector circuits track 12 (single sector). Observable-convention difference, not a defect.",
+    "QUITS r12 has 1008 detectors vs frontier 936: QUITS runs 12 noisy rounds + structure differences; detector counts are not expected to match exactly.",
+    "No simulation/p_L validation performed on either pipeline; entries remain PENDING_HUMAN_REVIEW."
+  ],
+  "human_adjudication": "2026-09-01: items 1-3 (QUITS duplicates, frontier known-good, sweep sensitivity class) closed as no-action."
+}

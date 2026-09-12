@@ -1,0 +1,552 @@
+{
+  "num_detectors": 24,
+  "num_observables": 1,
+  "num_error_mechanisms": 360,
+  "disabled_checks": [],
+  "applied_overrides": {},
+  "unknown_instructions": [],
+  "all_passed": false,
+  "any_skipped": false,
+  "has_errors": false,
+  "has_warnings": true,
+  "results": [
+    {
+      "name": "detectability",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanisms that flip observables also trigger detectors.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "sensitivity",
+      "passed": true,
+      "severity": "warning",
+      "message": "All detectors are triggered by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "observable_coverage",
+      "passed": true,
+      "severity": "error",
+      "message": "All declared observables are flipped by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "probability_bounds",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanism probabilities are in (0, 0.5].",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "duplicates",
+      "passed": false,
+      "severity": "warning",
+      "message": "Found 124 duplicate mechanism signature(s) across 124 distinct location(s). The same fault path appears more than once in the DEM, which typically happens when sub-circuit DEMs are concatenated without merging coincident mechanisms. Duplicate probabilities should be XOR-folded as p_eff = p1*(1-p2) + p2*(1-p1) (iterated for 3+), not left as separate entries.",
+      "counter_example": "error(0.00040005335705113, 0.0001333866998761608) share signature D0@(1,0,0) D1@(1,2,0); XOR-fused probability is 0.000533333; error(0.00040005335705113, 0.0001333866998761608) share signature D0@(1,0,0) D1@(1,2,0) D3@(0,1,1); XOR-fused probability is 0.000533333; error(0.001465475683586185, 0.0001333866998761608, 0.0002667378157289138) share signature D0@(1,0,0) D2@(1,0,1); XOR-fused probability is 0.00186436; error(0.0001333866998761608, 0.0001333866998761608) share signature D0@(1,0,0) D2@(1,0,1) D3@(0,1,1); XOR-fused probability is 0.000266738; error(0.00040005335705113, 0.0001333866998761608) share signature D0@(1,0,0) D3@(0,1,1) L0; XOR-fused probability is 0.000533333; error(0.001465475683586185, 0.0001333866998761608, 0.0002667378157289138) share signature D1@(1,2,0) D5@(1,2,1); XOR-fused probability is 0.00186436; error(0.0001333866998761608, 0.0001333866998761608) share signature D1@(1,2,0) D3@(0,1,1) D5@(1,2,1); XOR-fused probability is 0.000266738; error(0.0004666977902291165, 0.0001333866998761608, 6.669779853440971e-05) share signature D2@(1,0,1) D5@(1,2,1); XOR-fused probability is 0.000666578; error(0.0002667378157289138, 6.669779853440971e-05) share signature D2@(1,0,1) D3@(0,1,1) D5@(1,2,1); XOR-fused probability is 0.0003334; error(0.0001333866998761608, 0.0001333866998761608) share signature D2@(1,0,1) D3@(0,1,1) D4@(2,1,1) D5@(1,2,1); XOR-fused probability is 0.000266738 (and 114 more)",
+      "counter_example_data": {
+        "mechanisms": [
+          "error(0.00040005335705113) D0 D1",
+          "error(0.0001333866998761608) D0 D1",
+          "error(0.00040005335705113) D0 D1 D3",
+          "error(0.0001333866998761608) D0 D1 D3",
+          "error(0.001465475683586185) D0 D2",
+          "error(0.0001333866998761608) D0 D2",
+          "error(0.0002667378157289138) D0 D2",
+          "error(0.0001333866998761608) D0 D2 D3",
+          "error(0.0001333866998761608) D0 D2 D3",
+          "error(0.00040005335705113) D0 D3 L0",
+          "error(0.0001333866998761608) D0 D3 L0",
+          "error(0.001465475683586185) D1 D5",
+          "error(0.0001333866998761608) D1 D5",
+          "error(0.0002667378157289138) D1 D5",
+          "error(0.0001333866998761608) D1 D3 D5",
+          "error(0.0001333866998761608) D1 D3 D5",
+          "error(0.0004666977902291165) D2 D5",
+          "error(0.0001333866998761608) D2 D5",
+          "error(6.669779853440971e-05) D2 D5",
+          "error(0.0002667378157289138) D2 D3 D5",
+          "error(6.669779853440971e-05) D2 D3 D5",
+          "error(0.0001333866998761608) D2 D3 D4 D5",
+          "error(0.0001333866998761608) D2 D3 D4 D5",
+          "error(0.0001333866998761608) D2 D3 D5 D7",
+          "error(6.669779853440971e-05) D2 D3 D5 D7",
+          "error(0.0002000667052120995) D2 D4 D5",
+          "error(0.0001333866998761608) D2 D4 D5",
+          "error(0.0001333866998761608) D2 D4 D5 D7",
+          "error(6.669779853440971e-05) D2 D4 D5 D7",
+          "error(6.669779853440971e-05) D2 D5 D7",
+          "error(6.669779853440971e-05) D2 D5 D7",
+          "error(0.001398964500756632) D2 D6",
+          "error(0.0001333866998761608) D2 D6",
+          "error(0.0001333866998761608) D2 D6",
+          "error(6.669779853440971e-05) D2 D4 D6",
+          "error(0.0001333866998761608) D2 D4 D6",
+          "error(6.669779853440971e-05) D2 D6 D7",
+          "error(0.0001333866998761608) D2 D6 D7",
+          "error(0.0002667378157289138) D2 D7 L0",
+          "error(6.669779853440971e-05) D2 D7 L0",
+          "error(0.0001333866998761608) D2 D3 D7 L0",
+          "error(6.669779853440971e-05) D2 D3 D7 L0",
+          "error(0.0001333866998761608) D2 D4",
+          "error(0.0001333866998761608) D2 D4",
+          "error(0.0001333866998761608) D3 D4",
+          "error(0.0001333866998761608) D3 D4",
+          "error(0.0001333866998761608) D3 D7",
+          "error(0.0002000667052120995) D3 D7",
+          "error(0.0002667378157289138) D4 D7",
+          "error(0.0001333866998761608) D4 D7",
+          "error(0.0001333866998761608) D4 D6 D7 D9",
+          "error(6.669779853440971e-05) D4 D6 D7 D9",
+          "error(0.0001333866998761608) D4 D8",
+          "error(0.0002000667052120995) D4 D8",
+          "error(0.0001333866998761608) D4 D6 D8 D9",
+          "error(6.669779853440971e-05) D4 D6 D8 D9",
+          "error(0.0002667378157289138) D4 D5",
+          "error(0.0002667378157289138) D4 D5",
+          "error(0.0001333866998761608) D4 D6",
+          "error(6.669779853440971e-05) D4 D6",
+          "error(0.0001333866998761608) D4 D9",
+          "error(0.0002000667052120995) D4 D9",
+          "error(0.0001333866998761608) D4 D5 D9",
+          "error(6.669779853440971e-05) D4 D5 D9",
+          "error(0.001398964500756632) D5 D9",
+          "error(0.0001333866998761608) D5 D9",
+          "error(0.0001333866998761608) D5 D9",
+          "error(6.669779853440971e-05) D5 D7 D9",
+          "error(0.0001333866998761608) D5 D7 D9",
+          "error(0.00040005335705113) D6 D9",
+          "error(6.669779853440971e-05) D6 D9",
+          "error(6.669779853440971e-05) D6 D9",
+          "error(6.669779853440971e-05) D4 D6 D9",
+          "error(6.669779853440971e-05) D4 D6 D9",
+          "error(6.669779853440971e-05) D6 D7 D9",
+          "error(6.669779853440971e-05) D6 D7 D9",
+          "error(0.0001333866998761608) D6 D7 D9 D11",
+          "error(6.669779853440971e-05) D6 D7 D9 D11",
+          "error(6.669779853440971e-05) D6 D8 D9",
+          "error(6.669779853440971e-05) D6 D8 D9",
+          "error(0.0001333866998761608) D6 D8 D9 D11",
+          "error(6.669779853440971e-05) D6 D8 D9 D11",
+          "error(6.669779853440971e-05) D6 D9 D11",
+          "error(6.669779853440971e-05) D6 D9 D11",
+          "error(0.001398964500756632) D6 D10",
+          "error(0.0001333866998761608) D6 D10",
+          "error(0.0001333866998761608) D6 D10",
+          "error(6.669779853440971e-05) D6 D8 D10",
+          "error(0.0001333866998761608) D6 D8 D10",
+          "error(6.669779853440971e-05) D6 D10 D11",
+          "error(0.0001333866998761608) D6 D10 D11",
+          "error(0.0002667378157289138) D6 D11 L0",
+          "error(6.669779853440971e-05) D6 D11 L0",
+          "error(0.0001333866998761608) D6 D7 D11 L0",
+          "error(6.669779853440971e-05) D6 D7 D11 L0",
+          "error(6.669779853440971e-05) D6 D8",
+          "error(0.0001333866998761608) D6 D8",
+          "error(0.0001333866998761608) D7 D11",
+          "error(0.0002000667052120995) D7 D11",
+          "error(0.0002667378157289138) D8 D11",
+          "error(0.0001333866998761608) D8 D11",
+          "error(0.0001333866998761608) D8 D10 D11 D13",
+          "error(6.669779853440971e-05) D8 D10 D11 D13",
+          "error(0.0001333866998761608) D8 D12",
+          "error(0.0002000667052120995) D8 D12",
+          "error(0.0001333866998761608) D8 D10 D12 D13",
+          "error(6.669779853440971e-05) D8 D10 D12 D13",
+          "error(0.0002000667052120995) D8 D9",
+          "error(0.0001333866998761608) D8 D9",
+          "error(6.669779853440971e-05) D4 D8 D9",
+          "error(0.0001333866998761608) D4 D8 D9",
+          "error(0.0001333866998761608) D8 D10",
+          "error(6.669779853440971e-05) D8 D10",
+          "error(0.0001333866998761608) D8 D13",
+          "error(0.0002000667052120995) D8 D13",
+          "error(0.0001333866998761608) D8 D9 D13",
+          "error(6.669779853440971e-05) D8 D9 D13",
+          "error(0.001398964500756632) D9 D13",
+          "error(0.0001333866998761608) D9 D13",
+          "error(0.0001333866998761608) D9 D13",
+          "error(6.669779853440971e-05) D9 D11 D13",
+          "error(0.0001333866998761608) D9 D11 D13",
+          "error(0.00040005335705113) D10 D13",
+          "error(6.669779853440971e-05) D10 D13",
+          "error(6.669779853440971e-05) D10 D13",
+          "error(6.669779853440971e-05) D8 D10 D13",
+          "error(6.669779853440971e-05) D8 D10 D13",
+          "error(6.669779853440971e-05) D10 D11 D13",
+          "error(6.669779853440971e-05) D10 D11 D13",
+          "error(0.0001333866998761608) D10 D11 D13 D15",
+          "error(6.669779853440971e-05) D10 D11 D13 D15",
+          "error(6.669779853440971e-05) D10 D12 D13",
+          "error(6.669779853440971e-05) D10 D12 D13",
+          "error(0.0001333866998761608) D10 D12 D13 D15",
+          "error(6.669779853440971e-05) D10 D12 D13 D15",
+          "error(6.669779853440971e-05) D10 D13 D15",
+          "error(6.669779853440971e-05) D10 D13 D15",
+          "error(0.001398964500756632) D10 D14",
+          "error(0.0001333866998761608) D10 D14",
+          "error(0.0001333866998761608) D10 D14",
+          "error(6.669779853440971e-05) D10 D12 D14",
+          "error(0.0001333866998761608) D10 D12 D14",
+          "error(6.669779853440971e-05) D10 D14 D15",
+          "error(0.0001333866998761608) D10 D14 D15",
+          "error(0.0002667378157289138) D10 D15 L0",
+          "error(6.669779853440971e-05) D10 D15 L0",
+          "error(0.0001333866998761608) D10 D11 D15 L0",
+          "error(6.669779853440971e-05) D10 D11 D15 L0",
+          "error(6.669779853440971e-05) D10 D12",
+          "error(0.0001333866998761608) D10 D12",
+          "error(0.0001333866998761608) D11 D15",
+          "error(0.0002000667052120995) D11 D15",
+          "error(0.0002667378157289138) D12 D15",
+          "error(0.0001333866998761608) D12 D15",
+          "error(0.0001333866998761608) D12 D14 D15 D17",
+          "error(6.669779853440971e-05) D12 D14 D15 D17",
+          "error(0.0001333866998761608) D12 D16",
+          "error(0.0002000667052120995) D12 D16",
+          "error(0.0001333866998761608) D12 D14 D16 D17",
+          "error(6.669779853440971e-05) D12 D14 D16 D17",
+          "error(0.0002000667052120995) D12 D13",
+          "error(0.0001333866998761608) D12 D13",
+          "error(6.669779853440971e-05) D8 D12 D13",
+          "error(0.0001333866998761608) D8 D12 D13",
+          "error(0.0001333866998761608) D12 D14",
+          "error(6.669779853440971e-05) D12 D14",
+          "error(0.0001333866998761608) D12 D17",
+          "error(0.0002000667052120995) D12 D17",
+          "error(0.0001333866998761608) D12 D13 D17",
+          "error(6.669779853440971e-05) D12 D13 D17",
+          "error(0.001398964500756632) D13 D17",
+          "error(0.0001333866998761608) D13 D17",
+          "error(0.0001333866998761608) D13 D17",
+          "error(6.669779853440971e-05) D13 D15 D17",
+          "error(0.0001333866998761608) D13 D15 D17",
+          "error(0.00040005335705113) D14 D17",
+          "error(6.669779853440971e-05) D14 D17",
+          "error(6.669779853440971e-05) D14 D17",
+          "error(6.669779853440971e-05) D12 D14 D17",
+          "error(6.669779853440971e-05) D12 D14 D17",
+          "error(6.669779853440971e-05) D14 D15 D17",
+          "error(6.669779853440971e-05) D14 D15 D17",
+          "error(0.0001333866998761608) D14 D15 D17 D19",
+          "error(6.669779853440971e-05) D14 D15 D17 D19",
+          "error(6.669779853440971e-05) D14 D16 D17",
+          "error(6.669779853440971e-05) D14 D16 D17",
+          "error(0.0001333866998761608) D14 D16 D17 D19",
+          "error(6.669779853440971e-05) D14 D16 D17 D19",
+          "error(6.669779853440971e-05) D14 D17 D19",
+          "error(6.669779853440971e-05) D14 D17 D19",
+          "error(0.001398964500756632) D14 D18",
+          "error(0.0001333866998761608) D14 D18",
+          "error(0.0001333866998761608) D14 D18",
+          "error(6.669779853440971e-05) D14 D16 D18",
+          "error(0.0001333866998761608) D14 D16 D18",
+          "error(6.669779853440971e-05) D14 D18 D19",
+          "error(0.0001333866998761608) D14 D18 D19",
+          "error(0.0002667378157289138) D14 D19 L0",
+          "error(6.669779853440971e-05) D14 D19 L0",
+          "error(0.0001333866998761608) D14 D15 D19 L0",
+          "error(6.669779853440971e-05) D14 D15 D19 L0",
+          "error(6.669779853440971e-05) D14 D16",
+          "error(0.0001333866998761608) D14 D16",
+          "error(0.0001333866998761608) D15 D19",
+          "error(0.0002000667052120995) D15 D19",
+          "error(0.0002667378157289138) D16 D19",
+          "error(0.0001333866998761608) D16 D19",
+          "error(0.0001333866998761608) D16 D18 D19 D21",
+          "error(6.669779853440971e-05) D16 D18 D19 D21",
+          "error(0.0001333866998761608) D16 D20",
+          "error(0.0002000667052120995) D16 D20",
+          "error(0.0001333866998761608) D16 D18 D20 D21",
+          "error(6.669779853440971e-05) D16 D18 D20 D21",
+          "error(0.0002000667052120995) D16 D17",
+          "error(0.0001333866998761608) D16 D17",
+          "error(6.669779853440971e-05) D12 D16 D17",
+          "error(0.0001333866998761608) D12 D16 D17",
+          "error(0.0001333866998761608) D16 D18",
+          "error(6.669779853440971e-05) D16 D18",
+          "error(0.0001333866998761608) D16 D21",
+          "error(0.0002000667052120995) D16 D21",
+          "error(0.0001333866998761608) D16 D17 D21",
+          "error(6.669779853440971e-05) D16 D17 D21",
+          "error(0.001398964500756632) D17 D21",
+          "error(0.0001333866998761608) D17 D21",
+          "error(0.0001333866998761608) D17 D21",
+          "error(6.669779853440971e-05) D17 D19 D21",
+          "error(0.0001333866998761608) D17 D19 D21",
+          "error(0.0004666977902291165) D18 D21",
+          "error(6.669779853440971e-05) D18 D21",
+          "error(0.0001333866998761608) D18 D21",
+          "error(6.669779853440971e-05) D16 D18 D21",
+          "error(6.669779853440971e-05) D16 D18 D21",
+          "error(0.0002000667052120995) D18 D19 D21",
+          "error(0.0001333866998761608) D18 D19 D21",
+          "error(0.0001333866998761608) D18 D19 D20 D21",
+          "error(0.0001333866998761608) D18 D19 D20 D21",
+          "error(0.0002667378157289138) D18 D20 D21",
+          "error(6.669779853440971e-05) D18 D20 D21",
+          "error(0.001465475683586185) D18 D22",
+          "error(0.0002667378157289138) D18 D22",
+          "error(0.0001333866998761608) D18 D22",
+          "error(0.0001333866998761608) D18 D20 D22",
+          "error(0.0001333866998761608) D18 D20 D22",
+          "error(6.669779853440971e-05) D18 D20",
+          "error(0.0001333866998761608) D18 D20",
+          "error(0.0001333866998761608) D19 D20",
+          "error(0.0001333866998761608) D19 D20",
+          "error(0.0002000667052120995) D20 D21",
+          "error(0.0001333866998761608) D20 D21",
+          "error(6.669779853440971e-05) D16 D20 D21",
+          "error(0.0001333866998761608) D16 D20 D21",
+          "error(0.0001333866998761608) D20 D22",
+          "error(0.0001333866998761608) D20 D22",
+          "error(0.0001333866998761608) D20 D23",
+          "error(0.00040005335705113) D20 D23",
+          "error(0.0001333866998761608) D20 D21 D23",
+          "error(0.0001333866998761608) D20 D21 D23",
+          "error(0.001465475683586185) D21 D23",
+          "error(0.0002667378157289138) D21 D23",
+          "error(0.0001333866998761608) D21 D23",
+          "error(0.00040005335705113) D22 D23",
+          "error(0.0001333866998761608) D22 D23",
+          "error(0.00040005335705113) D20 D22 D23",
+          "error(0.0001333866998761608) D20 D22 D23"
+        ],
+        "signature_count": 124
+      },
+      "status": "verdict"
+    },
+    {
+      "name": "correctability",
+      "passed": false,
+      "severity": "warning",
+      "message": "Found 14 syndrome(s) across 14 distinct location(s) that map to more than one distinct observable set. The decoder cannot determine which logical observable was flipped from the measurement outcome alone.",
+      "counter_example": "syndrome {D0@(1,0,0)} maps to observable sets {}, {L0}; witnesses: error(0.0002667378157289138) D0 (iteration (0,)), error(0.000533333333333148) D0 L0 (iteration (0,)); syndrome {D1@(1,2,0)} maps to observable sets {}, {L0}; witnesses: error(0.0002667378157289138) D1 (iteration (0,)), error(0.0002667378157289138) D1 L0 (iteration (0,)); syndrome {D2@(1,0,1)} maps to observable sets {}, {L0}; witnesses: error(0.000533333333333148) D2 (iteration (0,)), error(0.0004666977902291165) D2 L0 (iteration (0,)); syndrome {D5@(1,2,1)} maps to observable sets {}, {L0}; witnesses: error(0.0007997866287252842) D5 (iteration (0,)), error(0.0003334000326131335) D5 L0 (iteration (0,)); syndrome {D6@(1,0,2)} maps to observable sets {}, {L0}; witnesses: error(0.0003334000326131335) D6 (iteration (0,)), error(0.0004666977902291165) D6 L0 (iteration (0,)); syndrome {D9@(1,2,2)} maps to observable sets {}, {L0}; witnesses: error(0.0004666977902291165) D9 (iteration (0,)), error(0.0003334000326131335) D9 L0 (iteration (0,)); syndrome {D10@(1,0,3)} maps to observable sets {}, {L0}; witnesses: error(0.0003334000326131335) D10 (iteration (0,)), error(0.0004666977902291165) D10 L0 (iteration (0,)); syndrome {D13@(1,2,3)} maps to observable sets {}, {L0}; witnesses: error(0.0004666977902291165) D13 (iteration (0,)), error(0.0003334000326131335) D13 L0 (iteration (0,)); syndrome {D14@(1,0,4)} maps to observable sets {}, {L0}; witnesses: error(0.0003334000326131335) D14 (iteration (0,)), error(0.0004666977902291165) D14 L0 (iteration (0,)); syndrome {D17@(1,2,4)} maps to observable sets {}, {L0}; witnesses: error(0.0004666977902291165) D17 (iteration (0,)), error(0.0003334000326131335) D17 L0 (iteration (0,)) (and 4 more)",
+      "counter_example_data": {
+        "conflicts": [
+          {
+            "syndrome": [
+              0
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0002667378157289138) D0",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.000533333333333148) D0 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              1
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0002667378157289138) D1",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0002667378157289138) D1 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              2
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.000533333333333148) D2",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0004666977902291165) D2 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              5
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0007997866287252842) D5",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0003334000326131335) D5 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              6
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0003334000326131335) D6",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0004666977902291165) D6 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              9
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0004666977902291165) D9",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0003334000326131335) D9 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              10
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0003334000326131335) D10",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0004666977902291165) D10 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              13
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0004666977902291165) D13",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0003334000326131335) D13 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              14
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0003334000326131335) D14",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0004666977902291165) D14 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              17
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0004666977902291165) D17",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0003334000326131335) D17 L0",
+                "iteration": []
+              }
+            ]
+          }
+        ],
+        "total_conflicts": 14,
+        "witnesses_truncated": true
+      },
+      "status": "verdict"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "num_detectors": 48,
+  "num_observables": 1,
+  "num_error_mechanisms": 177,
+  "disabled_checks": [],
+  "applied_overrides": {},
+  "unknown_instructions": [],
+  "all_passed": false,
+  "any_skipped": false,
+  "has_errors": false,
+  "has_warnings": true,
+  "results": [
+    {
+      "name": "detectability",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanisms that flip observables also trigger detectors.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "sensitivity",
+      "passed": true,
+      "severity": "warning",
+      "message": "All detectors are triggered by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "observable_coverage",
+      "passed": true,
+      "severity": "error",
+      "message": "All declared observables are flipped by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "probability_bounds",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanism probabilities are in (0, 0.5].",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    },
+    {
+      "name": "duplicates",
+      "passed": false,
+      "severity": "warning",
+      "message": "Found 14 duplicate mechanism signature(s) across 14 distinct location(s). The same fault path appears more than once in the DEM, which typically happens when sub-circuit DEMs are concatenated without merging coincident mechanisms. Duplicate probabilities should be XOR-folded as p_eff = p1*(1-p2) + p2*(1-p1) (iterated for 3+), not left as separate entries.",
+      "counter_example": "error(0.0002667378157289138, 0.0002667378157289138) share signature D2@(0,12,0) D26@(0,12,1); XOR-fused probability is 0.000533333; error(0.000533333333333148, 0.000533333333333148) share signature D3@(2,2,0) D27@(2,2,1); XOR-fused probability is 0.0010661; error(0.0002667378157289138, 0.0002667378157289138) share signature D8@(4,12,0) D26@(0,12,1); XOR-fused probability is 0.000533333; error(0.000533333333333148, 0.000533333333333148) share signature D8@(4,12,0) D32@(4,12,1); XOR-fused probability is 0.0010661; error(0.0002667378157289138, 0.0002667378157289138) share signature D9@(6,2,0) D27@(2,2,1); XOR-fused probability is 0.000533333; error(0.000533333333333148, 0.000533333333333148) share signature D9@(6,2,0) D33@(6,2,1); XOR-fused probability is 0.0010661; error(0.0002667378157289138, 0.0002667378157289138) share signature D14@(8,12,0) D32@(4,12,1); XOR-fused probability is 0.000533333; error(0.000533333333333148, 0.000533333333333148) share signature D14@(8,12,0) D38@(8,12,1); XOR-fused probability is 0.0010661; error(0.0002667378157289138, 0.0002667378157289138) share signature D15@(10,2,0) D33@(6,2,1); XOR-fused probability is 0.000533333; error(0.000533333333333148, 0.000533333333333148) share signature D15@(10,2,0) D39@(10,2,1); XOR-fused probability is 0.0010661 (and 4 more)",
+      "counter_example_data": {
+        "mechanisms": [
+          "error(0.0002667378157289138) D2 D26",
+          "error(0.0002667378157289138) D2 D26",
+          "error(0.000533333333333148) D3 D27",
+          "error(0.000533333333333148) D3 D27",
+          "error(0.0002667378157289138) D8 D26",
+          "error(0.0002667378157289138) D8 D26",
+          "error(0.000533333333333148) D8 D32",
+          "error(0.000533333333333148) D8 D32",
+          "error(0.0002667378157289138) D9 D27",
+          "error(0.0002667378157289138) D9 D27",
+          "error(0.000533333333333148) D9 D33",
+          "error(0.000533333333333148) D9 D33",
+          "error(0.0002667378157289138) D14 D32",
+          "error(0.0002667378157289138) D14 D32",
+          "error(0.000533333333333148) D14 D38",
+          "error(0.000533333333333148) D14 D38",
+          "error(0.0002667378157289138) D15 D33",
+          "error(0.0002667378157289138) D15 D33",
+          "error(0.000533333333333148) D15 D39",
+          "error(0.000533333333333148) D15 D39",
+          "error(0.0002667378157289138) D20 D38",
+          "error(0.0002667378157289138) D20 D38",
+          "error(0.000533333333333148) D20 D44",
+          "error(0.000533333333333148) D20 D44",
+          "error(0.0002667378157289138) D21 D39",
+          "error(0.0002667378157289138) D21 D39",
+          "error(0.0002667378157289138) D21 D45",
+          "error(0.0002667378157289138) D21 D45"
+        ],
+        "signature_count": 14
+      },
+      "status": "verdict"
+    },
+    {
+      "name": "correctability",
+      "passed": true,
+      "severity": "warning",
+      "message": "Every syndrome maps to at most one distinct set of logical observables.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict"
+    }
+  ]
+}
