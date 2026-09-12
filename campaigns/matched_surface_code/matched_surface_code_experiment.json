@@ -1,0 +1,60 @@
+{
+  "status": "empirical_evidence_only",
+  "matched_pair": true,
+  "match_definition": "One fixed clean circuit sampler and one fixed seed feed both decoders; only the decoder DEM changes.",
+  "circuit_generator": {
+    "task": "surface_code:rotated_memory_z",
+    "distance": 3,
+    "rounds": 3,
+    "after_clifford_depolarization": 0.02,
+    "decompose_errors": true
+  },
+  "sampling": {
+    "shots": 100000,
+    "seed": 20260807,
+    "detector_sample_shape": [
+      100000,
+      24
+    ],
+    "observable_sample_shape": [
+      100000,
+      1
+    ]
+  },
+  "bug_definition": "Delete every clean DEM error line containing L0, then append error(0) L0 to preserve one observable dimension.",
+  "dimensions": {
+    "clean_detectors": 24,
+    "buggy_detectors": 24,
+    "clean_observables": 1,
+    "buggy_observables": 1
+  },
+  "rates": {
+    "clean": {
+      "failures": 6545,
+      "shots": 100000,
+      "logical_error_rate": 0.06545,
+      "decoder_seconds": 0.026610375149175525,
+      "decoder_shots_per_second": 3757932.7401214154
+    },
+    "buggy": {
+      "failures": 18161,
+      "shots": 100000,
+      "logical_error_rate": 0.18161,
+      "decoder_seconds": 0.03285324992612004,
+      "decoder_shots_per_second": 3043838.896452518
+    }
+  },
+  "paired_decoder_prediction_disagreements": 17004,
+  "artifacts": {
+    "circuit_sha256": "f1bb743b43d9ee543cea77da8ae9bf202503ab69911e3800b91b97b2cbb26bcf",
+    "clean_dem_sha256": "93fa46fb917e81c4425f78e2433eb8d423bf4b26b245b63b0bf065d60122c79c",
+    "buggy_dem_sha256": "2f8f9d5182631bf669c1581b2d6705664977b64ac5546c8f8aed5a1eb55f7e62"
+  },
+  "environment": {
+    "python": "3.12.13 (main, Mar  3 2026, 12:39:30) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "stim": "1.16.0",
+    "pymatching": "2.4.0",
+    "numpy": "2.2.6"
+  }
+}
