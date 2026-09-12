@@ -1,0 +1,400 @@
+{
+  "date": "20260912",
+  "emlint_version": "0.2.2",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "emlint_package_root": "/Users/mathysrennela/Documents/GitHub/emlint-dev",
+  "artifacts_checked": 48,
+  "exit_code_histogram": {
+    "0": 3,
+    "1": 14,
+    "2": 31,
+    "3": 0
+  },
+  "failures": [],
+  "records": [
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3.dem",
+      "kind": "baseline",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__detector_index_shift.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__zero_probability.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__duplicate_fault.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__dead_detector.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5.dem",
+      "kind": "baseline",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__detector_index_shift.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__zero_probability.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__duplicate_fault.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__dead_detector.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7.dem",
+      "kind": "baseline",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__zero_probability.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__duplicate_fault.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__dead_detector.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3.dem",
+      "kind": "baseline",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__detector_index_shift.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__zero_probability.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__duplicate_fault.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__dead_detector.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9.dem",
+      "kind": "baseline",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__detector_index_shift.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__zero_probability.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__duplicate_fault.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__dead_detector.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1.dem",
+      "kind": "baseline_pinned",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__detector_index_shift.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__zero_probability.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__duplicate_fault.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__dead_detector.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1.dem",
+      "kind": "baseline_pinned",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__detector_index_shift.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__zero_probability.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__duplicate_fault.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__dead_detector.dem",
+      "kind": "mutant",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "matches_build_time": true,
+      "stderr_tail": []
+    }
+  ]
+}

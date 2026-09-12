@@ -1,0 +1,32 @@
+{
+  "tqec_main_cnot_k1": {
+    "duplicate_signature_groups": 938,
+    "groups_with_distinct_raw_instructions": 929,
+    "groups_with_identical_raw_instructions": 9
+  },
+  "tqec_main_cnot_k2": {
+    "duplicate_signature_groups": 5095,
+    "groups_with_distinct_raw_instructions": 5066,
+    "groups_with_identical_raw_instructions": 29
+  },
+  "tqec_main_memory_x_k1": {
+    "duplicate_signature_groups": 77,
+    "groups_with_distinct_raw_instructions": 75,
+    "groups_with_identical_raw_instructions": 2
+  },
+  "tqec_main_memory_x_k2": {
+    "duplicate_signature_groups": 464,
+    "groups_with_distinct_raw_instructions": 456,
+    "groups_with_identical_raw_instructions": 8
+  },
+  "tqec_main_memory_z_k1": {
+    "duplicate_signature_groups": 67,
+    "groups_with_distinct_raw_instructions": 66,
+    "groups_with_identical_raw_instructions": 1
+  },
+  "tqec_main_memory_z_k2": {
+    "duplicate_signature_groups": 453,
+    "groups_with_distinct_raw_instructions": 446,
+    "groups_with_identical_raw_instructions": 7
+  }
+}

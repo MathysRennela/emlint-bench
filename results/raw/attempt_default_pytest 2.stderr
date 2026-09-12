@@ -1,0 +1,2 @@
+python: No module named pytest
+Command: python -m pytest -q tests/test_checks.py tests/test_synthetic_bug_corpus.py tests/test_stim_integration.py

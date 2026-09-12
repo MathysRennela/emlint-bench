@@ -1,0 +1,2046 @@
+{
+  "date": "20260912",
+  "environment": {
+    "python": "3.14.6",
+    "stim": "1.16.0",
+    "emlint": "0.2.2",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+  },
+  "artifacts_verified": 48,
+  "failures": [],
+  "records": [
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3.dem",
+      "kind": "baseline",
+      "expectation": "no error-severity finding on baseline",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 0,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__detector_index_shift.dem",
+      "kind": "mutant",
+      "expectation": "correctability fires",
+      "verified": true,
+      "failing_checks": [
+        "correctability"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": false,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__zero_probability.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "expectation": "detectability fires",
+      "verified": true,
+      "failing_checks": [
+        "detectability"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__duplicate_fault.dem",
+      "kind": "mutant",
+      "expectation": "duplicates fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d3_r3__dead_detector.dem",
+      "kind": "mutant",
+      "expectation": "sensitivity fires",
+      "verified": true,
+      "failing_checks": [
+        "sensitivity"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5.dem",
+      "kind": "baseline",
+      "expectation": "no error-severity finding on baseline",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 0,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__detector_index_shift.dem",
+      "kind": "mutant",
+      "expectation": "correctability fires",
+      "verified": true,
+      "failing_checks": [
+        "correctability"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": false,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__zero_probability.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "probability_bounds"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "probability_bounds"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "expectation": "detectability fires",
+      "verified": true,
+      "failing_checks": [
+        "detectability"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__duplicate_fault.dem",
+      "kind": "mutant",
+      "expectation": "duplicates fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d5_r5__dead_detector.dem",
+      "kind": "mutant",
+      "expectation": "sensitivity fires",
+      "verified": true,
+      "failing_checks": [
+        "sensitivity"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7.dem",
+      "kind": "baseline",
+      "expectation": "no error-severity finding on baseline",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__zero_probability.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "expectation": "detectability fires",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__duplicate_fault.dem",
+      "kind": "mutant",
+      "expectation": "duplicates fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_z_d7_r7__dead_detector.dem",
+      "kind": "mutant",
+      "expectation": "sensitivity fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "sensitivity"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3.dem",
+      "kind": "baseline",
+      "expectation": "no error-severity finding on baseline",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 0,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__detector_index_shift.dem",
+      "kind": "mutant",
+      "expectation": "correctability fires",
+      "verified": true,
+      "failing_checks": [
+        "correctability"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": false,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__zero_probability.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "probability_bounds"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": false,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "probability_bounds"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": false,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "expectation": "detectability fires",
+      "verified": true,
+      "failing_checks": [
+        "detectability"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__duplicate_fault.dem",
+      "kind": "mutant",
+      "expectation": "duplicates fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_rotated_surface_x_d3_r3__dead_detector.dem",
+      "kind": "mutant",
+      "expectation": "sensitivity fires",
+      "verified": true,
+      "failing_checks": [
+        "sensitivity"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9.dem",
+      "kind": "baseline",
+      "expectation": "no error-severity finding on baseline",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__detector_index_shift.dem",
+      "kind": "mutant",
+      "expectation": "correctability fires",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": false,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__zero_probability.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "expectation": "detectability fires",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__duplicate_fault.dem",
+      "kind": "mutant",
+      "expectation": "duplicates fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/stim_repetition_d3_r9__dead_detector.dem",
+      "kind": "mutant",
+      "expectation": "sensitivity fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "sensitivity"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1.dem",
+      "kind": "baseline_pinned",
+      "expectation": "no error-severity finding on baseline",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__detector_index_shift.dem",
+      "kind": "mutant",
+      "expectation": "correctability fires",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": false,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__zero_probability.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "expectation": "detectability fires",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__duplicate_fault.dem",
+      "kind": "mutant",
+      "expectation": "duplicates fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_memory_z_k1__dead_detector.dem",
+      "kind": "mutant",
+      "expectation": "sensitivity fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "sensitivity"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1.dem",
+      "kind": "baseline_pinned",
+      "expectation": "no error-severity finding on baseline",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__detector_index_shift.dem",
+      "kind": "mutant",
+      "expectation": "correctability fires",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": false,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__zero_probability.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__high_probability_p_gt_0_5.dem",
+      "kind": "mutant",
+      "expectation": "probability_bounds fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "probability_bounds"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__logical_without_syndrome.dem",
+      "kind": "mutant",
+      "expectation": "detectability fires",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates"
+      ],
+      "exit_code": 1,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": false,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__duplicate_fault.dem",
+      "kind": "mutant",
+      "expectation": "duplicates fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": true,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    },
+    {
+      "file": "workloads/demo/tqec_cnot_k1__dead_detector.dem",
+      "kind": "mutant",
+      "expectation": "sensitivity fires",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "sensitivity"
+      ],
+      "exit_code": 2,
+      "findings": [
+        {
+          "name": "detectability",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "sensitivity",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "observable_coverage",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "probability_bounds",
+          "passed": true,
+          "severity": "error"
+        },
+        {
+          "name": "duplicates",
+          "passed": false,
+          "severity": "warning"
+        },
+        {
+          "name": "correctability",
+          "passed": true,
+          "severity": "warning"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "decoder": "pymatching.Matching.from_detector_error_model",
+  "shots": 2000,
+  "seed": 20260819,
+  "logical_failures": 21,
+  "logical_error_rate": 0.0105
+}
