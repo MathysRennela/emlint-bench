@@ -16,6 +16,7 @@ simulation records, adjudications, and final reports.
 | `GROSS_QUITS_MATCHED_20260901.json` | 2026-09-01 | Gross/BB QUITS-vs-frontier matched comparison (`run_gross_quits_matched_20260901.py`) | Q102 `duplicates` pending review |
 | `PREVIEW_TQEC_QECIRC_RERUN_20260819.json` | ≤ 2026-08-19 (dated by first citation in `FINAL_REPORT_2026-08-19.md`) | TQEC/QECirc rerun preview (`run_preview_integration.py`, not migrated — reads private inputs) | preview appendix |
 | `ECOSYSTEM_SURVEY_20260901.md` | 2026-09-01 | Crawler-axis survey of research `.stim`/`.dem` sources (manual) | frontier ingested; rest deferred |
+| `raw/pecos_stim_differential_{stim,pecos,pecos_d5}.dem` | 2026-09-12 | stim-vs-PECOS differential experiments (`campaigns/pecos_stim_differential.py`, `campaigns/pecos_stim_same_circuit_differential.py`) | phase-1 discrepancy adjudicated; phase-2 same-circuit sweep |
 | `raw/` | per campaign | Per-artifact check (`*.emlint.json`) and simulation (`*.simulation.json`) outputs; see `RUN_LOG.jsonl` for the row-to-file map | frozen record |
 
 ## Conventions for new results files
