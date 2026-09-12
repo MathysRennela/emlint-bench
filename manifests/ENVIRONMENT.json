@@ -1,0 +1,9 @@
+{
+  "python": "3.12.13",
+  "stim": "1.16.0",
+  "emlint": "0.2.0",
+  "pymatching": "2.4.0",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "repository_revision": "86e4e492ab144d37de9421f47bce72980c9cdbee",
+  "working_tree_dirty": true
+}
