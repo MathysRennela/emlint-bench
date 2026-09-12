@@ -1,0 +1,759 @@
+{
+  "num_detectors": 80,
+  "num_observables": 1,
+  "num_error_mechanisms": 587,
+  "disabled_checks": [],
+  "applied_overrides": {},
+  "unknown_instructions": [],
+  "all_passed": false,
+  "any_skipped": true,
+  "has_errors": false,
+  "has_warnings": true,
+  "results": [
+    {
+      "name": "detectability",
+      "passed": false,
+      "severity": "warning",
+      "message": "skipped: circuit_role='state_preparation' is outside the check's applicability domain",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "skipped",
+      "hint": null
+    },
+    {
+      "name": "sensitivity",
+      "passed": true,
+      "severity": "warning",
+      "message": "All detectors are triggered by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "observable_coverage",
+      "passed": true,
+      "severity": "error",
+      "message": "All declared observables are flipped by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "probability_bounds",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanism probabilities are in (0, 0.5].",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "duplicates",
+      "passed": false,
+      "severity": "warning",
+      "message": "Found 221 duplicate mechanism signature(s) across 221 distinct location(s). The same fault path appears more than once in the DEM, which typically happens when sub-circuit DEMs are concatenated without merging coincident mechanisms. Duplicate probabilities should be XOR-folded as p_eff = p1*(1-p2) + p2*(1-p1) (iterated for 3+), not left as separate entries.",
+      "counter_example": "error(0.002727503769002701, 0.0001333866998761608) share signature D8; XOR-fused probability is 0.00286016; error(0.0001333866998761608, 0.0001333866998761608) share signature D8 D12; XOR-fused probability is 0.000266738; error(0.0002667378157289138, 0.0001333866998761608) share signature D8 D12 D14; XOR-fused probability is 0.000400053; error(0.0001333866998761608, 6.669779853440971e-05) share signature D8 D12 D14 D16 D20 D22; XOR-fused probability is 0.000200067; error(0.0001333866998761608, 0.0001333866998761608) share signature D8 D12 D16 D20 L0; XOR-fused probability is 0.000266738; error(0.0003334000326131335, 0.0003334000326131335) share signature D8 D14; XOR-fused probability is 0.000666578; error(6.669779853440971e-05, 0.0001333866998761608) share signature D8 D14 D16 D22 L0; XOR-fused probability is 0.000200067; error(0.0001333866998761608, 0.0001333866998761608) share signature D8 D16; XOR-fused probability is 0.000266738; error(6.669779853440971e-05, 0.0001333866998761608) share signature D9 D12 D13; XOR-fused probability is 0.000200067; error(6.669779853440971e-05, 0.0001333866998761608) share signature D9 D12 D13 D17 D20 D21; XOR-fused probability is 0.000200067 (and 211 more)",
+      "counter_example_data": {
+        "mechanisms": [
+          "error(0.002727503769002701) D8",
+          "error(0.0001333866998761608) D8",
+          "error(0.0001333866998761608) D8 D12",
+          "error(0.0001333866998761608) D8 D12",
+          "error(0.0002667378157289138) D8 D12 D14",
+          "error(0.0001333866998761608) D8 D12 D14",
+          "error(0.0001333866998761608) D8 D12 D14 D16 D20 D22",
+          "error(6.669779853440971e-05) D8 D12 D14 D16 D20 D22",
+          "error(0.0001333866998761608) D8 D12 D16 D20 L0",
+          "error(0.0001333866998761608) D8 D12 D16 D20 L0",
+          "error(0.0003334000326131335) D8 D14",
+          "error(0.0003334000326131335) D8 D14",
+          "error(6.669779853440971e-05) D8 D14 D16 D22 L0",
+          "error(0.0001333866998761608) D8 D14 D16 D22 L0",
+          "error(0.0001333866998761608) D8 D16",
+          "error(0.0001333866998761608) D8 D16",
+          "error(6.669779853440971e-05) D9 D12 D13",
+          "error(0.0001333866998761608) D9 D12 D13",
+          "error(6.669779853440971e-05) D9 D12 D13 D17 D20 D21",
+          "error(0.0001333866998761608) D9 D12 D13 D17 D20 D21",
+          "error(6.669779853440971e-05) D9 D12 D14",
+          "error(0.0002667378157289138) D9 D12 D14",
+          "error(6.669779853440971e-05) D9 D12 D14 D17 D20 D22 L0",
+          "error(0.0001333866998761608) D9 D12 D14 D17 D20 D22 L0",
+          "error(0.0001333866998761608) D9 D13",
+          "error(0.0001333866998761608) D9 D13",
+          "error(0.0001333866998761608) D9 D13 D17 D21 L0",
+          "error(6.669779853440971e-05) D9 D13 D17 D21 L0",
+          "error(0.0007331866340596878) D9 D14",
+          "error(0.0001333866998761608) D9 D14",
+          "error(0.0001333866998761608) D9 D14 D17 D22",
+          "error(0.0001333866998761608) D9 D14 D17 D22",
+          "error(0.001731431703749411) D10",
+          "error(0.0001333866998761608) D10",
+          "error(0.0003334000326131335) D10 D11",
+          "error(0.0001333866998761608) D10 D11",
+          "error(0.0002667378157289138) D10 D11 D12",
+          "error(0.0001333866998761608) D10 D11 D12",
+          "error(0.0001333866998761608) D10 D11 D12 D18 D19 D20",
+          "error(0.0001333866998761608) D10 D11 D12 D18 D19 D20",
+          "error(0.0001333866998761608) D10 D11 D15",
+          "error(0.0003334000326131335) D10 D11 D15",
+          "error(0.0001333866998761608) D10 D11 D15 D18 D19 D23",
+          "error(0.0001333866998761608) D10 D11 D15 D18 D19 D23",
+          "error(0.0001333866998761608) D10 D12",
+          "error(0.0001333866998761608) D10 D12",
+          "error(0.0001333866998761608) D10 D12 D18 D20",
+          "error(6.669779853440971e-05) D10 D12 D18 D20",
+          "error(6.669779853440971e-05) D10 D15",
+          "error(0.0003334000326131335) D10 D15",
+          "error(6.669779853440971e-05) D10 D15 D18 D23",
+          "error(0.0001333866998761608) D10 D15 D18 D23",
+          "error(0.0002667378157289138) D11 D12",
+          "error(0.0002667378157289138) D11 D12",
+          "error(6.669779853440971e-05) D11 D12 D18 D20",
+          "error(6.669779853440971e-05) D11 D12 D18 D20",
+          "error(6.669779853440971e-05) D11 D12 D19 D20",
+          "error(0.0001333866998761608) D11 D12 D19 D20",
+          "error(6.669779853440971e-05) D11 D15",
+          "error(0.0001333866998761608) D11 D15",
+          "error(6.669779853440971e-05) D11 D15 D18",
+          "error(6.669779853440971e-05) D11 D15 D18",
+          "error(6.669779853440971e-05) D11 D15 D19 D23",
+          "error(6.669779853440971e-05) D11 D15 D19 D23",
+          "error(0.003589155411149188) D12",
+          "error(0.0002667378157289138) D12",
+          "error(6.669779853440971e-05) D12 D13",
+          "error(0.0002667378157289138) D12 D13",
+          "error(6.669779853440971e-05) D12 D13 D20 D21",
+          "error(0.0001333866998761608) D12 D13 D20 D21",
+          "error(6.669779853440971e-05) D12 D13 D21 L0",
+          "error(6.669779853440971e-05) D12 D13 D21 L0",
+          "error(6.669779853440971e-05) D12 D21 L0",
+          "error(6.669779853440971e-05) D12 D21 L0",
+          "error(0.001864356503703524) D13",
+          "error(0.0003334000326131335) D13",
+          "error(0.0003334000326131335) D13 D21 L0",
+          "error(6.669779853440971e-05) D13 D21 L0",
+          "error(0.001997245842856841) D15",
+          "error(0.0003334000326131335) D15",
+          "error(0.00040005335705113) D15 D23",
+          "error(0.0001333866998761608) D15 D23",
+          "error(0.0001333866998761608) D16",
+          "error(0.0003334000326131335) D16",
+          "error(0.0001333866998761608) D16 D20 D22",
+          "error(6.669779853440971e-05) D16 D20 D22",
+          "error(0.0002667378157289138) D16 D20 L0",
+          "error(0.0003334000326131335) D16 D20 L0",
+          "error(6.669779853440971e-05) D16 D22 L0",
+          "error(0.0001333866998761608) D16 D22 L0",
+          "error(0.0001333866998761608) D17 D20 D21",
+          "error(0.0002667378157289138) D17 D20 D21",
+          "error(0.0002000667052120995) D17 D20 D22 L0",
+          "error(0.0001333866998761608) D17 D20 D22 L0",
+          "error(0.0003334000326131335) D17 D21 L0",
+          "error(6.669779853440971e-05) D17 D21 L0",
+          "error(0.0001333866998761608) D17 D22",
+          "error(0.0003334000326131335) D17 D22",
+          "error(0.0002000667052120995) D18",
+          "error(0.0001333866998761608) D18",
+          "error(0.0001333866998761608) D18 D19 D20",
+          "error(0.0002667378157289138) D18 D19 D20",
+          "error(0.0002667378157289138) D18 D19 D23",
+          "error(0.0001333866998761608) D18 D19 D23",
+          "error(0.0003334000326131335) D18 D20",
+          "error(6.669779853440971e-05) D18 D20",
+          "error(0.0004666977902291165) D18 D23",
+          "error(0.0001333866998761608) D18 D23",
+          "error(0.0002000667052120995) D19 D20",
+          "error(0.0001333866998761608) D19 D20",
+          "error(0.0002000667052120995) D19 D23",
+          "error(6.669779853440971e-05) D19 D23",
+          "error(0.0002000667052120995) D20 D21",
+          "error(0.0001333866998761608) D20 D21",
+          "error(0.000599959987549121) D21 L0",
+          "error(6.669779853440971e-05) D21 L0",
+          "error(0.0006665777540627741) D23",
+          "error(0.0001333866998761608) D23",
+          "error(0.0003334000326131335) D24",
+          "error(0.0001333866998761608) D24",
+          "error(0.0001333866998761608) D24 D28",
+          "error(0.0001333866998761608) D24 D28",
+          "error(0.0002667378157289138) D24 D28 D30",
+          "error(0.0001333866998761608) D24 D28 D30",
+          "error(0.0001333866998761608) D24 D28 D30 D32 D36 D38",
+          "error(6.669779853440971e-05) D24 D28 D30 D32 D36 D38",
+          "error(0.0001333866998761608) D24 D28 D32 D36 L0",
+          "error(0.0001333866998761608) D24 D28 D32 D36 L0",
+          "error(0.0001333866998761608) D24 D30",
+          "error(0.0003334000326131335) D24 D30",
+          "error(6.669779853440971e-05) D24 D30 D32 D38 L0",
+          "error(0.0001333866998761608) D24 D30 D32 D38 L0",
+          "error(0.0001333866998761608) D24 D32",
+          "error(0.0001333866998761608) D24 D32",
+          "error(6.669779853440971e-05) D25 D28 D29",
+          "error(0.0001333866998761608) D25 D28 D29",
+          "error(6.669779853440971e-05) D25 D28 D29 D33 D36 D37",
+          "error(0.0001333866998761608) D25 D28 D29 D33 D36 D37",
+          "error(6.669779853440971e-05) D25 D28 D30",
+          "error(0.0002667378157289138) D25 D28 D30",
+          "error(6.669779853440971e-05) D25 D28 D30 D33 D36 D38 L0",
+          "error(0.0001333866998761608) D25 D28 D30 D33 D36 D38 L0",
+          "error(0.0001333866998761608) D25 D29",
+          "error(0.0001333866998761608) D25 D29",
+          "error(0.0001333866998761608) D25 D29 D33 D37 L0",
+          "error(6.669779853440971e-05) D25 D29 D33 D37 L0",
+          "error(0.0003334000326131335) D25 D30",
+          "error(0.0001333866998761608) D25 D30",
+          "error(0.0001333866998761608) D25 D30 D33 D38",
+          "error(0.0001333866998761608) D25 D30 D33 D38",
+          "error(0.0002667378157289138) D26 D27 D28",
+          "error(0.0001333866998761608) D26 D27 D28",
+          "error(0.0001333866998761608) D26 D27 D28 D34 D35 D36",
+          "error(0.0001333866998761608) D26 D27 D28 D34 D35 D36",
+          "error(0.0001333866998761608) D26 D27 D31",
+          "error(0.0003334000326131335) D26 D27 D31",
+          "error(0.0001333866998761608) D26 D27 D31 D34 D35 D39",
+          "error(0.0001333866998761608) D26 D27 D31 D34 D35 D39",
+          "error(0.0001333866998761608) D26 D28",
+          "error(0.0001333866998761608) D26 D28",
+          "error(0.0001333866998761608) D26 D28 D34 D36",
+          "error(6.669779853440971e-05) D26 D28 D34 D36",
+          "error(6.669779853440971e-05) D26 D31",
+          "error(0.0003334000326131335) D26 D31",
+          "error(6.669779853440971e-05) D26 D31 D34 D39",
+          "error(0.0001333866998761608) D26 D31 D34 D39",
+          "error(6.669779853440971e-05) D27 D28",
+          "error(0.0002667378157289138) D27 D28",
+          "error(6.669779853440971e-05) D27 D28 D35 D36",
+          "error(0.0001333866998761608) D27 D28 D35 D36",
+          "error(6.669779853440971e-05) D27 D31",
+          "error(0.0001333866998761608) D27 D31",
+          "error(6.669779853440971e-05) D27 D31 D34",
+          "error(6.669779853440971e-05) D27 D31 D34",
+          "error(6.669779853440971e-05) D27 D31 D35 D39",
+          "error(6.669779853440971e-05) D27 D31 D35 D39",
+          "error(6.669779853440971e-05) D28 D29",
+          "error(0.0002667378157289138) D28 D29",
+          "error(6.669779853440971e-05) D28 D29 D36 D37",
+          "error(0.0001333866998761608) D28 D29 D36 D37",
+          "error(6.669779853440971e-05) D28 D29 D37 L0",
+          "error(6.669779853440971e-05) D28 D29 D37 L0",
+          "error(0.0001333866998761608) D29",
+          "error(0.0003334000326131335) D29",
+          "error(0.0001333866998761608) D29 D37 L0",
+          "error(6.669779853440971e-05) D29 D37 L0",
+          "error(0.0001333866998761608) D31",
+          "error(0.0003334000326131335) D31",
+          "error(0.0001333866998761608) D31 D39",
+          "error(0.0001333866998761608) D31 D39",
+          "error(0.0001333866998761608) D32",
+          "error(0.0003334000326131335) D32",
+          "error(0.0001333866998761608) D32 D36 D38",
+          "error(6.669779853440971e-05) D32 D36 D38",
+          "error(0.0002667378157289138) D32 D36 L0",
+          "error(0.0003334000326131335) D32 D36 L0",
+          "error(6.669779853440971e-05) D32 D38 L0",
+          "error(0.0001333866998761608) D32 D38 L0",
+          "error(0.0001333866998761608) D33 D36 D37",
+          "error(0.0002667378157289138) D33 D36 D37",
+          "error(0.0001333866998761608) D33 D36 D38 L0",
+          "error(0.0001333866998761608) D33 D36 D38 L0",
+          "error(0.0003334000326131335) D33 D37 L0",
+          "error(6.669779853440971e-05) D33 D37 L0",
+          "error(0.0001333866998761608) D33 D38",
+          "error(0.0003334000326131335) D33 D38",
+          "error(0.0001333866998761608) D34",
+          "error(0.0001333866998761608) D34",
+          "error(0.0001333866998761608) D34 D35 D36",
+          "error(0.0002667378157289138) D34 D35 D36",
+          "error(0.0002667378157289138) D34 D35 D39",
+          "error(0.0001333866998761608) D34 D35 D39",
+          "error(0.0002667378157289138) D34 D36",
+          "error(6.669779853440971e-05) D34 D36",
+          "error(0.0002000667052120995) D34 D39",
+          "error(0.0001333866998761608) D34 D39",
+          "error(0.0002000667052120995) D35 D36",
+          "error(0.0001333866998761608) D35 D36",
+          "error(0.0002000667052120995) D35 D39",
+          "error(6.669779853440971e-05) D35 D39",
+          "error(0.0001333866998761608) D36 D37",
+          "error(0.0001333866998761608) D36 D37",
+          "error(0.0002667378157289138) D37 L0",
+          "error(6.669779853440971e-05) D37 L0",
+          "error(0.0003334000326131335) D39",
+          "error(0.0001333866998761608) D39",
+          "error(0.0003334000326131335) D40",
+          "error(0.0001333866998761608) D40",
+          "error(0.0001333866998761608) D40 D44",
+          "error(0.0001333866998761608) D40 D44",
+          "error(0.0002667378157289138) D40 D44 D46",
+          "error(0.0001333866998761608) D40 D44 D46",
+          "error(0.0001333866998761608) D40 D44 D46 D48 D52 D54",
+          "error(6.669779853440971e-05) D40 D44 D46 D48 D52 D54",
+          "error(0.0001333866998761608) D40 D44 D48 D52 L0",
+          "error(0.0001333866998761608) D40 D44 D48 D52 L0",
+          "error(0.0001333866998761608) D40 D46",
+          "error(0.0003334000326131335) D40 D46",
+          "error(6.669779853440971e-05) D40 D46 D48 D54 L0",
+          "error(0.0001333866998761608) D40 D46 D48 D54 L0",
+          "error(0.0001333866998761608) D40 D48",
+          "error(0.0001333866998761608) D40 D48",
+          "error(6.669779853440971e-05) D41 D44 D45",
+          "error(0.0001333866998761608) D41 D44 D45",
+          "error(6.669779853440971e-05) D41 D44 D45 D49 D52 D53",
+          "error(0.0001333866998761608) D41 D44 D45 D49 D52 D53",
+          "error(6.669779853440971e-05) D41 D44 D46",
+          "error(0.0002667378157289138) D41 D44 D46",
+          "error(6.669779853440971e-05) D41 D44 D46 D49 D52 D54 L0",
+          "error(0.0001333866998761608) D41 D44 D46 D49 D52 D54 L0",
+          "error(0.0001333866998761608) D41 D45",
+          "error(0.0001333866998761608) D41 D45",
+          "error(0.0001333866998761608) D41 D45 D49 D53 L0",
+          "error(6.669779853440971e-05) D41 D45 D49 D53 L0",
+          "error(0.0003334000326131335) D41 D46",
+          "error(0.0001333866998761608) D41 D46",
+          "error(0.0001333866998761608) D41 D46 D49 D54",
+          "error(0.0001333866998761608) D41 D46 D49 D54",
+          "error(0.0002667378157289138) D42 D43 D44",
+          "error(0.0001333866998761608) D42 D43 D44",
+          "error(0.0001333866998761608) D42 D43 D44 D50 D51 D52",
+          "error(0.0001333866998761608) D42 D43 D44 D50 D51 D52",
+          "error(0.0001333866998761608) D42 D43 D47",
+          "error(0.0003334000326131335) D42 D43 D47",
+          "error(0.0001333866998761608) D42 D43 D47 D50 D51 D55",
+          "error(0.0001333866998761608) D42 D43 D47 D50 D51 D55",
+          "error(0.0001333866998761608) D42 D44",
+          "error(0.0001333866998761608) D42 D44",
+          "error(0.0001333866998761608) D42 D44 D50 D52",
+          "error(6.669779853440971e-05) D42 D44 D50 D52",
+          "error(6.669779853440971e-05) D42 D47",
+          "error(0.0003334000326131335) D42 D47",
+          "error(6.669779853440971e-05) D42 D47 D50 D55",
+          "error(0.0001333866998761608) D42 D47 D50 D55",
+          "error(6.669779853440971e-05) D43 D44",
+          "error(0.0002667378157289138) D43 D44",
+          "error(6.669779853440971e-05) D43 D44 D51 D52",
+          "error(0.0001333866998761608) D43 D44 D51 D52",
+          "error(6.669779853440971e-05) D43 D47",
+          "error(0.0001333866998761608) D43 D47",
+          "error(6.669779853440971e-05) D43 D47 D50",
+          "error(6.669779853440971e-05) D43 D47 D50",
+          "error(6.669779853440971e-05) D43 D47 D51 D55",
+          "error(6.669779853440971e-05) D43 D47 D51 D55",
+          "error(6.669779853440971e-05) D44 D45",
+          "error(0.0002667378157289138) D44 D45",
+          "error(6.669779853440971e-05) D44 D45 D52 D53",
+          "error(0.0001333866998761608) D44 D45 D52 D53",
+          "error(6.669779853440971e-05) D44 D45 D53 L0",
+          "error(6.669779853440971e-05) D44 D45 D53 L0",
+          "error(0.0001333866998761608) D45",
+          "error(0.0003334000326131335) D45",
+          "error(0.0001333866998761608) D45 D53 L0",
+          "error(6.669779853440971e-05) D45 D53 L0",
+          "error(0.0001333866998761608) D47",
+          "error(0.0003334000326131335) D47",
+          "error(0.0001333866998761608) D47 D55",
+          "error(0.0001333866998761608) D47 D55",
+          "error(0.0001333866998761608) D48",
+          "error(0.0003334000326131335) D48",
+          "error(0.0001333866998761608) D48 D52 D54",
+          "error(6.669779853440971e-05) D48 D52 D54",
+          "error(0.0002667378157289138) D48 D52 L0",
+          "error(0.0003334000326131335) D48 D52 L0",
+          "error(6.669779853440971e-05) D48 D54 L0",
+          "error(0.0001333866998761608) D48 D54 L0",
+          "error(0.0001333866998761608) D49 D52 D53",
+          "error(0.0002667378157289138) D49 D52 D53",
+          "error(0.0001333866998761608) D49 D52 D54 L0",
+          "error(0.0001333866998761608) D49 D52 D54 L0",
+          "error(0.0003334000326131335) D49 D53 L0",
+          "error(6.669779853440971e-05) D49 D53 L0",
+          "error(0.0001333866998761608) D49 D54",
+          "error(0.0003334000326131335) D49 D54",
+          "error(0.0001333866998761608) D50",
+          "error(0.0001333866998761608) D50",
+          "error(0.0001333866998761608) D50 D51 D52",
+          "error(0.0002667378157289138) D50 D51 D52",
+          "error(0.0002667378157289138) D50 D51 D55",
+          "error(0.0001333866998761608) D50 D51 D55",
+          "error(0.0002667378157289138) D50 D52",
+          "error(6.669779853440971e-05) D50 D52",
+          "error(0.0002000667052120995) D50 D55",
+          "error(0.0001333866998761608) D50 D55",
+          "error(0.0002000667052120995) D51 D52",
+          "error(0.0001333866998761608) D51 D52",
+          "error(0.0002000667052120995) D51 D55",
+          "error(6.669779853440971e-05) D51 D55",
+          "error(0.0001333866998761608) D52 D53",
+          "error(0.0001333866998761608) D52 D53",
+          "error(0.0002667378157289138) D53 L0",
+          "error(6.669779853440971e-05) D53 L0",
+          "error(0.0003334000326131335) D55",
+          "error(0.0001333866998761608) D55",
+          "error(0.0003334000326131335) D56",
+          "error(0.00206367721758955) D56",
+          "error(0.0001333866998761608) D56 D60",
+          "error(0.0001333866998761608) D56 D60",
+          "error(0.0002667378157289138) D56 D60 D62",
+          "error(0.0001333866998761608) D56 D60 D62",
+          "error(0.0001333866998761608) D56 D60 D62 D64 D68 D70",
+          "error(6.669779853440971e-05) D56 D60 D62 D64 D68 D70",
+          "error(0.0001333866998761608) D56 D60 D64 D68 L0",
+          "error(0.0001333866998761608) D56 D60 D64 D68 L0",
+          "error(0.0001333866998761608) D56 D62",
+          "error(0.0003334000326131335) D56 D62",
+          "error(6.669779853440971e-05) D56 D62 D64 D70 L0",
+          "error(0.0001333866998761608) D56 D62 D64 D70 L0",
+          "error(0.0001333866998761608) D56 D64",
+          "error(0.0003334000326131335) D56 D64",
+          "error(6.669779853440971e-05) D57 D60 D61",
+          "error(0.0001333866998761608) D57 D60 D61",
+          "error(6.669779853440971e-05) D57 D60 D61 D65 D68 D69",
+          "error(0.0001333866998761608) D57 D60 D61 D65 D68 D69",
+          "error(6.669779853440971e-05) D57 D60 D62",
+          "error(0.0002667378157289138) D57 D60 D62",
+          "error(6.669779853440971e-05) D57 D60 D62 D65 D68 D70 L0",
+          "error(0.0001333866998761608) D57 D60 D62 D65 D68 D70 L0",
+          "error(0.0001333866998761608) D57 D61",
+          "error(0.0001333866998761608) D57 D61",
+          "error(0.0001333866998761608) D57 D61 D65 D69 L0",
+          "error(6.669779853440971e-05) D57 D61 D65 D69 L0",
+          "error(0.0003334000326131335) D57 D62",
+          "error(0.0001333866998761608) D57 D62",
+          "error(0.0001333866998761608) D57 D62 D65 D70",
+          "error(0.0001333866998761608) D57 D62 D65 D70",
+          "error(0.0002667378157289138) D58 D59 D60",
+          "error(0.0001333866998761608) D58 D59 D60",
+          "error(0.0001333866998761608) D58 D59 D60 D66 D67 D68",
+          "error(0.0001333866998761608) D58 D59 D60 D66 D67 D68",
+          "error(0.0001333866998761608) D58 D59 D63",
+          "error(0.0003334000326131335) D58 D59 D63",
+          "error(0.0001333866998761608) D58 D59 D63 D66 D67 D71",
+          "error(0.0001333866998761608) D58 D59 D63 D66 D67 D71",
+          "error(0.0001333866998761608) D58 D60",
+          "error(0.0001333866998761608) D58 D60",
+          "error(0.0001333866998761608) D58 D60 D66 D68",
+          "error(6.669779853440971e-05) D58 D60 D66 D68",
+          "error(6.669779853440971e-05) D58 D63",
+          "error(0.0006665777540627741) D58 D63",
+          "error(6.669779853440971e-05) D58 D63 D66 D71",
+          "error(0.0001333866998761608) D58 D63 D66 D71",
+          "error(6.669779853440971e-05) D59 D60",
+          "error(0.0002667378157289138) D59 D60",
+          "error(6.669779853440971e-05) D59 D60 D67 D68",
+          "error(0.0001333866998761608) D59 D60 D67 D68",
+          "error(6.669779853440971e-05) D59 D63",
+          "error(0.0001333866998761608) D59 D63",
+          "error(6.669779853440971e-05) D59 D63 D66",
+          "error(6.669779853440971e-05) D59 D63 D66",
+          "error(6.669779853440971e-05) D59 D63 D67 D71",
+          "error(6.669779853440971e-05) D59 D63 D67 D71",
+          "error(6.669779853440971e-05) D60 D61",
+          "error(0.0007331866340596878) D60 D61",
+          "error(6.669779853440971e-05) D60 D61 D68 D69",
+          "error(0.0001333866998761608) D60 D61 D68 D69",
+          "error(6.669779853440971e-05) D60 D61 D69 L0",
+          "error(6.669779853440971e-05) D60 D61 D69 L0",
+          "error(0.0001333866998761608) D61",
+          "error(0.002860162843425568) D61",
+          "error(0.0001333866998761608) D61 D69 L0",
+          "error(6.669779853440971e-05) D61 D69 L0",
+          "error(0.0001333866998761608) D63",
+          "error(0.002992786527936142) D63",
+          "error(0.0001333866998761608) D63 D71",
+          "error(0.0001333866998761608) D63 D71",
+          "error(0.0001333866998761608) D64",
+          "error(0.000599959987549121) D64",
+          "error(0.0001333866998761608) D64 D68 D70",
+          "error(6.669779853440971e-05) D64 D68 D70",
+          "error(0.0002667378157289138) D64 D68 L0",
+          "error(0.00040005335705113) D64 D68 L0",
+          "error(6.669779853440971e-05) D64 D70 L0",
+          "error(0.0001333866998761608) D64 D70 L0",
+          "error(0.0001333866998761608) D65 D68 D69",
+          "error(0.0002667378157289138) D65 D68 D69",
+          "error(0.0001333866998761608) D65 D68 D70 L0",
+          "error(0.0001333866998761608) D65 D68 D70 L0",
+          "error(0.0003334000326131335) D65 D69 L0",
+          "error(6.669779853440971e-05) D65 D69 L0",
+          "error(0.0001333866998761608) D65 D70",
+          "error(0.0003334000326131335) D65 D70",
+          "error(0.0001333866998761608) D66",
+          "error(0.0002000667052120995) D66",
+          "error(0.0001333866998761608) D66 D67 D68",
+          "error(0.0002667378157289138) D66 D67 D68",
+          "error(0.0002667378157289138) D66 D67 D71",
+          "error(0.0001333866998761608) D66 D67 D71",
+          "error(0.0002667378157289138) D66 D68",
+          "error(6.669779853440971e-05) D66 D68",
+          "error(0.0002000667052120995) D66 D71",
+          "error(0.0001333866998761608) D66 D71",
+          "error(0.0002000667052120995) D67 D68",
+          "error(0.0001333866998761608) D67 D68",
+          "error(0.0002000667052120995) D67 D71",
+          "error(6.669779853440971e-05) D67 D71",
+          "error(0.0001333866998761608) D68 D69",
+          "error(0.0001333866998761608) D68 D69",
+          "error(0.0002667378157289138) D69 L0",
+          "error(6.669779853440971e-05) D69 L0",
+          "error(0.0003334000326131335) D71",
+          "error(0.0001333866998761608) D71"
+        ],
+        "signature_count": 221
+      },
+      "status": "verdict",
+      "hint": "Hypothesis: mechanisms sharing a full signature in the same spatial boundary region suggest sub-circuit DEMs concatenated without XOR-merging; the correct probability is the XOR-fused value shown in the counter-example. On decompose_errors=True output, an undecomposed and a ^-decomposed instruction can also legitimately share a merged signature."
+    },
+    {
+      "name": "correctability",
+      "passed": false,
+      "severity": "warning",
+      "message": "Found 9 syndrome(s) across 9 distinct location(s) that map to more than one distinct observable set. The decoder cannot determine which logical observable was flipped from the measurement outcome alone.",
+      "counter_example": "syndrome {D12 D21} maps to observable sets {}, {L0}; witnesses: error(0.0002000667052120995) D12 D21 (iteration (0,)), error(6.669779853440971e-05) D12 D21 L0 (iteration (0,)), error(6.669779853440971e-05) D12 D21 L0 (iteration (0,)); syndrome {D21} maps to observable sets {}, {L0}; witnesses: error(0.0002000667052120995) D21 (iteration (0,)), error(0.000599959987549121) D21 L0 (iteration (0,)), error(6.669779853440971e-05) D21 L0 (iteration (0,)); syndrome {D37} maps to observable sets {}, {L0}; witnesses: error(0.0001333866998761608) D37 (iteration (0,)), error(0.0002667378157289138) D37 L0 (iteration (0,)), error(6.669779853440971e-05) D37 L0 (iteration (1,)); syndrome {D53} maps to observable sets {}, {L0}; witnesses: error(0.0001333866998761608) D53 (iteration (1,)), error(0.0002667378157289138) D53 L0 (iteration (1,)), error(6.669779853440971e-05) D53 L0 (iteration (2,)); syndrome {D69} maps to observable sets {}, {L0}; witnesses: error(0.0001333866998761608) D69 (iteration (2,)), error(0.0002667378157289138) D69 L0 (iteration (2,)), error(6.669779853440971e-05) D69 L0 (iteration (0,)); syndrome {D60 D61 D77} maps to observable sets {}, {L0}; witnesses: error(6.669779853440971e-05) D60 D61 D77 (iteration (0,)), error(6.669779853440971e-05) D60 D61 D77 L0 (iteration (0,)); syndrome {D60 D77} maps to observable sets {}, {L0}; witnesses: error(0.0001333866998761608) D60 D77 (iteration (0,)), error(6.669779853440971e-05) D60 D77 L0 (iteration (0,)); syndrome {D61 D77} maps to observable sets {}, {L0}; witnesses: error(6.669779853440971e-05) D61 D77 (iteration (0,)), error(0.0004666977902291165) D61 D77 L0 (iteration (0,)); syndrome {D77} maps to observable sets {}, {L0}; witnesses: error(0.0001333866998761608) D77 (iteration (0,)), error(0.0004666977902291165) D77 L0 (iteration (0,))",
+      "counter_example_data": {
+        "conflicts": [
+          {
+            "syndrome": [
+              12,
+              21
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0002000667052120995) D12 D21",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D12 D21 L0",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D12 D21 L0",
+                "iteration": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              21
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0002000667052120995) D21",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.000599959987549121) D21 L0",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D21 L0",
+                "iteration": [
+                  0
+                ]
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              37
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0001333866998761608) D37",
+                "iteration": [
+                  0
+                ]
+              },
+              {
+                "mechanism": "error(0.0002667378157289138) D37 L0",
+                "iteration": [
+                  0
+                ]
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D37 L0",
+                "iteration": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              53
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0001333866998761608) D53",
+                "iteration": [
+                  1
+                ]
+              },
+              {
+                "mechanism": "error(0.0002667378157289138) D53 L0",
+                "iteration": [
+                  1
+                ]
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D53 L0",
+                "iteration": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              69
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0001333866998761608) D69",
+                "iteration": [
+                  2
+                ]
+              },
+              {
+                "mechanism": "error(0.0002667378157289138) D69 L0",
+                "iteration": [
+                  2
+                ]
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D69 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              60,
+              61,
+              77
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(6.669779853440971e-05) D60 D61 D77",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D60 D61 D77 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              60,
+              77
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0001333866998761608) D60 D77",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(6.669779853440971e-05) D60 D77 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              61,
+              77
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(6.669779853440971e-05) D61 D77",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0004666977902291165) D61 D77 L0",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              77
+            ],
+            "observable_sets": [
+              [],
+              [
+                0
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.0001333866998761608) D77",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.0004666977902291165) D77 L0",
+                "iteration": []
+              }
+            ]
+          }
+        ],
+        "total_conflicts": 9,
+        "witnesses_truncated": false
+      },
+      "status": "verdict",
+      "hint": "Hypothesis: spatially distant conflicting mechanisms suggest genuine code-distance collapse; co-located ones suggest a degenerate code family or a decompose_errors=True artefact. Compare the conflicting witnesses' detector coordinates (from counter_example_data) before treating this as a code bug."
+    }
+  ]
+}
