@@ -49,22 +49,3 @@ The curated regression fixtures consumed by emlint's own test suite live in the 
 ## License
 
 Apache 2.0
-
-## Automation
-
-Tiered, per the repo purpose — benchmarks measure releases, and findings need
-human adjudication:
-
-- **Automated smoke tier** (`.github/workflows/release_smoke.yml`): triggers on
-  `repository_dispatch` (type `emlint-release`, payload `{"version": "x.y.z"}`)
-  or manually via `workflow_dispatch`. Installs `emlint==<version>` plus the
-  pinned requirements, runs `scripts/release_smoke.py`, commits the per-case
-  records under `results/raw/release-smoke/<version>/` and appends to
-  `results/RUN_LOG.jsonl`. Fails visibly only on error-severity findings;
-  warnings are recorded and left for manual review.
-- **Manual tier**: full campaigns and matched-simulation runs stay human-run
-  and human-adjudicated; automation never updates narrative summaries or any
-  shift-left index (anti-fabrication gate).
-
-To wire the trigger, have the emlint release workflow send a
-`repository_dispatch` with type `emlint-release` to this repository.

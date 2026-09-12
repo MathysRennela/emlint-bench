@@ -14,6 +14,8 @@ paths the script expects.
 Note: these scripts were moved from their original workspace; output-path
 constants were remapped to this repository layout (workloads/, results/).
 
+The taxonomy corpus-mining script `qecirc_mine.py` is retained here as a historical QECirc campaign script. Its interpretation is recorded in `results/QECIRC_CORPUS_NOTE_20260901.md`.
+
 Scripts whose input DEM trees were produced by internal library-study tooling
 (`run_qecirc_noisy_campaign.py`, `run_tqec_campaign.py`) expect those inputs
 under `external/`; the inputs are not redistributed here, but the outputs of
