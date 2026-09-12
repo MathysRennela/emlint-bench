@@ -1,0 +1,12 @@
+# Base environment for emlint-bench campaigns (pinned 2026-09-12).
+#
+# emlint is intentionally NOT pinned here: pin it to the emlint release under
+# test before running a benchmark, e.g.:  pip install "emlint==0.2.2"
+#
+# Original per-campaign versions are recorded in results/RUN_LOG.jsonl and
+# manifests/ENVIRONMENT.json (stim 1.16.0, pymatching 2.4.0, python 3.12.13).
+#
+# Record the exact environment of every new run (python/stim/emlint versions,
+# platform) next to the results, per the timing-comparability rule.
+stim==1.16.0
+pymatching==2.4.0
