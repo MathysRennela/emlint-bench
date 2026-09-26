@@ -20,3 +20,12 @@ Scripts whose input DEM trees were produced by internal library-study tooling
 (`run_qecirc_noisy_campaign.py`, `run_tqec_campaign.py`) expect those inputs
 under `external/`; the inputs are not redistributed here, but the outputs of
 the original runs are preserved under `results/raw/`.
+
+The upstream-issue fixture corpus (`build_upstream_issue_corpus.py`) turns the
+strong-tier findings of the emlint-dev ecosystem survey
+(`notes/ecosystem/UPSTREAM_ISSUE_SURVEY.md`) into labeled fixtures under
+`workloads/upstream_issues/`, with `manifests/upstream_issue_manifest.jsonl`.
+Labels are `caught` (expected check fires), `gap` (predicate class applies but
+the current build does not flag it), and `unlintable` (frontend rejects the
+text; exit-3 contract). The build fails loudly if any observed behavior drifts
+from its label, so gap fixtures flip to `caught` when coverage lands.
