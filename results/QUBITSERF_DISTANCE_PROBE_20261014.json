@@ -1,0 +1,241 @@
+{
+  "stages": {
+    "toy": [
+      {
+        "name": "repetition-code capacity, distance 3",
+        "detectors": 2,
+        "observables": 1,
+        "weight_statistics": {
+          "mechanisms_total": 3,
+          "mechanisms_with_separator": 0,
+          "mechanisms_weight_0": 0,
+          "mechanisms_weight_1": 2,
+          "mechanisms_weight_2": 1,
+          "mechanisms_weight_3_or_more": 0,
+          "probability_mass_total": 0.30000000000000004,
+          "probability_mass_with_separator": 0.0,
+          "probability_mass_on_weight_3_or_more": 0.0
+        },
+        "blocks": [
+          {
+            "rows": 2,
+            "columns": 3,
+            "qubitserf_classical_distance": 3,
+            "minimum_weight_3_witness": 3,
+            "witness_observable_parity": 1
+          }
+        ],
+        "qubitserf_minimum_over_blocks": 3,
+        "stim_shortest_graphlike_error": 3,
+        "emlint_check_distance_message": "Distance exact: 3.",
+        "brute_force": 3
+      },
+      {
+        "name": "repetition-code capacity, distance 5",
+        "detectors": 4,
+        "observables": 1,
+        "weight_statistics": {
+          "mechanisms_total": 5,
+          "mechanisms_with_separator": 0,
+          "mechanisms_weight_0": 0,
+          "mechanisms_weight_1": 2,
+          "mechanisms_weight_2": 3,
+          "mechanisms_weight_3_or_more": 0,
+          "probability_mass_total": 0.5,
+          "probability_mass_with_separator": 0.0,
+          "probability_mass_on_weight_3_or_more": 0.0
+        },
+        "blocks": [
+          {
+            "rows": 4,
+            "columns": 5,
+            "qubitserf_classical_distance": 5,
+            "minimum_weight_3_witness": null,
+            "witness_observable_parity": null
+          }
+        ],
+        "qubitserf_minimum_over_blocks": 5,
+        "stim_shortest_graphlike_error": 5,
+        "emlint_check_distance_message": "Distance exact: 5.",
+        "brute_force": 5
+      },
+      {
+        "name": "repetition-code capacity, distance 5, one weight-3 mechanism added",
+        "detectors": 4,
+        "observables": 1,
+        "weight_statistics": {
+          "mechanisms_total": 6,
+          "mechanisms_with_separator": 0,
+          "mechanisms_weight_0": 0,
+          "mechanisms_weight_1": 2,
+          "mechanisms_weight_2": 3,
+          "mechanisms_weight_3_or_more": 1,
+          "probability_mass_total": 0.6,
+          "probability_mass_with_separator": 0.0,
+          "probability_mass_on_weight_3_or_more": 0.16666666666666669
+        },
+        "blocks": [
+          {
+            "rows": 4,
+            "columns": 5,
+            "qubitserf_classical_distance": 5,
+            "minimum_weight_3_witness": null,
+            "witness_observable_parity": null
+          }
+        ],
+        "qubitserf_minimum_over_blocks": 5,
+        "stim_shortest_graphlike_error": 5,
+        "emlint_check_distance_message": "Distance sound lower bound: 2.",
+        "brute_force": 4
+      }
+    ],
+    "graphlike": [
+      {
+        "name": "rotated_memory_z distance 3 rounds 3, graphlike submodel",
+        "detectors": 24,
+        "observables": 1,
+        "weight_statistics": {
+          "mechanisms_total": 78,
+          "mechanisms_with_separator": 0,
+          "mechanisms_weight_0": 0,
+          "mechanisms_weight_1": 24,
+          "mechanisms_weight_2": 54,
+          "mechanisms_weight_3_or_more": 0,
+          "probability_mass_total": 0.1336950616202504,
+          "probability_mass_with_separator": 0.0,
+          "probability_mass_on_weight_3_or_more": 0.0
+        },
+        "blocks": [
+          {
+            "rows": 16,
+            "columns": 55,
+            "qubitserf_classical_distance": 3,
+            "minimum_weight_3_witness": 3,
+            "witness_observable_parity": 1
+          },
+          {
+            "rows": 8,
+            "columns": 23,
+            "qubitserf_classical_distance": 3,
+            "minimum_weight_3_witness": 3,
+            "witness_observable_parity": 0
+          }
+        ],
+        "qubitserf_minimum_over_blocks": 3,
+        "stim_shortest_graphlike_error": 3,
+        "emlint_check_distance_message": "Distance exact: 3.",
+        "brute_force": null
+      },
+      {
+        "name": "rotated_memory_z distance 5 rounds 5, graphlike submodel",
+        "detectors": 120,
+        "observables": 1,
+        "weight_statistics": {
+          "mechanisms_total": 502,
+          "mechanisms_with_separator": 0,
+          "mechanisms_weight_0": 0,
+          "mechanisms_weight_1": 72,
+          "mechanisms_weight_2": 430,
+          "mechanisms_weight_3_or_more": 0,
+          "probability_mass_total": 0.6397491101375093,
+          "probability_mass_with_separator": 0.0,
+          "probability_mass_on_weight_3_or_more": 0.0
+        },
+        "blocks": [
+          {
+            "rows": 72,
+            "columns": 301,
+            "qubitserf_classical_distance": 3,
+            "minimum_weight_3_witness": 3,
+            "witness_observable_parity": 0
+          },
+          {
+            "rows": 48,
+            "columns": 201,
+            "qubitserf_classical_distance": 3,
+            "minimum_weight_3_witness": 3,
+            "witness_observable_parity": 0
+          }
+        ],
+        "qubitserf_minimum_over_blocks": 3,
+        "stim_shortest_graphlike_error": 5,
+        "emlint_check_distance_message": "Distance exact: 5.",
+        "brute_force": null
+      }
+    ],
+    "hyperedge": [
+      {
+        "name": "rotated_memory_z distance 3 rounds 3, full circuit-level model",
+        "detectors": 24,
+        "observables": 1,
+        "weight_statistics": {
+          "mechanisms_total": 286,
+          "mechanisms_with_separator": 208,
+          "mechanisms_weight_0": 0,
+          "mechanisms_weight_1": 24,
+          "mechanisms_weight_2": 54,
+          "mechanisms_weight_3_or_more": 0,
+          "probability_mass_total": 0.17103581347837798,
+          "probability_mass_with_separator": 0.21832124570125794,
+          "probability_mass_on_weight_3_or_more": 0.0
+        },
+        "blocks": [
+          {
+            "rows": 16,
+            "columns": 55,
+            "qubitserf_classical_distance": 3,
+            "minimum_weight_3_witness": 3,
+            "witness_observable_parity": 1
+          },
+          {
+            "rows": 8,
+            "columns": 23,
+            "qubitserf_classical_distance": 3,
+            "minimum_weight_3_witness": 3,
+            "witness_observable_parity": 0
+          }
+        ],
+        "qubitserf_minimum_over_blocks": 3,
+        "stim_shortest_graphlike_error": 3,
+        "emlint_check_distance_message": "Distance sound lower bound: 2.",
+        "brute_force": null
+      },
+      {
+        "name": "rotated_memory_z distance 5 rounds 5, full circuit-level model",
+        "detectors": 120,
+        "observables": 1,
+        "weight_statistics": {
+          "mechanisms_total": 1953,
+          "mechanisms_with_separator": 1451,
+          "mechanisms_weight_0": 0,
+          "mechanisms_weight_1": 72,
+          "mechanisms_weight_2": 430,
+          "mechanisms_weight_3_or_more": 0,
+          "probability_mass_total": 0.85967379602574,
+          "probability_mass_with_separator": 0.2558234145380874,
+          "probability_mass_on_weight_3_or_more": 0.0
+        },
+        "blocks": [
+          {
+            "rows": 72,
+            "columns": 301,
+            "qubitserf_classical_distance": 3,
+            "minimum_weight_3_witness": 3,
+            "witness_observable_parity": 0
+          },
+          {
+            "rows": 48,
+            "columns": 201,
+            "qubitserf_classical_distance": 3,
+            "minimum_weight_3_witness": 3,
+            "witness_observable_parity": 0
+          }
+        ],
+        "qubitserf_minimum_over_blocks": 3,
+        "stim_shortest_graphlike_error": 5,
+        "emlint_check_distance_message": "Distance sound lower bound: 2.",
+        "brute_force": null
+      }
+    ]
+  }
+}
