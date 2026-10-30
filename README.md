@@ -36,7 +36,13 @@ This repository tracks emlint's behavior across releases over a fixed set of DEM
    append to `results/RUN_LOG.jsonl` and write the narrative summary to
    `results/` (see `results/README.md` for the record format).
 
-4. Do not edit historical results; add a new dated section instead.
+4. Seeded-defect catalogue (DEM-level fault injection): run
+   `python campaigns/build_seeded_defect_catalogue.py` to regenerate
+   `workloads/seeded_defects/` and `manifests/seeded_defect_manifest.jsonl`.
+   The build fails loudly if any observed emlint behavior drifts from its
+   recorded expectation.
+
+5. Do not edit historical results; add a new dated section instead.
 
 ## Provenance
 
