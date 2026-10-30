@@ -1,3 +1,4 @@
+---
 name: release-smoke
 
 # Tiered automation: the smoke tier runs automatically on every emlint release
@@ -17,24 +18,39 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: release-smoke
+  cancel-in-progress: false
+
 jobs:
   smoke:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
 
       - name: Resolve emlint version
         id: ver
         run: |
+          version=""
           if [ -n "${{ github.event.client_payload.version }}" ]; then
-            echo "version=${{ github.event.client_payload.version }}" >> "$GITHUB_OUTPUT"
-          else
-            echo "version=${{ github.event.inputs.emlint_version }}" >> "$GITHUB_OUTPUT"
+            version="${{ github.event.client_payload.version }}"
+          elif [ -n "${{ github.event.client_payload.emlint_version }}" ]; then
+            version="${{ github.event.client_payload.emlint_version }}"
+          elif [ -n "${{ github.event.inputs.emlint_version }}" ]; then
+            version="${{ github.event.inputs.emlint_version }}"
           fi
+          # Normalise: strip a leading 'v' so both '0.2.4' and 'v0.2.4' work.
+          version="${version#v}"
+          if [ -z "$version" ]; then
+            echo "::error::Could not resolve emlint version from event payload or inputs."
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: Install pinned environment
         run: pip install "emlint==${{ steps.ver.outputs.version }}" -r requirements.txt
