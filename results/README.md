@@ -17,6 +17,7 @@ simulation records, adjudications, and final reports.
 | `PREVIEW_TQEC_QECIRC_RERUN_20260819.json` | ≤ 2026-08-19 (dated by first citation in `FINAL_REPORT_2026-08-19.md`) | TQEC/QECirc rerun preview (`run_preview_integration.py`, not migrated — reads private inputs) | preview appendix |
 | `QECIRC_CORPUS_NOTE_20260901.md` | 2026-09-01 | QECirc selected-circuit mining (`campaigns/qecirc_mine.py`) | empirical corpus interpretation; not a proof |
 | `ECOSYSTEM_SURVEY_20260901.md` | 2026-09-01 | Crawler-axis survey of research `.stim`/`.dem` sources (manual) | frontier ingested; rest deferred |
+| `CANDIDATE_PATCHWORK_20261016.md` | 2026-10-16 | Patchwork lattice-surgery compiler (paper triage, no campaign; arXiv:2610.22112) | candidate source; deferred — tool unreleased |
 | `raw/pecos_stim_differential_{stim,pecos,pecos_d5}.dem` | 2026-09-12 | stim-vs-PECOS differential experiments (`campaigns/pecos_stim_differential.py`, `campaigns/pecos_stim_same_circuit_differential.py`) | phase-1 discrepancy adjudicated; phase-2 same-circuit sweep |
 | `raw/demo_corpus_verification_20260912.json` | 2026-09-12 | IEEE-demo corpus build (`campaigns/build_demo_corpus.py`) | 48 artifacts verified, 0 failures |
 | `raw/demo_exitcodes_20260912.json` | 2026-09-12 | CLI exit-code verification over the demo corpus (`campaigns/verify_demo_exit_codes.py`) | 0/1/2 contract holds; exit 3 never occurs |
