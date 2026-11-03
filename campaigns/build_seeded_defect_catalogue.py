@@ -73,6 +73,12 @@ def _n_detectors(text: str) -> int:
     return sum(1 for l in text.splitlines() if l.startswith("detector"))
 
 
+def _n_observables(text: str) -> int:
+    import stim
+
+    return stim.DetectorErrorModel(text).num_observables
+
+
 def _constructors(text: str) -> dict[str, Callable[[], list[str]]]:
     first_err = _first_error_line(text)
     n_dets = _n_detectors(text)
@@ -115,9 +121,9 @@ OPERATOR_META: dict[str, dict[str, object]] = {
     "disconnected_graph": {"expected_check": "connectivity", "expected_behavior": "caught", "taxonomy_id": "P1 disconnected decoding graph"},
     "duplicate_target_in_mechanism": {"expected_check": "duplicates", "expected_behavior": "caught", "taxonomy_id": "P1 within-mechanism target repetition", "issues": [("PECOS-packages/PECOS", 800), ("PECOS-packages/PECOS", 813)]},
     "dropped_detector_referencer": {"expected_check": "sensitivity", "expected_behavior": "caught", "taxonomy_id": "P0 dead detector", "issues": [("quantumlib/Stim", 202)]},
-    "dropped_observable_referencers": {"expected_check": "observable_coverage", "expected_behavior": "gap", "taxonomy_id": "P0 dead observable", "issues": [("quantumlib/Stim", 202)]},
+    "dropped_observable_referencers": {"expected_check": "observable_coverage", "expected_behavior": "caught", "taxonomy_id": "P0 dead observable", "issues": [("quantumlib/Stim", 202)]},
     "negative_probability": {"expected_check": None, "expected_behavior": "unlintable", "taxonomy_id": "P0 invalid probability", "issues": [("Deltakit/deltakit", 329)]},
-    "missing_observable": {"expected_check": "observable_coverage", "expected_behavior": "gap", "taxonomy_id": "P0 dead observable (blind spot)"},
+    "missing_observable": {"expected_check": "observable_coverage", "expected_behavior": "caught", "taxonomy_id": "P0 dead observable (blind spot)"},
 }
 
 
@@ -148,6 +154,7 @@ def _run_one(base_name, text, mutation, meta, date, environment, failures, verif
     expected_behavior = str(meta["expected_behavior"])
     constructors = _constructors(text)
     candidates = constructors.get(mutation, lambda: [])()
+    baseline_observables = _n_observables(text)
     mutated = None
     if mutation == "detector_index_shift":
         for candidate in candidates:
@@ -195,7 +202,7 @@ def _run_one(base_name, text, mutation, meta, date, environment, failures, verif
     actual_exit = 0
     raised: str | None = None
     try:
-        report = emlint.check(mutated)
+        report = emlint.check(mutated, context={"expected_observables": baseline_observables})
         failing_checks = sorted(f.name for f in report.results if not f.passed)
         fires = any(f.name == expected_check and not f.passed for f in report.results) if expected_check is not None else False
         behavior = "caught" if fires else "not_flagged"
