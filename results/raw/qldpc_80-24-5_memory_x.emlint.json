@@ -1,0 +1,461 @@
+{
+  "num_detectors": 400,
+  "num_observables": 24,
+  "num_error_mechanisms": 20831,
+  "profile": null,
+  "disabled_checks": [],
+  "applied_overrides": {},
+  "unknown_instructions": [],
+  "all_passed": false,
+  "any_skipped": false,
+  "is_vacuous": false,
+  "has_errors": false,
+  "has_warnings": true,
+  "results": [
+    {
+      "name": "detectability",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanisms that flip observables also trigger detectors.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "sensitivity",
+      "passed": true,
+      "severity": "warning",
+      "message": "All detectors are triggered by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "observable_coverage",
+      "passed": true,
+      "severity": "error",
+      "message": "All declared observables are flipped by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "probability_bounds",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanism probabilities are finite and strictly positive.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "duplicates",
+      "passed": true,
+      "severity": "warning",
+      "message": "No duplicate mechanism signatures found.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "correctability",
+      "passed": false,
+      "severity": "warning",
+      "message": "Found 10 syndrome(s) across 10 distinct location(s) that map to more than one distinct observable set. The decoder cannot determine which logical observable was flipped from the measurement outcome alone.",
+      "counter_example": "syndrome {D43 D44 D48 D49 D55 D59 D60 D64} maps to observable sets {L1 L4 L19 L20}, {L19 L20}; witnesses: error(0.00013338669987616076) D43 D44 D48 D49 D55 D59 D60 D64 L1 L4 L19 L20 (iteration (0,)), error(0.00013338669987616076) D43 D44 D48 D49 D55 D59 D60 D64 L19 L20 (iteration (0,)); syndrome {D50 D51 D55 D56 D65 D66 D70 D71} maps to observable sets {L3 L6 L21 L22}, {L21 L22}; witnesses: error(0.00013338669987616076) D50 D51 D55 D56 D65 D66 D70 D71 L3 L6 L21 L22 (iteration (0,)), error(0.00013338669987616076) D50 D51 D55 D56 D65 D66 D70 D71 L21 L22 (iteration (0,)); syndrome {D123 D124 D128 D129 D135 D139 D140 D144} maps to observable sets {L1 L4 L19 L20}, {L19 L20}; witnesses: error(0.00013338669987616076) D123 D124 D128 D129 D135 D139 D140 D144 L1 L4 L19 L20 (iteration (0,)), error(0.00013338669987616076) D123 D124 D128 D129 D135 D139 D140 D144 L19 L20 (iteration (0,)); syndrome {D130 D131 D135 D136 D145 D146 D150 D151} maps to observable sets {L3 L6 L21 L22}, {L21 L22}; witnesses: error(0.00013338669987616076) D130 D131 D135 D136 D145 D146 D150 D151 L3 L6 L21 L22 (iteration (0,)), error(0.00013338669987616076) D130 D131 D135 D136 D145 D146 D150 D151 L21 L22 (iteration (0,)); syndrome {D203 D204 D208 D209 D215 D219 D220 D224} maps to observable sets {L1 L4 L19 L20}, {L19 L20}; witnesses: error(0.00013338669987616076) D203 D204 D208 D209 D215 D219 D220 D224 L1 L4 L19 L20 (iteration (0,)), error(0.00013338669987616076) D203 D204 D208 D209 D215 D219 D220 D224 L19 L20 (iteration (0,)); syndrome {D210 D211 D215 D216 D225 D226 D230 D231} maps to observable sets {L3 L6 L21 L22}, {L21 L22}; witnesses: error(0.00013338669987616076) D210 D211 D215 D216 D225 D226 D230 D231 L3 L6 L21 L22 (iteration (0,)), error(0.00013338669987616076) D210 D211 D215 D216 D225 D226 D230 D231 L21 L22 (iteration (0,)); syndrome {D283 D284 D288 D289 D295 D299 D300 D304} maps to observable sets {L1 L4 L19 L20}, {L19 L20}; witnesses: error(0.00013338669987616076) D283 D284 D288 D289 D295 D299 D300 D304 L1 L4 L19 L20 (iteration (0,)), error(0.00013338669987616076) D283 D284 D288 D289 D295 D299 D300 D304 L19 L20 (iteration (0,)); syndrome {D290 D291 D295 D296 D305 D306 D310 D311} maps to observable sets {L3 L6 L21 L22}, {L21 L22}; witnesses: error(0.00013338669987616076) D290 D291 D295 D296 D305 D306 D310 D311 L3 L6 L21 L22 (iteration (0,)), error(0.00013338669987616076) D290 D291 D295 D296 D305 D306 D310 D311 L21 L22 (iteration (0,)); syndrome {D363 D364 D368 D369 D375 D379 D380 D384} maps to observable sets {L1 L4 L19 L20}, {L19 L20}; witnesses: error(0.00020006670521209943) D363 D364 D368 D369 D375 D379 D380 D384 L1 L4 L19 L20 (iteration (0,)), error(0.00013338669987616076) D363 D364 D368 D369 D375 D379 D380 D384 L19 L20 (iteration (0,)); syndrome {D370 D371 D375 D376 D385 D386 D390 D391} maps to observable sets {L3 L6 L21 L22}, {L21 L22}; witnesses: error(0.00020006670521209943) D370 D371 D375 D376 D385 D386 D390 D391 L3 L6 L21 L22 (iteration (0,)), error(0.00020006670521209943) D370 D371 D375 D376 D385 D386 D390 D391 L21 L22 (iteration (0,))",
+      "counter_example_data": {
+        "conflicts": [
+          {
+            "syndrome": [
+              43,
+              44,
+              48,
+              49,
+              55,
+              59,
+              60,
+              64
+            ],
+            "observable_sets": [
+              [
+                1,
+                4,
+                19,
+                20
+              ],
+              [
+                19,
+                20
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00013338669987616076) D43 D44 D48 D49 D55 D59 D60 D64 L1 L4 L19 L20",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00013338669987616076) D43 D44 D48 D49 D55 D59 D60 D64 L19 L20",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              50,
+              51,
+              55,
+              56,
+              65,
+              66,
+              70,
+              71
+            ],
+            "observable_sets": [
+              [
+                3,
+                6,
+                21,
+                22
+              ],
+              [
+                21,
+                22
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00013338669987616076) D50 D51 D55 D56 D65 D66 D70 D71 L3 L6 L21 L22",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00013338669987616076) D50 D51 D55 D56 D65 D66 D70 D71 L21 L22",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              123,
+              124,
+              128,
+              129,
+              135,
+              139,
+              140,
+              144
+            ],
+            "observable_sets": [
+              [
+                1,
+                4,
+                19,
+                20
+              ],
+              [
+                19,
+                20
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00013338669987616076) D123 D124 D128 D129 D135 D139 D140 D144 L1 L4 L19 L20",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00013338669987616076) D123 D124 D128 D129 D135 D139 D140 D144 L19 L20",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              130,
+              131,
+              135,
+              136,
+              145,
+              146,
+              150,
+              151
+            ],
+            "observable_sets": [
+              [
+                3,
+                6,
+                21,
+                22
+              ],
+              [
+                21,
+                22
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00013338669987616076) D130 D131 D135 D136 D145 D146 D150 D151 L3 L6 L21 L22",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00013338669987616076) D130 D131 D135 D136 D145 D146 D150 D151 L21 L22",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              203,
+              204,
+              208,
+              209,
+              215,
+              219,
+              220,
+              224
+            ],
+            "observable_sets": [
+              [
+                1,
+                4,
+                19,
+                20
+              ],
+              [
+                19,
+                20
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00013338669987616076) D203 D204 D208 D209 D215 D219 D220 D224 L1 L4 L19 L20",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00013338669987616076) D203 D204 D208 D209 D215 D219 D220 D224 L19 L20",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              210,
+              211,
+              215,
+              216,
+              225,
+              226,
+              230,
+              231
+            ],
+            "observable_sets": [
+              [
+                3,
+                6,
+                21,
+                22
+              ],
+              [
+                21,
+                22
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00013338669987616076) D210 D211 D215 D216 D225 D226 D230 D231 L3 L6 L21 L22",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00013338669987616076) D210 D211 D215 D216 D225 D226 D230 D231 L21 L22",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              283,
+              284,
+              288,
+              289,
+              295,
+              299,
+              300,
+              304
+            ],
+            "observable_sets": [
+              [
+                1,
+                4,
+                19,
+                20
+              ],
+              [
+                19,
+                20
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00013338669987616076) D283 D284 D288 D289 D295 D299 D300 D304 L1 L4 L19 L20",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00013338669987616076) D283 D284 D288 D289 D295 D299 D300 D304 L19 L20",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              290,
+              291,
+              295,
+              296,
+              305,
+              306,
+              310,
+              311
+            ],
+            "observable_sets": [
+              [
+                3,
+                6,
+                21,
+                22
+              ],
+              [
+                21,
+                22
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00013338669987616076) D290 D291 D295 D296 D305 D306 D310 D311 L3 L6 L21 L22",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00013338669987616076) D290 D291 D295 D296 D305 D306 D310 D311 L21 L22",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              363,
+              364,
+              368,
+              369,
+              375,
+              379,
+              380,
+              384
+            ],
+            "observable_sets": [
+              [
+                1,
+                4,
+                19,
+                20
+              ],
+              [
+                19,
+                20
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00020006670521209943) D363 D364 D368 D369 D375 D379 D380 D384 L1 L4 L19 L20",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00013338669987616076) D363 D364 D368 D369 D375 D379 D380 D384 L19 L20",
+                "iteration": []
+              }
+            ]
+          },
+          {
+            "syndrome": [
+              370,
+              371,
+              375,
+              376,
+              385,
+              386,
+              390,
+              391
+            ],
+            "observable_sets": [
+              [
+                3,
+                6,
+                21,
+                22
+              ],
+              [
+                21,
+                22
+              ]
+            ],
+            "witnesses": [
+              {
+                "mechanism": "error(0.00020006670521209943) D370 D371 D375 D376 D385 D386 D390 D391 L3 L6 L21 L22",
+                "iteration": []
+              },
+              {
+                "mechanism": "error(0.00020006670521209943) D370 D371 D375 D376 D385 D386 D390 D391 L21 L22",
+                "iteration": []
+              }
+            ]
+          }
+        ],
+        "total_conflicts": 10,
+        "witnesses_truncated": false
+      },
+      "status": "verdict",
+      "hint": "Hypothesis: spatially distant conflicting mechanisms suggest genuine code-distance collapse; co-located ones suggest a degenerate code family or a decompose_errors=True artefact. Compare the conflicting witnesses' detector coordinates (from counter_example_data) before treating this as a code bug."
+    },
+    {
+      "name": "null_mechanism",
+      "passed": true,
+      "severity": "warning",
+      "message": "No mechanism has empty detector and observable support.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "high_probability_mechanisms",
+      "passed": true,
+      "severity": "warning",
+      "message": "All mechanism probabilities are \u2264 0.3.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "connectivity",
+      "passed": true,
+      "severity": "warning",
+      "message": "Decoding graph is fully connected.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "boundary_symmetry",
+      "passed": true,
+      "severity": "warning",
+      "message": "Observable distances are balanced: L0=2, L1=2, L2=2, L3=2, L4=2, L5=2, L6=2, L7=2, L8=2, L9=2, L10=2, L11=2, L12=2, L13=2, L14=2, L15=2, L16=2, L17=2, L18=2, L19=2, L20=2, L21=2, L22=2, L23=2.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    }
+  ]
+}

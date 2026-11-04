@@ -11,6 +11,7 @@ This repository tracks emlint's behavior across releases over a fixed set of DEM
 | `manifests/` | Pinned artifact manifests (sweep manifest, environment pins). Hashes make every artifact reproducible. |
 | `schemas/` | JSON schemas for manifest and corpus metadata records. |
 | `workloads/` | Bulk DEM/circuit artifacts (circuits, stress DEMs, per-compiler DEM dumps). Stim-generated DEMs are regenerable from manifest parameters. |
+| `workloads/dems/qldpc_*.dem` + `workloads/circuits/qldpc_*.stim` | qldpc-challenge corpus: 446 DEMs + 446 Stim circuits from 223 verified qLDPC codes (memory_x/memory_z). Ingested via `campaigns/run_qldpc_ingest.py`; hash-pinned in `manifests/QLDPC_MANIFEST.jsonl`. |
 | `campaigns/` | Run-once campaign and ingest scripts, one per audit campaign. |
 | `results/` | Campaign outputs: run logs, check reports, adjudication records. |
 | `scripts/` | Benchmark utility scripts. |
