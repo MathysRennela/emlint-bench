@@ -4309,4 +4309,4 @@ detector(12, 12, 1) D140
 detector(14, 2, 1) D141
 detector(14, 6, 1) D142
 detector(14, 10, 1) D143
-error(0.1) D0 L1
+error(0.1) D3 D24 L1

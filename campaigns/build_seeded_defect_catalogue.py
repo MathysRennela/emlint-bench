@@ -90,7 +90,19 @@ def _constructors(text: str) -> dict[str, Callable[[], list[str]]]:
     out["logical_without_syndrome"] = lambda: [text + "\nerror(0.1) L0\n"]
     out["duplicate_fault"] = lambda: ([text + "\n" + first_err + "\n"] if first_err else [])
     out["dead_detector"] = lambda: [text + f"\ndetector D{n_dets}\n"]
-    out["conflicting_observable"] = lambda: [text + "\nerror(0.1) D0 L1\n"]
+    def _conflicting() -> list[str]:
+        obs_err = next(
+            (l for l in text.splitlines() if l.startswith("error(") and " L0" in l),
+            None,
+        )
+        if not obs_err:
+            return []
+        import re as _re
+        line = _re.sub(r"^error\([^)]*\)", "error(0.1)", obs_err.strip())
+        line = line.replace(" L0", " L1", 1)
+        return [text + "\n" + line + "\n"]
+
+    out["conflicting_observable"] = _conflicting
     out["null_mechanism"] = lambda: [text + "\nerror(0.1)\n"]
     out["high_probability_mechanism"] = lambda: [text + "\nerror(0.4) D0\n"]
     out["disconnected_graph"] = lambda: [text + f"\ndetector D{n_dets + 1}\n"]

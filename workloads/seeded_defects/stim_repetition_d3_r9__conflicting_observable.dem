@@ -42,4 +42,4 @@ detector(1, 0) D2
 detector(3, 0) D3
 detector(1, 1) D4
 detector(3, 1) D5
-error(0.1) D0 L1
+error(0.1) D1 L1

@@ -1,0 +1,1669 @@
+{
+  "date": "20261107",
+  "environment": {
+    "python": "3.14.4",
+    "stim": "1.16.0",
+    "emlint": "0.2.5",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43"
+  },
+  "artifacts_verified": 111,
+  "failures": [],
+  "records": [
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3.dem",
+      "kind": "baseline",
+      "verified": true,
+      "failing_checks": [
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__detector_index_shift.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "detector_index_shift",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__zero_probability.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "zero_probability",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "probability_bounds"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__high_probability_p_gt_0_5.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "high_probability_p_gt_0_5",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__logical_without_syndrome.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "logical_without_syndrome",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__duplicate_fault.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "duplicate_fault",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__dead_detector.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "dead_detector",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__conflicting_observable.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "conflicting_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "boundary_symmetry",
+        "correctability",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__null_mechanism.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "null_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__high_probability_mechanism.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "high_probability_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__disconnected_graph.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "disconnected_graph",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__duplicate_target_in_mechanism.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "duplicate_target_in_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__dropped_detector_referencer.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "dropped_detector_referencer",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__dropped_observable_referencers.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "dropped_observable_referencers",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__negative_probability.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "negative_probability",
+      "expected_behavior": "unlintable",
+      "observed_behavior": "unlintable",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 3,
+      "raised": "ValueError: Failed to parse DEM: 'error' instruction argument must be a probability (0 to 1) but got -0.001000"
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d3_r3__missing_observable.dem",
+      "base": "stim_rotated_surface_z_d3_r3",
+      "mutation": "missing_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5.dem",
+      "kind": "baseline",
+      "verified": true,
+      "failing_checks": [
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__detector_index_shift.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "detector_index_shift",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "boundary_symmetry",
+        "correctability",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__zero_probability.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "zero_probability",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "probability_bounds"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__high_probability_p_gt_0_5.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "high_probability_p_gt_0_5",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "high_probability_mechanisms",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__logical_without_syndrome.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "logical_without_syndrome",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__duplicate_fault.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "duplicate_fault",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__dead_detector.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "dead_detector",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__conflicting_observable.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "conflicting_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "boundary_symmetry",
+        "correctability",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__null_mechanism.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "null_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__high_probability_mechanism.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "high_probability_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "high_probability_mechanisms",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__disconnected_graph.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "disconnected_graph",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__duplicate_target_in_mechanism.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "duplicate_target_in_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__dropped_detector_referencer.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "dropped_detector_referencer",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__dropped_observable_referencers.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "dropped_observable_referencers",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__negative_probability.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "negative_probability",
+      "expected_behavior": "unlintable",
+      "observed_behavior": "unlintable",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 3,
+      "raised": "ValueError: Failed to parse DEM: 'error' instruction argument must be a probability (0 to 1) but got -0.001000"
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d5_r5__missing_observable.dem",
+      "base": "stim_rotated_surface_z_d5_r5",
+      "mutation": "missing_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7.dem",
+      "kind": "baseline",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__zero_probability.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "zero_probability",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "probability_bounds"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__high_probability_p_gt_0_5.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "high_probability_p_gt_0_5",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__logical_without_syndrome.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "logical_without_syndrome",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__duplicate_fault.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "duplicate_fault",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__dead_detector.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "dead_detector",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__conflicting_observable.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "conflicting_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "not_flagged",
+      "verified": false,
+      "failing_checks": [
+        "boundary_symmetry",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__null_mechanism.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "null_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__high_probability_mechanism.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "high_probability_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__disconnected_graph.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "disconnected_graph",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__duplicate_target_in_mechanism.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "duplicate_target_in_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__dropped_detector_referencer.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "dropped_detector_referencer",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__dropped_observable_referencers.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "dropped_observable_referencers",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__negative_probability.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "negative_probability",
+      "expected_behavior": "unlintable",
+      "observed_behavior": "unlintable",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 3,
+      "raised": "ValueError: Failed to parse DEM: 'error' instruction argument must be a probability (0 to 1) but got -0.001000"
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_z_d7_r7__missing_observable.dem",
+      "base": "stim_rotated_surface_z_d7_r7",
+      "mutation": "missing_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3.dem",
+      "kind": "baseline",
+      "verified": true,
+      "failing_checks": [
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__detector_index_shift.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "detector_index_shift",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__zero_probability.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "zero_probability",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "probability_bounds"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__high_probability_p_gt_0_5.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "high_probability_p_gt_0_5",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "high_probability_mechanisms",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__logical_without_syndrome.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "logical_without_syndrome",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__duplicate_fault.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "duplicate_fault",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__dead_detector.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "dead_detector",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__conflicting_observable.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "conflicting_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__null_mechanism.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "null_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__high_probability_mechanism.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "high_probability_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "high_probability_mechanisms",
+        "linear_independence",
+        "mechanism_arity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__disconnected_graph.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "disconnected_graph",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__duplicate_target_in_mechanism.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "duplicate_target_in_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "mechanism_arity",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__dropped_detector_referencer.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "dropped_detector_referencer",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__dropped_observable_referencers.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "dropped_observable_referencers",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__negative_probability.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "negative_probability",
+      "expected_behavior": "unlintable",
+      "observed_behavior": "unlintable",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 3,
+      "raised": "ValueError: Failed to parse DEM: 'error' instruction argument must be a probability (0 to 1) but got -0.001000"
+    },
+    {
+      "file": "workloads/seeded_defects/stim_rotated_surface_x_d3_r3__missing_observable.dem",
+      "base": "stim_rotated_surface_x_d3_r3",
+      "mutation": "missing_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "linear_independence",
+        "mechanism_arity",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9.dem",
+      "kind": "baseline",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "hook_errors",
+        "linear_independence"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__detector_index_shift.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "detector_index_shift",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__zero_probability.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "zero_probability",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence",
+        "probability_bounds"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__high_probability_p_gt_0_5.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "high_probability_p_gt_0_5",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "hook_errors",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__logical_without_syndrome.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "logical_without_syndrome",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__duplicate_fault.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "duplicate_fault",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__dead_detector.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "dead_detector",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__conflicting_observable.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "conflicting_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__null_mechanism.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "null_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__high_probability_mechanism.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "high_probability_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "hook_errors",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__disconnected_graph.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "disconnected_graph",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__duplicate_target_in_mechanism.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "duplicate_target_in_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__dropped_detector_referencer.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "dropped_detector_referencer",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__dropped_observable_referencers.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "dropped_observable_referencers",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__negative_probability.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "negative_probability",
+      "expected_behavior": "unlintable",
+      "observed_behavior": "unlintable",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 3,
+      "raised": "ValueError: Failed to parse DEM: 'error' instruction argument must be a probability (0 to 1) but got -0.001000"
+    },
+    {
+      "file": "workloads/seeded_defects/stim_repetition_d3_r9__missing_observable.dem",
+      "base": "stim_repetition_d3_r9",
+      "mutation": "missing_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "hook_errors",
+        "linear_independence",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1.dem",
+      "kind": "baseline_pinned",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__detector_index_shift.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "detector_index_shift",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "boundary_symmetry",
+        "correctability",
+        "detectability",
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__zero_probability.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "zero_probability",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "probability_bounds"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__high_probability_p_gt_0_5.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "high_probability_p_gt_0_5",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__logical_without_syndrome.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "logical_without_syndrome",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__duplicate_fault.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "duplicate_fault",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__dead_detector.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "dead_detector",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__conflicting_observable.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "conflicting_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "boundary_symmetry",
+        "correctability",
+        "detectability",
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__null_mechanism.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "null_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__high_probability_mechanism.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "high_probability_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__disconnected_graph.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "disconnected_graph",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__duplicate_target_in_mechanism.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "duplicate_target_in_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__dropped_detector_referencer.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "dropped_detector_referencer",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__dropped_observable_referencers.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "dropped_observable_referencers",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__negative_probability.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "negative_probability",
+      "expected_behavior": "unlintable",
+      "observed_behavior": "unlintable",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 3,
+      "raised": "ValueError: Failed to parse DEM: 'error' instruction argument must be a probability (0 to 1) but got -0.001000"
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_memory_z_k1__missing_observable.dem",
+      "base": "tqec_memory_z_k1",
+      "mutation": "missing_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1.dem",
+      "kind": "baseline_pinned",
+      "verified": true,
+      "failing_checks": [
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__detector_index_shift.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "detector_index_shift",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__zero_probability.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "zero_probability",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "probability_bounds"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__high_probability_p_gt_0_5.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "high_probability_p_gt_0_5",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__logical_without_syndrome.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "logical_without_syndrome",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "boundary_symmetry",
+        "detectability",
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__duplicate_fault.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "duplicate_fault",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__dead_detector.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "dead_detector",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__conflicting_observable.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "conflicting_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "correctability",
+        "detectability",
+        "duplicates",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__null_mechanism.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "null_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__high_probability_mechanism.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "high_probability_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "high_probability_mechanisms",
+        "linear_independence"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__disconnected_graph.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "disconnected_graph",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__duplicate_target_in_mechanism.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "duplicate_target_in_mechanism",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "null_mechanism"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__dropped_detector_referencer.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "dropped_detector_referencer",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "connectivity",
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "sensitivity"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__dropped_observable_referencers.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "dropped_observable_referencers",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__negative_probability.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "negative_probability",
+      "expected_behavior": "unlintable",
+      "observed_behavior": "unlintable",
+      "verified": true,
+      "failing_checks": [],
+      "exit_code": 3,
+      "raised": "ValueError: Failed to parse DEM: 'error' instruction argument must be a probability (0 to 1) but got -0.001000"
+    },
+    {
+      "file": "workloads/seeded_defects/tqec_cnot_k1__missing_observable.dem",
+      "base": "tqec_cnot_k1",
+      "mutation": "missing_observable",
+      "expected_behavior": "caught",
+      "observed_behavior": "caught",
+      "verified": true,
+      "failing_checks": [
+        "detectability",
+        "duplicates",
+        "linear_independence",
+        "observable_coverage"
+      ],
+      "exit_code": 1
+    }
+  ]
+}

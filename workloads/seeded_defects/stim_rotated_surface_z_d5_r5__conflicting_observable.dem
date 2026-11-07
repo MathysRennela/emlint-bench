@@ -1799,4 +1799,4 @@ detector(8, 4, 1) D116
 detector(8, 8, 1) D117
 detector(10, 2, 1) D118
 detector(10, 6, 1) D119
-error(0.1) D0 L1
+error(0.1) D2 D12 L1

@@ -4685,4 +4685,4 @@ detector(10, 12, 0) D253
 detector(12, 12, 0) D254
 detector(12, 14, 0) D255
 shift_detectors(0, 0, 1) 0
-error(0.1) D0 L1
+error(0.1) D0 D3 L1
