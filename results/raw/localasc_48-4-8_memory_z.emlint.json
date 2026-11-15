@@ -1,0 +1,164 @@
+{
+  "num_detectors": 144,
+  "num_observables": 4,
+  "num_error_mechanisms": 4902,
+  "profile": null,
+  "disabled_checks": [],
+  "applied_overrides": {},
+  "unknown_instructions": [],
+  "all_passed": true,
+  "any_skipped": true,
+  "is_vacuous": false,
+  "has_errors": false,
+  "has_warnings": false,
+  "has_inconclusive": false,
+  "results": [
+    {
+      "name": "detectability",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanisms that flip observables also trigger detectors.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "sensitivity",
+      "passed": true,
+      "severity": "warning",
+      "message": "All detectors are triggered by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "observable_coverage",
+      "passed": true,
+      "severity": "error",
+      "message": "All declared observables are flipped by at least one error mechanism.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "probability_bounds",
+      "passed": true,
+      "severity": "error",
+      "message": "All error mechanism probabilities are finite and strictly positive.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "duplicates",
+      "passed": true,
+      "severity": "warning",
+      "message": "No duplicate mechanism signatures found.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "correctability",
+      "passed": true,
+      "severity": "warning",
+      "message": "Every syndrome maps to at most one distinct set of logical observables.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "null_mechanism",
+      "passed": true,
+      "severity": "warning",
+      "message": "No mechanism has empty detector and observable support.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "high_probability_mechanisms",
+      "passed": true,
+      "severity": "warning",
+      "message": "All mechanism probabilities are \u2264 0.3.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "linear_independence",
+      "passed": false,
+      "severity": "warning",
+      "message": "skipped: the detector-redundancy sub-check needs a declared family expectation (expected_redundancy, e.g. k/2 for bivariate bicycle codes); a bare intolerance of detector dependence is a family assumption, not a check. Observable independence verified: rank 4 of 4.",
+      "counter_example": "skipped: no declared family expectation; observable rank 4 of 4",
+      "counter_example_data": {
+        "reason": "no_expected_redundancy",
+        "observable_rank": 4,
+        "declared_observables": 4
+      },
+      "status": "skipped",
+      "hint": null
+    },
+    {
+      "name": "hook_errors",
+      "passed": true,
+      "severity": "warning",
+      "message": "No local hook errors detected (weights 2..2).",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "temporal_span",
+      "passed": false,
+      "severity": "warning",
+      "message": "skipped: fewer than three coordinate rounds are declared; boundary rounds cannot be separated from bulk rounds.",
+      "counter_example": "skipped: fewer than three coordinate rounds declared; boundary rounds cannot be separated from bulk rounds",
+      "counter_example_data": {
+        "reason": "insufficient_rounds",
+        "round_count": 2
+      },
+      "status": "skipped",
+      "hint": null
+    },
+    {
+      "name": "gauge_detectors",
+      "passed": true,
+      "severity": "warning",
+      "message": "No gauge detector events detected (no mechanisms with probability \u2248 0.5 and no observable flip).",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "connectivity",
+      "passed": true,
+      "severity": "warning",
+      "message": "Decoding graph is fully connected.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    },
+    {
+      "name": "boundary_symmetry",
+      "passed": true,
+      "severity": "warning",
+      "message": "Observable distances are balanced: L0=2, L1=2, L2=2, L3=2.",
+      "counter_example": null,
+      "counter_example_data": null,
+      "status": "verdict",
+      "hint": null
+    }
+  ]
+}
