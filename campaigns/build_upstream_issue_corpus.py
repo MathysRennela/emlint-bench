@@ -83,7 +83,7 @@ MUTATIONS: list[dict[str, object]] = [
             ("PECOS-packages/PECOS", 813),
         ],
         "expected_check": "duplicates",
-        "expected_behavior": "gap",
+        "expected_behavior": "caught",
         "construct": "append\nerror(0.001) D0 D0",
     },
     {
@@ -147,13 +147,13 @@ def _construct(base_text: str, construct: str) -> str:
 
 def _findings(report: emlint.Report) -> list[dict[str, object]]:
     return [
-        {"name": r.name, "passed": r.passed, "severity": r.severity}
+        {"name": r.name, "passed": r.passed, "severity": r.severity, "status": r.status}
         for r in report.results
     ]
 
 
 def _exit_code(findings: list[dict[str, object]]) -> int:
-    failing = [f for f in findings if not f["passed"]]
+    failing = [f for f in findings if f.get("status", "verdict") == "verdict" and not f["passed"]]
     if any(f["severity"] == "error" for f in failing):
         return 1
     return 2 if failing else 0
@@ -170,7 +170,8 @@ def main() -> int:
     base_text = BASELINE.read_text(encoding="utf-8")
     base_report = emlint.check(base_text)
     base_failing = sorted(
-        f.name for f in base_report.results if not f.passed
+        f.name for f in base_report.results
+        if f.status == "verdict" and not f.passed
     )
     if base_failing:
         print(
@@ -218,12 +219,15 @@ def main() -> int:
                 exit_code = 3
             else:
                 failing = sorted(
-                    f.name for f in report.results if not f.passed
+                    f.name for f in report.results
+                    if f.status == "verdict" and not f.passed
                 )
                 behavior = (
                     "caught"
                     if any(
-                        f.name == expected_check and not f.passed
+                        f.name == expected_check
+                        and f.status == "verdict"
+                        and not f.passed
                         for f in report.results
                     )
                     else "not_flagged"
@@ -232,10 +236,13 @@ def main() -> int:
         else:
             report = emlint.check(text)
             failing = sorted(
-                f.name for f in report.results if not f.passed
+                f.name for f in report.results
+                if f.status == "verdict" and not f.passed
             )
             fires = any(
-                f.name == expected_check and not f.passed
+                f.name == expected_check
+                and f.status == "verdict"
+                and not f.passed
                 for f in report.results
             )
             behavior = "caught" if fires else "not_flagged"
