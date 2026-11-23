@@ -29,3 +29,14 @@ Labels are `caught` (expected check fires), `gap` (predicate class applies but
 the current build does not flag it), and `unlintable` (frontend rejects the
 text; exit-3 contract). The build fails loudly if any observed behavior drifts
 from its label, so gap fixtures flip to `caught` when coverage lands.
+
+The issue-146 circuit-check audit (`run_circuit_check_audit.py`) is a separate,
+on-demand campaign. It reads `manifests/circuit_check_audit_issue146.jsonl`,
+verifies fixture hashes, and records every circuit check result, including
+`skipped` and `inconclusive` as not exercised. It runs no Monte Carlo shots and
+is not part of the default `pytest` suite or CI. Run from the benchmark root:
+
+```bash
+uv run --no-project --with stim==1.16.0 python campaigns/run_circuit_check_audit.py \
+  --emlint-source /path/to/emlint-dev
+```
