@@ -40,3 +40,12 @@ is not part of the default `pytest` suite or CI. Run from the benchmark root:
 uv run --no-project --with stim==1.16.0 python campaigns/run_circuit_check_audit.py \
   --emlint-source /path/to/emlint-dev
 ```
+
+The flag-gadget family is covered by two fixtures: the bare source-derived
+gadget (its five annotation/record checks are not exercised because the gadget
+declares no annotations) and a derived annotated memory variant
+(`flag_gadget_chao_reichardt_w4_memory_annotated.stim`, same flagged-check
+schedule unrolled into a memory experiment with authored annotations) which
+exercises all six registered checks. The repetition and Bacon–Shor hook-check
+gaps are schedule-inherent (no bare weight-4-or-higher cycles) and stay
+recorded as not exercised, not passes.

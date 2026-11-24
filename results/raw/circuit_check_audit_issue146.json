@@ -4,7 +4,7 @@
   "emlint_version": null,
   "stim_version": "1.16.0",
   "manifest": "manifests/circuit_check_audit_issue146.jsonl",
-  "case_count": 8,
+  "case_count": 9,
   "registered_check_names": [
     "rec_target_validity",
     "nondeterministic_detector",
@@ -25,7 +25,7 @@
     "flag_gadget_chao_reichardt_w4_multi_round:observable_record_validity=verdict (The gadget declares no observable annotations.)",
     "flag_gadget_chao_reichardt_w4_multi_round:noiseless_detector_determinism=skipped (The gadget declares no detectors or observables.)"
   ],
-  "elapsed_seconds": 0.23201816715300083,
+  "elapsed_seconds": 0.22651637508533895,
   "cases": [
     {
       "id": "stim_surface_rotated_z_d3_r3",
@@ -59,7 +59,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0002479578834027052
+          "elapsed_seconds": 0.00030341604724526405
         },
         "nondeterministic_detector": {
           "name": "nondeterministic_detector",
@@ -72,7 +72,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0014976668171584606
+          "elapsed_seconds": 0.001067084027454257
         },
         "detector_record_validity": {
           "name": "detector_record_validity",
@@ -85,7 +85,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0002015409991145134
+          "elapsed_seconds": 0.00025554210878908634
         },
         "observable_record_validity": {
           "name": "observable_record_validity",
@@ -98,7 +98,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.00038654194213449955
+          "elapsed_seconds": 0.00024158298037946224
         },
         "noiseless_detector_determinism": {
           "name": "noiseless_detector_determinism",
@@ -111,7 +111,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.00043625012040138245
+          "elapsed_seconds": 0.0005295420996844769
         },
         "irreducible_hook_excess": {
           "name": "irreducible_hook_excess",
@@ -124,7 +124,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0018497079145163298
+          "elapsed_seconds": 0.0012330000754445791
         }
       }
     },
@@ -160,7 +160,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.00010179216042160988
+          "elapsed_seconds": 0.00011733290739357471
         },
         "nondeterministic_detector": {
           "name": "nondeterministic_detector",
@@ -173,7 +173,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0002005421556532383
+          "elapsed_seconds": 0.0002159159630537033
         },
         "detector_record_validity": {
           "name": "detector_record_validity",
@@ -186,7 +186,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 8.816597983241081e-05
+          "elapsed_seconds": 0.00016337493434548378
         },
         "observable_record_validity": {
           "name": "observable_record_validity",
@@ -199,7 +199,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 8.429097943007946e-05
+          "elapsed_seconds": 0.00011999998241662979
         },
         "noiseless_detector_determinism": {
           "name": "noiseless_detector_determinism",
@@ -212,7 +212,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.00017895805649459362
+          "elapsed_seconds": 0.0002287500537931919
         },
         "irreducible_hook_excess": {
           "name": "irreducible_hook_excess",
@@ -225,7 +225,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": "No supported weight-4-or-higher cycle was analyzed. The heuristic does not inspect unlisted two-qubit gates such as ISWAP.",
-          "elapsed_seconds": 0.0002709999680519104
+          "elapsed_seconds": 0.0002627079375088215
         }
       }
     },
@@ -261,7 +261,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.00015904218889772892
+          "elapsed_seconds": 0.000187374884262681
         },
         "nondeterministic_detector": {
           "name": "nondeterministic_detector",
@@ -274,7 +274,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.00030608312226831913
+          "elapsed_seconds": 0.00037762499414384365
         },
         "detector_record_validity": {
           "name": "detector_record_validity",
@@ -287,7 +287,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0001674999948590994
+          "elapsed_seconds": 0.00017962511628866196
         },
         "observable_record_validity": {
           "name": "observable_record_validity",
@@ -300,7 +300,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0003409171476960182
+          "elapsed_seconds": 0.00017504114657640457
         },
         "noiseless_detector_determinism": {
           "name": "noiseless_detector_determinism",
@@ -313,7 +313,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0005066669546067715
+          "elapsed_seconds": 0.0003677499480545521
         },
         "irreducible_hook_excess": {
           "name": "irreducible_hook_excess",
@@ -326,7 +326,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0006430000066757202
+          "elapsed_seconds": 0.0004748329520225525
         }
       }
     },
@@ -367,7 +367,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.01007058285176754
+          "elapsed_seconds": 0.009557415964081883
         },
         "nondeterministic_detector": {
           "name": "nondeterministic_detector",
@@ -380,7 +380,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.020514082862064242
+          "elapsed_seconds": 0.023054291028529406
         },
         "detector_record_validity": {
           "name": "detector_record_validity",
@@ -393,7 +393,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.011578916106373072
+          "elapsed_seconds": 0.009419041918590665
         },
         "observable_record_validity": {
           "name": "observable_record_validity",
@@ -406,7 +406,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.010431582806631923
+          "elapsed_seconds": 0.012754332972690463
         },
         "noiseless_detector_determinism": {
           "name": "noiseless_detector_determinism",
@@ -419,7 +419,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.02255854196846485
+          "elapsed_seconds": 0.02731274999678135
         },
         "irreducible_hook_excess": {
           "name": "irreducible_hook_excess",
@@ -432,7 +432,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.02353133400902152
+          "elapsed_seconds": 0.017885624896734953
         }
       }
     },
@@ -473,7 +473,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.011411542072892189
+          "elapsed_seconds": 0.00880737486295402
         },
         "nondeterministic_detector": {
           "name": "nondeterministic_detector",
@@ -486,7 +486,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.02011225000023842
+          "elapsed_seconds": 0.021255915984511375
         },
         "detector_record_validity": {
           "name": "detector_record_validity",
@@ -499,7 +499,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.011387750040739775
+          "elapsed_seconds": 0.01383545808494091
         },
         "observable_record_validity": {
           "name": "observable_record_validity",
@@ -512,7 +512,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.01101908297277987
+          "elapsed_seconds": 0.012304082978516817
         },
         "noiseless_detector_determinism": {
           "name": "noiseless_detector_determinism",
@@ -525,7 +525,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.031112833879888058
+          "elapsed_seconds": 0.021441875025629997
         },
         "irreducible_hook_excess": {
           "name": "irreducible_hook_excess",
@@ -538,7 +538,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.016668166033923626
+          "elapsed_seconds": 0.01675941701978445
         }
       }
     },
@@ -589,7 +589,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0011941671837121248
+          "elapsed_seconds": 0.0013014168944209814
         },
         "nondeterministic_detector": {
           "name": "nondeterministic_detector",
@@ -602,7 +602,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0025683329440653324
+          "elapsed_seconds": 0.0032464999239891768
         },
         "detector_record_validity": {
           "name": "detector_record_validity",
@@ -615,7 +615,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.001044499920681119
+          "elapsed_seconds": 0.001528250053524971
         },
         "observable_record_validity": {
           "name": "observable_record_validity",
@@ -628,7 +628,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.001006291015073657
+          "elapsed_seconds": 0.0010328330099582672
         },
         "noiseless_detector_determinism": {
           "name": "noiseless_detector_determinism",
@@ -641,7 +641,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0020834999158978462
+          "elapsed_seconds": 0.002145417034626007
         },
         "irreducible_hook_excess": {
           "name": "irreducible_hook_excess",
@@ -654,7 +654,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": "No supported weight-4-or-higher cycle was analyzed. The heuristic does not inspect unlisted two-qubit gates such as ISWAP.",
-          "elapsed_seconds": 0.0005651249084621668
+          "elapsed_seconds": 0.0005749580450356007
         }
       }
     },
@@ -705,7 +705,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0010164161212742329
+          "elapsed_seconds": 0.001076625194400549
         },
         "nondeterministic_detector": {
           "name": "nondeterministic_detector",
@@ -718,7 +718,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.002938208170235157
+          "elapsed_seconds": 0.0021115830168128014
         },
         "detector_record_validity": {
           "name": "detector_record_validity",
@@ -731,7 +731,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.0014073329512029886
+          "elapsed_seconds": 0.0010521658696234226
         },
         "observable_record_validity": {
           "name": "observable_record_validity",
@@ -744,7 +744,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.001407124800607562
+          "elapsed_seconds": 0.0010310420766472816
         },
         "noiseless_detector_determinism": {
           "name": "noiseless_detector_determinism",
@@ -757,7 +757,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.00260666711255908
+          "elapsed_seconds": 0.0024762919638305902
         },
         "irreducible_hook_excess": {
           "name": "irreducible_hook_excess",
@@ -770,7 +770,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": "No supported weight-4-or-higher cycle was analyzed. The heuristic does not inspect unlisted two-qubit gates such as ISWAP.",
-          "elapsed_seconds": 0.0006117499433457851
+          "elapsed_seconds": 0.0008705409709364176
         }
       }
     },
@@ -804,7 +804,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 8.670915849506855e-05
+          "elapsed_seconds": 5.8125006034970284e-05
         },
         "nondeterministic_detector": {
           "name": "nondeterministic_detector",
@@ -820,7 +820,7 @@
             "num_observables": 0
           },
           "hint": null,
-          "elapsed_seconds": 7.417052984237671e-06
+          "elapsed_seconds": 4.332978278398514e-06
         },
         "detector_record_validity": {
           "name": "detector_record_validity",
@@ -833,7 +833,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 5.291588604450226e-05
+          "elapsed_seconds": 4.74581029266119e-05
         },
         "observable_record_validity": {
           "name": "observable_record_validity",
@@ -846,7 +846,7 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 4.375004209578037e-05
+          "elapsed_seconds": 4.424992948770523e-05
         },
         "noiseless_detector_determinism": {
           "name": "noiseless_detector_determinism",
@@ -862,7 +862,7 @@
             "num_observables": 0
           },
           "hint": null,
-          "elapsed_seconds": 2.7921050786972046e-06
+          "elapsed_seconds": 2.500135451555252e-06
         },
         "irreducible_hook_excess": {
           "name": "irreducible_hook_excess",
@@ -875,7 +875,106 @@
           "counter_example": null,
           "counter_example_data": null,
           "hint": null,
-          "elapsed_seconds": 0.00027125002816319466
+          "elapsed_seconds": 0.00027416693046689034
+        }
+      }
+    },
+    {
+      "id": "flag_gadget_chao_reichardt_w4_memory_annotated",
+      "family": "flag gadget",
+      "input_kind": "stim_fixture",
+      "source_metadata": {
+        "path": "workloads/circuits/issue146/flag_gadget_chao_reichardt_w4_memory_annotated.stim",
+        "compressed_sha256": null,
+        "sha256": "05323c44924591a9779336df151ff1af010cbc217036289a024c50640a9f71ec",
+        "source": {
+          "paper": "Chao and Reichardt, Flag fault-tolerant error correction for any stabilizer code, arXiv:1912.09549",
+          "derivation": "annotated memory variant of flag_gadget_chao_reichardt_w4_multi_round.stim: the same flagged-check schedule unrolled for three rounds and completed into a memory experiment; DETECTOR/OBSERVABLE_INCLUDE annotations authored for this audit, not taken from a paper data file"
+        }
+      },
+      "input_sha256": "05323c44924591a9779336df151ff1af010cbc217036289a024c50640a9f71ec",
+      "num_qubits": 6,
+      "num_measurements": 10,
+      "num_detectors": 6,
+      "num_observables": 1,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 11 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.000134957954287529
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 6 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00027429102919995785
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 10 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00013154116459190845
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 1 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00012691691517829895
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 6 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0003749579191207886
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "No irreducible hook excess detected across 3 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0005251660477370024
         }
       }
     }

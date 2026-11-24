@@ -1,0 +1,67 @@
+# Annotated multi-round Chao-Reichardt weight-4 flag-gadget memory.
+# Derived fixture (issue 146): the flagged-check schedule of
+# flag_gadget_chao_reichardt_w4_multi_round.stim, unrolled for three rounds and
+# completed into a memory experiment with DETECTOR and OBSERVABLE_INCLUDE
+# annotations. Construction adapted from the published flagged-check schedule of
+# Chao and Reichardt, arXiv:1912.09549; the annotations are authored for this
+# audit, not taken from a published data file.
+#
+# Qubit roles: 0-3 data (reset to |0000>, measuring the ZZZZ stabilizer),
+# 4 stabilizer ancilla, 5 flag ancilla. Every round's stabilizer (rec[-2]) and
+# flag (rec[-1]) outcomes are deterministic without noise, so detectors compare
+# consecutive rounds and the observable is the final Z_0 data measurement.
+R 0 1 2 3 4 5
+TICK
+# Round 1
+CX 0 4
+TICK
+CX 4 5
+TICK
+CX 1 4
+TICK
+CX 2 4
+TICK
+CX 4 5
+TICK
+CX 3 4
+TICK
+MR 4 5
+TICK
+DETECTOR rec[-2]
+DETECTOR rec[-1]
+# Round 2
+CX 0 4
+TICK
+CX 4 5
+TICK
+CX 1 4
+TICK
+CX 2 4
+TICK
+CX 4 5
+TICK
+CX 3 4
+TICK
+MR 4 5
+TICK
+DETECTOR rec[-2] rec[-4]
+DETECTOR rec[-1] rec[-3]
+# Round 3
+CX 0 4
+TICK
+CX 4 5
+TICK
+CX 1 4
+TICK
+CX 2 4
+TICK
+CX 4 5
+TICK
+CX 3 4
+TICK
+MR 4 5
+TICK
+DETECTOR rec[-2] rec[-4]
+DETECTOR rec[-1] rec[-3]
+M 0 1 2 3
+OBSERVABLE_INCLUDE(0) rec[-4]
