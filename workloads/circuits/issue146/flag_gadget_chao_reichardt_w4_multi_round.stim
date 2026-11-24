@@ -1,0 +1,20 @@
+# Minimal multi-round Chao-Reichardt weight-4 flag gadget.
+# Adapted from the standard flagged check schedule cited in arXiv:1912.09549.
+R 0 1 2 3 4 5
+REPEAT 2 {
+    CX 0 4
+    TICK
+    CX 4 5
+    TICK
+    CX 1 4
+    TICK
+    CX 2 4
+    TICK
+    CX 4 5
+    TICK
+    CX 3 4
+    TICK
+    MR 4 5
+    TICK
+}
+M 0 1 2 3

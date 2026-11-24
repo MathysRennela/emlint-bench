@@ -1,0 +1,983 @@
+{
+  "campaign": "issue146-circuit-check-false-positive-audit",
+  "emlint_source": "emlint/__init__.py",
+  "emlint_version": null,
+  "stim_version": "1.16.0",
+  "manifest": "manifests/circuit_check_audit_issue146.jsonl",
+  "case_count": 9,
+  "registered_check_names": [
+    "rec_target_validity",
+    "nondeterministic_detector",
+    "detector_record_validity",
+    "observable_record_validity",
+    "noiseless_detector_determinism",
+    "irreducible_hook_excess"
+  ],
+  "potential_false_positives": [],
+  "exceptions": [],
+  "not_exercised": [
+    "stim_repetition_d3_r3:irreducible_hook_excess=verdict (No bare weight-4-or-higher check cycle is present in this repetition-code memory.)",
+    "bacon_shor_d3_memory_x:irreducible_hook_excess=verdict (The source measures Bacon-Shor gauge checks using MPP; it has no recognized CNOT-family bare weight-4-or-higher cycles.)",
+    "bacon_shor_d3_memory_z:irreducible_hook_excess=verdict (The source measures Bacon-Shor gauge checks using MPP; it has no recognized CNOT-family bare weight-4-or-higher cycles.)",
+    "flag_gadget_chao_reichardt_w4_multi_round:rec_target_validity=verdict (The gadget contains no record targets.)",
+    "flag_gadget_chao_reichardt_w4_multi_round:nondeterministic_detector=skipped (The gadget declares no detectors or observables.)",
+    "flag_gadget_chao_reichardt_w4_multi_round:detector_record_validity=verdict (The gadget declares no detector annotations.)",
+    "flag_gadget_chao_reichardt_w4_multi_round:observable_record_validity=verdict (The gadget declares no observable annotations.)",
+    "flag_gadget_chao_reichardt_w4_multi_round:noiseless_detector_determinism=skipped (The gadget declares no detectors or observables.)"
+  ],
+  "elapsed_seconds": 0.22651637508533895,
+  "cases": [
+    {
+      "id": "stim_surface_rotated_z_d3_r3",
+      "family": "surface code control",
+      "input_kind": "stim_generated",
+      "source_metadata": {
+        "source": {
+          "repository": "https://github.com/quantumlib/Stim",
+          "kind": "built-in generator"
+        },
+        "task": "surface_code:rotated_memory_z",
+        "parameters": {
+          "distance": 3,
+          "rounds": 3
+        }
+      },
+      "input_sha256": "169e6e44081915cbd99ae6945a4d648b415bfd8987b4440dd8234303528fe522",
+      "num_qubits": 26,
+      "num_measurements": 33,
+      "num_detectors": 24,
+      "num_observables": 1,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 39 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00030341604724526405
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 24 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.001067084027454257
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 36 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00025554210878908634
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 3 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00024158298037946224
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 24 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0005295420996844769
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "No irreducible hook excess detected across 12 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0012330000754445791
+        }
+      }
+    },
+    {
+      "id": "stim_repetition_d3_r3",
+      "family": "repetition code",
+      "input_kind": "stim_generated",
+      "source_metadata": {
+        "source": {
+          "repository": "https://github.com/quantumlib/Stim",
+          "kind": "built-in generator"
+        },
+        "task": "repetition_code:memory",
+        "parameters": {
+          "distance": 3,
+          "rounds": 3
+        }
+      },
+      "input_sha256": "a693396f66ef06c734a4e56313c3317c9ba490755cc7dadba3d453026c9893c2",
+      "num_qubits": 5,
+      "num_measurements": 9,
+      "num_detectors": 8,
+      "num_observables": 1,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 13 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00011733290739357471
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 8 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0002159159630537033
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 12 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00016337493434548378
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 1 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00011999998241662979
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 8 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0002287500537931919
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "not_exercised",
+          "not_exercised_reason": "No bare weight-4-or-higher check cycle is present in this repetition-code memory.",
+          "message": "No irreducible hook excess detected across 0 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": "No supported weight-4-or-higher cycle was analyzed. The heuristic does not inspect unlisted two-qubit gates such as ISWAP.",
+          "elapsed_seconds": 0.0002627079375088215
+        }
+      }
+    },
+    {
+      "id": "stim_color_d3_r3",
+      "family": "color code",
+      "input_kind": "stim_generated",
+      "source_metadata": {
+        "source": {
+          "repository": "https://github.com/quantumlib/Stim",
+          "kind": "built-in generator"
+        },
+        "task": "color_code:memory_xyz",
+        "parameters": {
+          "distance": 3,
+          "rounds": 3
+        }
+      },
+      "input_sha256": "d4026eceba8e532519298426346dfed77b24db34c4e3acc8314e54366bbf1f2e",
+      "num_qubits": 10,
+      "num_measurements": 16,
+      "num_detectors": 9,
+      "num_observables": 1,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 33 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.000187374884262681
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 9 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00037762499414384365
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 30 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00017962511628866196
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 3 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00017504114657640457
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 9 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0003677499480545521
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "No irreducible hook excess detected across 9 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0004748329520225525
+        }
+      }
+    },
+    {
+      "id": "qldpc_40_20_3_memory_x",
+      "family": "bivariate-bicycle qLDPC",
+      "input_kind": "stim_fixture",
+      "source_metadata": {
+        "path": "workloads/circuits/issue146/qldpc_40-20-3_memory_x.stim",
+        "compressed_sha256": null,
+        "sha256": "714c17711ec9f3e648c04a0d3a31bf1d6933442d5d955f4285eed2fbf2f85bb4",
+        "source": {
+          "repository": "https://github.com/unitaryfoundation/qldpc-challenge",
+          "commit": "390113e90fe8a70ab1e30c4ab05f49f4a85b1225",
+          "path": "circuits/40-20-3/memory_x.stim",
+          "blob_sha": "a0dd01e2be5be399e37dc41d64d4ceef56e777ba",
+          "license": "Apache-2.0",
+          "code_record": "codes/40-20-3.json",
+          "code_parameters": "[[40,20,3]]",
+          "family": "bivariate-bicycle",
+          "stim_version": "1.16.0"
+        }
+      },
+      "input_sha256": "714c17711ec9f3e648c04a0d3a31bf1d6933442d5d955f4285eed2fbf2f85bb4",
+      "num_qubits": 280,
+      "num_measurements": 760,
+      "num_detectors": 720,
+      "num_observables": 20,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 1159 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.009557415964081883
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 720 detector(s) and 20 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.023054291028529406
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 1000 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.009419041918590665
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 159 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.012754332972690463
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 720 detector(s) and 20 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.02731274999678135
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "No irreducible hook excess detected across 120 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.017885624896734953
+        }
+      }
+    },
+    {
+      "id": "qldpc_40_20_3_memory_z",
+      "family": "bivariate-bicycle qLDPC",
+      "input_kind": "stim_fixture",
+      "source_metadata": {
+        "path": "workloads/circuits/issue146/qldpc_40-20-3_memory_z.stim",
+        "compressed_sha256": null,
+        "sha256": "7cb7de4f04444a212770c32a5908bf5373d2d5911ba4978a4f87bd5eed7394e5",
+        "source": {
+          "repository": "https://github.com/unitaryfoundation/qldpc-challenge",
+          "commit": "390113e90fe8a70ab1e30c4ab05f49f4a85b1225",
+          "path": "circuits/40-20-3/memory_z.stim",
+          "blob_sha": "9a6ed2a5024d5acdd8ffb02ddb5e1984471d7b83",
+          "license": "Apache-2.0",
+          "code_record": "codes/40-20-3.json",
+          "code_parameters": "[[40,20,3]]",
+          "family": "bivariate-bicycle",
+          "stim_version": "1.16.0"
+        }
+      },
+      "input_sha256": "7cb7de4f04444a212770c32a5908bf5373d2d5911ba4978a4f87bd5eed7394e5",
+      "num_qubits": 280,
+      "num_measurements": 760,
+      "num_detectors": 720,
+      "num_observables": 20,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 1135 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00880737486295402
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 720 detector(s) and 20 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.021255915984511375
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 1000 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.01383545808494091
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 135 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.012304082978516817
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 720 detector(s) and 20 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.021441875025629997
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "No irreducible hook excess detected across 120 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.01675941701978445
+        }
+      }
+    },
+    {
+      "id": "bacon_shor_d3_memory_x",
+      "family": "Bacon-Shor code",
+      "input_kind": "stim_fixture",
+      "source_metadata": {
+        "path": "workloads/circuits/issue146/bacon_shor_d3_x.stim",
+        "compressed_sha256": null,
+        "sha256": "ceb90d3050586ab080521ddb0da12834e525731ed4d7fe0dbca1c3cbce107264",
+        "source": {
+          "repository": "https://zenodo.org/records/7901729",
+          "doi": "10.5281/zenodo.7901729",
+          "archive": "code.zip",
+          "archive_sha256": "11378925ee35938bec5ea5234f29bf297951a45af9db6e78124ae2c5fe3d1747",
+          "license": "CC BY 4.0",
+          "generator": "src/baconshor/_bacon_shor.py:make_bacon_shor_circuit + gen.generate_noisy_circuit_from_chunks",
+          "parameters": {
+            "width": 6,
+            "height": 6,
+            "basis": "X",
+            "rounds": 3,
+            "noise": "uniform depolarizing, p=0.001"
+          },
+          "data": {
+            "qubits": 36,
+            "measurements": 216,
+            "detectors": 55,
+            "observables": 1
+          }
+        }
+      },
+      "input_sha256": "ceb90d3050586ab080521ddb0da12834e525731ed4d7fe0dbca1c3cbce107264",
+      "num_qubits": 36,
+      "num_measurements": 216,
+      "num_detectors": 55,
+      "num_observables": 1,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 366 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0013014168944209814
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 55 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0032464999239891768
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 360 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.001528250053524971
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 6 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0010328330099582672
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 55 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.002145417034626007
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "not_exercised",
+          "not_exercised_reason": "The source measures Bacon-Shor gauge checks using MPP; it has no recognized CNOT-family bare weight-4-or-higher cycles.",
+          "message": "No irreducible hook excess detected across 0 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": "No supported weight-4-or-higher cycle was analyzed. The heuristic does not inspect unlisted two-qubit gates such as ISWAP.",
+          "elapsed_seconds": 0.0005749580450356007
+        }
+      }
+    },
+    {
+      "id": "bacon_shor_d3_memory_z",
+      "family": "Bacon-Shor code",
+      "input_kind": "stim_fixture",
+      "source_metadata": {
+        "path": "workloads/circuits/issue146/bacon_shor_d3_z.stim",
+        "compressed_sha256": null,
+        "sha256": "6edfa8d7e991634d19f6796971e53d0d0555173e98185eed9ced2f5988e1b32f",
+        "source": {
+          "repository": "https://zenodo.org/records/7901729",
+          "doi": "10.5281/zenodo.7901729",
+          "archive": "code.zip",
+          "archive_sha256": "11378925ee35938bec5ea5234f29bf297951a45af9db6e78124ae2c5fe3d1747",
+          "license": "CC BY 4.0",
+          "generator": "src/baconshor/_bacon_shor.py:make_bacon_shor_circuit + gen.generate_noisy_circuit_from_chunks",
+          "parameters": {
+            "width": 6,
+            "height": 6,
+            "basis": "Z",
+            "rounds": 3,
+            "noise": "uniform depolarizing, p=0.001"
+          },
+          "data": {
+            "qubits": 36,
+            "measurements": 216,
+            "detectors": 55,
+            "observables": 1
+          }
+        }
+      },
+      "input_sha256": "6edfa8d7e991634d19f6796971e53d0d0555173e98185eed9ced2f5988e1b32f",
+      "num_qubits": 36,
+      "num_measurements": 216,
+      "num_detectors": 55,
+      "num_observables": 1,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 366 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.001076625194400549
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 55 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0021115830168128014
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 360 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0010521658696234226
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 6 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0010310420766472816
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 55 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0024762919638305902
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "not_exercised",
+          "not_exercised_reason": "The source measures Bacon-Shor gauge checks using MPP; it has no recognized CNOT-family bare weight-4-or-higher cycles.",
+          "message": "No irreducible hook excess detected across 0 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": "No supported weight-4-or-higher cycle was analyzed. The heuristic does not inspect unlisted two-qubit gates such as ISWAP.",
+          "elapsed_seconds": 0.0008705409709364176
+        }
+      }
+    },
+    {
+      "id": "flag_gadget_chao_reichardt_w4_multi_round",
+      "family": "flag gadget",
+      "input_kind": "stim_fixture",
+      "source_metadata": {
+        "path": "workloads/circuits/issue146/flag_gadget_chao_reichardt_w4_multi_round.stim",
+        "compressed_sha256": null,
+        "sha256": "311646dece07bdeb930b9e858642d93570ce773782d72d2104bd243134534b5c",
+        "source": {
+          "paper": "Chao and Reichardt, Flag fault-tolerant error correction for any stabilizer code, arXiv:1912.09549",
+          "derivation": "minimal multi-round weight-4 gadget adapted from the published flagged-check construction; not copied from a paper data file"
+        }
+      },
+      "input_sha256": "311646dece07bdeb930b9e858642d93570ce773782d72d2104bd243134534b5c",
+      "num_qubits": 6,
+      "num_measurements": 8,
+      "num_detectors": 0,
+      "num_observables": 0,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "not_exercised",
+          "not_exercised_reason": "The gadget contains no record targets.",
+          "message": "All 0 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 5.8125006034970284e-05
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": false,
+          "status": "skipped",
+          "severity": "error",
+          "disposition": "not_exercised",
+          "not_exercised_reason": "The gadget declares no detectors or observables.",
+          "message": "skipped: the circuit declares no DETECTOR or OBSERVABLE_INCLUDE annotations, so there is no parity to test.",
+          "counter_example": "no detector or observable annotations",
+          "counter_example_data": {
+            "num_detectors": 0,
+            "num_observables": 0
+          },
+          "hint": null,
+          "elapsed_seconds": 4.332978278398514e-06
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "not_exercised",
+          "not_exercised_reason": "The gadget declares no detector annotations.",
+          "message": "All 0 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 4.74581029266119e-05
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "not_exercised",
+          "not_exercised_reason": "The gadget declares no observable annotations.",
+          "message": "All 0 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 4.424992948770523e-05
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": false,
+          "status": "skipped",
+          "severity": "error",
+          "disposition": "not_exercised",
+          "not_exercised_reason": "The gadget declares no detectors or observables.",
+          "message": "skipped: the circuit declares no DETECTOR or OBSERVABLE_INCLUDE annotations, so there is no parity to test.",
+          "counter_example": "no detector or observable annotations",
+          "counter_example_data": {
+            "num_detectors": 0,
+            "num_observables": 0
+          },
+          "hint": null,
+          "elapsed_seconds": 2.500135451555252e-06
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "No irreducible hook excess detected across 2 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00027416693046689034
+        }
+      }
+    },
+    {
+      "id": "flag_gadget_chao_reichardt_w4_memory_annotated",
+      "family": "flag gadget",
+      "input_kind": "stim_fixture",
+      "source_metadata": {
+        "path": "workloads/circuits/issue146/flag_gadget_chao_reichardt_w4_memory_annotated.stim",
+        "compressed_sha256": null,
+        "sha256": "05323c44924591a9779336df151ff1af010cbc217036289a024c50640a9f71ec",
+        "source": {
+          "paper": "Chao and Reichardt, Flag fault-tolerant error correction for any stabilizer code, arXiv:1912.09549",
+          "derivation": "annotated memory variant of flag_gadget_chao_reichardt_w4_multi_round.stim: the same flagged-check schedule unrolled for three rounds and completed into a memory experiment; DETECTOR/OBSERVABLE_INCLUDE annotations authored for this audit, not taken from a paper data file"
+        }
+      },
+      "input_sha256": "05323c44924591a9779336df151ff1af010cbc217036289a024c50640a9f71ec",
+      "num_qubits": 6,
+      "num_measurements": 10,
+      "num_detectors": 6,
+      "num_observables": 1,
+      "checks": {
+        "rec_target_validity": {
+          "name": "rec_target_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 11 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.000134957954287529
+        },
+        "nondeterministic_detector": {
+          "name": "nondeterministic_detector",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 6 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00027429102919995785
+        },
+        "detector_record_validity": {
+          "name": "detector_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 10 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00013154116459190845
+        },
+        "observable_record_validity": {
+          "name": "observable_record_validity",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 1 rec[...] target(s) resolve to an existing measurement record (bounds check only; intended-round alignment is not established).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.00012691691517829895
+        },
+        "noiseless_detector_determinism": {
+          "name": "noiseless_detector_determinism",
+          "passed": true,
+          "status": "verdict",
+          "severity": "error",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "All 6 detector(s) and 1 observable(s) are deterministic in the noise-free circuit (Stim exact flow analysis; certifies the annotations only, not the noise model or decoder).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0003749579191207886
+        },
+        "irreducible_hook_excess": {
+          "name": "irreducible_hook_excess",
+          "passed": true,
+          "status": "verdict",
+          "severity": "warning",
+          "disposition": "pass",
+          "not_exercised_reason": null,
+          "message": "No irreducible hook excess detected across 3 weight->=4 check cycle(s).",
+          "counter_example": null,
+          "counter_example_data": null,
+          "hint": null,
+          "elapsed_seconds": 0.0005251660477370024
+        }
+      }
+    }
+  ],
+  "interpretation": "A skipped or inconclusive result is not counted as a pass or a false positive; it is recorded as not exercised. Potential false positives require human adjudication."
+}
