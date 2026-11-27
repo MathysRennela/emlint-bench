@@ -14,7 +14,7 @@ workloads/demo/stim_rotated_surface_z_d3_r3.dem, which is duplicates-clean):
   ==========================================  =========================  ==========
   mutation                                    upstream issue             behavior
   ==========================================  =========================  ==========
-  duplicate_target_in_mechanism               PECOS#800, PECOS#813       gap
+  duplicate_target_in_mechanism               PECOS#800, PECOS#813       caught
   same_syndrome_disagreeing_observables       PECOS#780                  caught
   zero_probability                            Deltakit#329               caught
   negative_probability                        Deltakit#329               unlintable
@@ -22,7 +22,10 @@ workloads/demo/stim_rotated_surface_z_d3_r3.dem, which is duplicates-clean):
   dropped_observable_referencers              Stim#202                   gap
   ==========================================  =========================  ==========
 
-Behaviors (verified empirically 2026-09-26, emlint 0.2.2 / stim 1.16.0):
+Behaviors (verified empirically 2026-09-26, emlint 0.2.2 / stim 1.16.0;
+re-adjudicated 2026-11-27 against emlint 0.2.6 `a191419`: the repeated-target
+row flipped `gap` -> `caught` when emlint 0.2.4 added the repeated-target
+finding to `duplicates` (with `null_mechanism`)):
 
 - `caught`      — the expected check fires; expectation verified at build time.
 - `gap`         — the expected check does NOT fire; recorded as the benchmark
@@ -33,10 +36,10 @@ Behaviors (verified empirically 2026-09-26, emlint 0.2.2 / stim 1.16.0):
 
 Gap rationale (why these are representation gaps, not missing predicates):
 
-- duplicate_target_in_mechanism: `ErrorMechanism.detectors` is a
-  frozenset, so target multiplicity inside one instruction is discarded at
-  parse time; `duplicates` cannot see `D0 D0` today. Catching it needs the
-  repetition preserved (parse-level check), not a new predicate.
+- duplicate_target_in_mechanism (historical, now `caught`): emlint 0.2.2
+  discarded target multiplicity at parse time, so `duplicates` could not see
+  `D0 D0`. Since 0.2.4 the frontend preserves repeated targets and
+  `duplicates` reports them.
 - dropped_observable_referencers: once every mechanism referencing L0 is
   removed, no DEM text declares L0, so presence-based predicates have nothing
   to compare against. Same blind spot the demo corpus recorded for its

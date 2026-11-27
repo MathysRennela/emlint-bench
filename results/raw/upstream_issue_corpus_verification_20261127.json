@@ -1,0 +1,72 @@
+{
+  "date": "20261127",
+  "environment": {
+    "python": "3.13.18",
+    "stim": "1.16.0",
+    "emlint": "0.2.6",
+    "platform": "Linux-6.18.44-fc-v880-x86_64-with-glibc2.39"
+  },
+  "survey": "notes/ecosystem/UPSTREAM_ISSUE_SURVEY.md (emlint-dev)",
+  "artifacts_verified": 6,
+  "failures": [],
+  "records": [
+    {
+      "file": "workloads/upstream_issues/stim_rotated_surface_z_d3_r3__duplicate_target_in_mechanism.dem",
+      "expectation": "caught (duplicates)",
+      "verified": true,
+      "behavior": "caught",
+      "failing_checks": [
+        "duplicates",
+        "null_mechanism"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/upstream_issues/stim_rotated_surface_z_d3_r3__same_syndrome_disagreeing_observables.dem",
+      "expectation": "caught (correctability)",
+      "verified": true,
+      "behavior": "caught",
+      "failing_checks": [
+        "correctability"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/upstream_issues/stim_rotated_surface_z_d3_r3__zero_probability.dem",
+      "expectation": "caught (probability_bounds)",
+      "verified": true,
+      "behavior": "caught",
+      "failing_checks": [
+        "probability_bounds"
+      ],
+      "exit_code": 1
+    },
+    {
+      "file": "workloads/upstream_issues/stim_rotated_surface_z_d3_r3__negative_probability.dem",
+      "expectation": "unlintable (None)",
+      "verified": true,
+      "behavior": "unlintable",
+      "failing_checks": [],
+      "exit_code": 3
+    },
+    {
+      "file": "workloads/upstream_issues/stim_rotated_surface_z_d3_r3__dropped_detector_referencer.dem",
+      "expectation": "caught (sensitivity)",
+      "verified": true,
+      "behavior": "caught",
+      "failing_checks": [
+        "connectivity",
+        "sensitivity"
+      ],
+      "exit_code": 2
+    },
+    {
+      "file": "workloads/upstream_issues/stim_rotated_surface_z_d3_r3__dropped_observable_referencers.dem",
+      "expectation": "gap (observable_coverage)",
+      "verified": true,
+      "behavior": "not_flagged",
+      "failing_checks": [],
+      "exit_code": 0
+    }
+  ]
+}
